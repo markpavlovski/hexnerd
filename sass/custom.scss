@@ -1,6 +1,18 @@
+// Variables
+
+$green: #bada55;
+$white: rgba(255,255,255,1);
+
+
+
+
+
+// Styles
+
 body {
   margin: 0;
   padding: 0;
+  transition: all 1s ease;
 }
 
 .grid-container {
@@ -12,7 +24,7 @@ body {
 }
 
 header {
-  background-color: green;
+  background-color: $green;
   grid-column: 1;
   grid-row: 1
 }
@@ -24,28 +36,32 @@ main {
 }
 
 nav {
-  background-color: pink;
-  grid-column: 1;
-  grid-row: 3;
+  background-color: $white;
+  // grid-column: 1;
+  // grid-row: 3;
   overflow: auto;
 }
 
 footer {
   background-color: teal;
   grid-column: 1;
-  grid-row: 4;
+  // grid-row: 4;
 }
 
 @media only screen and (orientation: landscape) {
+
   .grid-container {
-    grid-template-columns: 5fr 4fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 100px 1fr 100px;
   }
+
   nav {
     grid-column: 2;
     grid-row: 1 / span 3;
   }
+
   footer {
     grid-row: 3;
   }
+
 }
