@@ -38,7 +38,11 @@ nav {
   background-color: darken($white, 22%);
   grid-column: 1;
   grid-row: 2;
-
+  box-shadow:
+    16px 0px 24px 2px rgba(0, 0, 0, 0.14),
+    6px 0px 30px 5px rgba(0, 0, 0, 0.12),
+    8px 0px 10px -5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
   li {
     font-size: 20px;
   }
