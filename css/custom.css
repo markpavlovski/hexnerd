@@ -1,191 +1,41 @@
-/** Read the guide at: http://bit.ly/2xIdHu0 **/
-/** Variables & Mixins **/
-.ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-/** Scafolding --------------------**/
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
-.page {
+.grid-container {
   display: grid;
-  grid-template-rows: auto 30px;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px 0px;
   height: 100vh; }
 
-/** Panel Module **/
-.panel {
-  display: grid;
-  grid-template-rows: 30px auto;
-  height: calc(100vh - $bar-height); }
+header {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 1; }
 
-.panel-body {
+main {
+  background-color: blue;
+  grid-column: 1;
+  grid-row: 2; }
+
+nav {
+  background-color: pink;
+  grid-column: 1;
+  grid-row: 3;
   overflow: auto; }
 
-/** Tabs Module **/
-.tabs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 100%; }
+footer {
+  background-color: teal;
+  grid-column: 1;
+  grid-row: 4; }
 
-.tab-item {
-  text-align: center;
-  padding: 6px; }
-
-/** Editor **/
-.editor {
-  display: grid; }
-  .editor .window-2 {
-    display: none; }
-  .editor.editor--2-windows-layout {
-    grid-template-columns: 1fr 1fr; }
-    .editor.editor--2-windows-layout .window-2 {
-      display: grid; }
-
-/** Footer **/
-.footer {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-column-start: 1;
-  grid-column-end: 3; }
-
-.footer-controls {
-  display: flex;
-  height: 100%;
-  justify-content: flex-end; }
-  .footer-controls a {
-    height: 100%;
-    display: flex;
-    align-items: center; }
-
-/** Theme --------------------- **/
-/** Icons
-  * From https://octicons.github.com/
-**/
-@font-face {
-  font-family: 'octicons';
-  src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'octicons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-squirrel:before {
-  content: "\e900"; }
-
-.icon-repo:before {
-  content: "\e901"; }
-
-.icon-git-branch:before {
-  content: "\e902"; }
-
-.icon-diff:before {
-  content: "\e905"; }
-
-/** Variables **/
-/** Styles **/
-body {
-  background-color: #d7dae0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.8rem;
-  color: #2c313a; }
-
-.sidebar {
-  border-right: 1px solid #c5cad3; }
-  .sidebar .tree-group {
-    padding: 0;
-    margin: 0; }
-  .sidebar .tree-item {
-    padding: 5px 0 5px 25px;
-    list-style: none;
-    position: relative; }
-    .sidebar .tree-item:before {
-      font-family: 'octicons' !important;
-      position: absolute;
-      left: 10px; }
-    .sidebar .tree-item.tree-item--chevron-down:before {
-      content: "\e907"; }
-    .sidebar .tree-item.tree-item--chevron-right:before {
-      content: "\e908"; }
-  .sidebar .tree-item-label {
-    display: flex; }
-    .sidebar .tree-item-label:before {
-      font-family: 'octicons' !important;
-      font-size: 17px;
-      margin-right: 10px; }
-    .sidebar .tree-item-label.tree-item-label--repo:before {
-      content: "\e901"; }
-    .sidebar .tree-item-label.tree-item-label--file-directory:before {
-      content: "\e903"; }
-    .sidebar .tree-item-label.tree-item-label--file-text:before {
-      content: "\e904"; }
-    .sidebar .tree-item-label.tree-item-label--file-book:before {
-      content: "\e906"; }
-  .sidebar .panel-header {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
-.editor .tab-item {
-  border-right: 1px solid #c5cad3;
-  border-bottom: 1px solid #c5cad3;
-  color: #5c6370; }
-  .editor .tab-item.tab-item--selected {
-    background-color: #2c313a;
-    color: #dcdfe4;
-    border-color: #2c313a; }
-
-.editor .panel-body {
-  background-color: #2c313a;
-  color: #dcdfe4;
-  font-family: "Courier New";
-  font-size: 1rem; }
-  .editor .panel-body .editor-container {
-    padding-left: 45px;
-    margin-top: 0; }
-  .editor .panel-body .editor-line {
-    color: #5c6370; }
-  .editor .panel-body .editor-content {
-    color: #c5cad3; }
-
-.editor .window-2 {
-  border-left: 1px solid #c5cad3; }
-
-.footer {
-  align-items: center;
-  border-top: 1px solid #c5cad3; }
-
-.footer-file-info .file-info-source {
-  padding: 0 10px; }
-
-.footer-controls a {
-  padding: 0 10px;
-  color: initial;
-  text-decoration: none; }
-  .footer-controls a [class*="icon-"] {
-    font-size: 15px;
-    margin-right: 5px; }
-  .footer-controls a:hover {
-    background-color: #c5cad3; }
-  .footer-controls a .icon-squirrel {
-    color: #1f96ff; }
-
-/** Control Bar for demo purposes **/
-.control-bar {
-  position: fixed;
-  bottom: 50px;
-  right: 20px; }
-
-#window-1 {
-  display: none; }
+@media only screen and (orientation: landscape) {
+  .grid-container {
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  nav {
+    grid-column: 2;
+    grid-row: 1 / span 3; }
+  footer {
+    grid-row: 3; } }

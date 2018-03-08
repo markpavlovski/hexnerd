@@ -1,262 +1,51 @@
-/** Read the guide at: http://bit.ly/2xIdHu0 **/
-
-/** Variables & Mixins **/
-
-$bar-height: 30px;
-
-.ellipsis {
-  overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-
-/** Scafolding --------------------**/
 body {
-	margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.page {
-	display: grid;
-	grid-template-rows: auto $bar-height;
-	grid-template-columns: 300px 1fr;
-	height: 100vh;
-}
-
-
-/** Panel Module **/
-.panel {
-	display: grid;
-	grid-template-rows: $bar-height auto;
-	height: calc(100vh - $bar-height);
-}
-
-.panel-body {
-	overflow: auto;
-}
-
-
-/** Tabs Module **/
-.tabs {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	height: 100%;
-}
-
-.tab-item {
-	text-align: center;
-  padding: 6px;
-}
-
-
-/** Editor **/
-.editor {
+.grid-container {
   display: grid;
-  .window-2  {
-    display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px 0px;
+  height: 100vh;
+}
+
+header {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 1
+}
+
+main {
+  background-color: blue;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+nav {
+  background-color: pink;
+  grid-column: 1;
+  grid-row: 3;
+  overflow: auto;
+}
+
+footer {
+  background-color: teal;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+@media only screen and (orientation: landscape) {
+  .grid-container {
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
-  &.editor--2-windows-layout {
-		grid-template-columns: 1fr 1fr;
-      .window-2 {
-       display: grid;
-	  }
-	}
-}
-
-
-/** Footer **/
-.footer {
-  display: grid;
-  grid-template-columns: 1fr auto;
-	grid-column-start: 1;
-	grid-column-end:   3;
-}
-
-.footer-file-info {
-}
-
-.footer-controls {
-  display: flex;
-  height: 100%;
-  justify-content: flex-end;
-  a {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  nav {
+    grid-column: 2;
+    grid-row: 1 / span 3;
   }
-}
-
-
-/** Theme --------------------- **/
-
-
-/** Icons
-  * From https://octicons.github.com/
-**/
-@font-face {
-  font-family: 'octicons';
-  src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'octicons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-squirrel:before {
-  content: "\e900";
-}
-.icon-repo:before {
-  content: "\e901";
-}
-.icon-git-branch:before {
-  content: "\e902";
-}
-.icon-diff:before {
-  content: "\e905";
-}
-
-
-/** Variables **/
-$gray-dark: #2c313a;
-$gray-base: #5c6370;
-$gray-light: #c5cad3;
-$gray-lighter: #d7dae0;
-$gray-lightest: #dcdfe4;
-$blue: #1f96ff;
-$border-default: 1px solid $gray-light;
-
-/** Styles **/
-body {
-	background-color: $gray-lighter;
-	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 0.8rem;
-	color: $gray-dark;
-}
-
-
-.sidebar {
-	border-right: $border-default;
-	.tree-group {
-		padding: 0;
-		margin: 0;
-	}
-	.tree-item {
-		padding: 5px 0 5px 25px;
-		list-style: none;
-    position: relative;
-    &:before {
-     font-family: 'octicons' !important;
-     position: absolute;
-     left: 10px;
-    }
-    &.tree-item--chevron-down:before {
-      content: "\e907";
-    }
-    &.tree-item--chevron-right:before {
-      content: "\e908";
-    }
-	}
-  .tree-item-label {
-    display: flex;
-    &:before {
-     font-family: 'octicons' !important;
-     font-size: 17px;
-     margin-right: 10px;
-    }
-    &.tree-item-label--repo:before {
-      content: "\e901";
-    }
-    &.tree-item-label--file-directory:before {
-      content: "\e903";
-    }
-    &.tree-item-label--file-text:before {
-      content: "\e904";
-    }
-    &.tree-item-label--file-book:before {
-      content: "\e906";
-    }
+  footer {
+    grid-row: 3;
   }
-	.panel-header {
-		display: flex;
-	  align-items: center;
-	  justify-content: center;
-	}
-}
-
-.editor {
-	.tab-item {
-		border-right: $border-default;
-		border-bottom: $border-default;
-    color: $gray-base;
-		&.tab-item--selected {
-			background-color: $gray-dark;
-			color: $gray-lightest;
-			border-color: $gray-dark;
-		}
-	}
-	.panel-body {
-		background-color: $gray-dark;
-		color: $gray-lightest;
-		font-family: "Courier New";
-		font-size: 1rem;
-		.editor-container {
-			padding-left: 45px;
-			margin-top: 0;
-		}
-		.editor-line {
-			color: $gray-base;
-		}
-		.editor-content {
-			color: $gray-light;
-		}
-	}
-  .window-2  {
-    border-left: 1px solid $gray-light;
-  }
-}
-
-.footer {
-  align-items: center;
-	border-top: $border-default;
-}
-.footer-file-info {
-  .file-info-source {
-    padding: 0 10px;
-  }
-}
-.footer-controls {
-  a {
-    padding: 0 10px;
-    color: initial;
-    text-decoration: none;
-    [class*="icon-"] {
-      font-size: 15px;
-      margin-right: 5px;
-    }
-    &:hover {
-      background-color: $gray-light;
-    }
-    .icon-squirrel {
-      color: $blue;
-    }
-  }
-}
-
-/** Control Bar for demo purposes **/
-.control-bar {
-	position: fixed;
-	bottom: 50px;
-	right: 20px;
-}
-#window-1 {
-  display: none;
 }
