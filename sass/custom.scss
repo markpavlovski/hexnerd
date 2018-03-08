@@ -2,6 +2,7 @@
 
 $grey: #DDD;
 $white: rgba(255,255,255,1);
+$transparent: rgba(255,255,255,0);
 
 
 
@@ -24,32 +25,30 @@ body {
   height: 100vh;
 }
 
-header {
-  background-color: darken($white, 20%);
-  grid-column: 1;
-  grid-row: 1;
 
-  h1 {
-    font-size: 15px;
-  }
-}
 
 nav {
   background-color: darken($white, 22%);
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1 /span 3;
   box-shadow:
     16px 0px 24px 2px rgba(0, 0, 0, 0.14),
     6px 0px 30px 5px rgba(0, 0, 0, 0.12),
     8px 0px 10px -5px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 2;
+  margin-top: -2px;
+  margin-bottom: -2px;
+
+
   li {
     font-size: 20px;
   }
+
 }
 
-section#display-style {
-  background-color: darken($white,5%);
+header {
+  background: linear-gradient(darken($white,7%), $transparent);
+;
   grid-column: 2;
   grid-row: 1;
 
@@ -63,7 +62,7 @@ main {
   grid-column: 2;
   grid-row: 2 /span 3;
   overflow: auto;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-top: 20px;
 
 
@@ -75,15 +74,5 @@ main {
     height: 100px;
     margin-bottom: 20px;
     margin-right: 20px;
-  }
-}
-
-footer {
-  background-color: darken($white, 20%);
-  grid-column: 1;
-  grid-row: 3;
-
-  h1 {
-    font-size: 10px;
   }
 }
