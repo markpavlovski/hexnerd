@@ -7,91 +7,209 @@
   <link rel="stylesheet" href="css/custom.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script defer src="js/custom.js"></script>
+  <script
+  refer src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <nav>
-    <header>
-      <h1>Logo</h1>
-    </header>
-    <section>
-      <h1>Category</h1>
-      <ul>
-        <li>CSS Natives</li>
-        <li>Classic HEX</li>
-        <li>LEET HEX</li>
-        <li>DURTY LEET</li>
-      </ul>
-    </section>
-    <section>
-      <h1>Type</h1>
-      <ul>
-        <li>RGB</li>
-        <li>RGBA</li>
-      </ul>
-    </section>
-    <section>
-      <h1>Length</h1>
-      <ul>
-        <li>6 - #000000</li>
-        <li>8 - #000000FF</li>
-        <li>3 - #000</li>
-        <li>4 - #000F</li>
-      </ul>
-    </section>
-    <footer>
-      <p>© 2018 Mark Pavlovski</p>
-    </footer>
-  </nav>
+  <div class="page">
+
+  <!--Sidebar-->
+  <div class="sidebar">
+    <div class="panel">
+     <div class="panel-header ">Project</div>
+
+		  <!--Tree-->
+      <div class="panel-body">
+
+		    <ul class="tree-group">
+
+          <li class="tree-item tree-item--chevron-down">
+            <span class="tree-item-label tree-item-label--repo">vintage-shop</span>
+            <ul class="tree-group">
+              <li class="tree-item tree-item--chevron-right">
+                <span class="tree-item-label tree-item-label--file-directory">git</span>
+              </li>
+              <li class="tree-item tree-item--chevron-right">
+                <span class="tree-item-label tree-item-label--file-directory">dist</span>
+              </li>
+              <li class="tree-item tree-item--chevron-right">
+                <span class="tree-item-label tree-item-label--file-directory">node_modules</span>
+              </li>
+              <li class="tree-item tree-item--chevron-right">
+                <span class="tree-item-label tree-item-label--file-directory">src</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">.editconfig</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">build.js</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">development.html</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">LICENSE</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">package-lock.json</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">production.html</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-book">README.md</span>
+              </li>
+              <li class="tree-item">
+                <span class="tree-item-label tree-item-label--file-text">test.html</span>
+              </li>
+            </ul>
+          </li>
+         </ul>
+       </div>
+
+    </div>
+  </div><!--Sidebar ends-->
 
 
-    <header>
-      <ul>
-        <li>
-          <i class="fas fa-th"></i>
-        </li>
-        <li>
-          <i class="fas fa-th"></i>
-        </li>
-        <li>
-          <i class="fas fa-th"></i>
-        </li>
-        <li>
-          <i class="fas fa-th"></i>
-        </li>
-      </ul>
-    </header>
+  <div class="editor">
 
-    <main>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </main>
+    <!--Editor 1 -->
+    <div class="panel">
+
+      <div class="panel-header">
+        <div class="tabs">
+          <div class="tab-item">scafolding.less</div>
+          <div class="tab-item tab-item--selected">styles.less</div>
+          <div class="tab-item">cart-item.stash</div>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        <ol class="editor-container">
+          <li class="editor-line"></li>
+          <li class="editor-line"><span class="editor-content">Hey <br>there!</span></li>
+          <li class="editor-line"></li>
+                    <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+          <li class="editor-line"></li>
+
+         </ol>
+       </div>
+     </div>
+
+     <!--Editor 2 -->
+     <div class="panel window-2">
+
+       <div class="panel-header">
+         <div class="tabs">
+           <div class="tab-item tab-item--selected">styles.less</div>
+         </div>
+       </div>
+
+       <div class="panel-body">
+         <ol class="editor-container">
+           <li class="editor-line"></li>
+           <li class="editor-line"><span class="editor-content">Hey there!</span></li>
+           <li class="editor-line"></li>
+         </ol>
+       </div>
+
+      </div>
+
+  </div><!--Editor ends-->
+
+	<!--Footer-->
+	<div class="footer">
+    <div class="footer-file-info">
+      <span class="file-info-source">src/styles.less</span>
+      <span class="file-info-location">2:5</span>
+      </div>
+    <div class="footer-controls">
+      <a href="">LF</a>
+      <a href="">UTF-8</a>
+      <a href="">Less</a>
+      <a href=""><span class="icon-git-branch"></span>master</a>
+      <a href="">⬇︎ 5 ⬆︎</a>
+      <a href=""><span class="icon-diff"></span>1 file</a>
+      <a href=""><span class="icon-squirrel"></span></a>
+    </div>
+  </div>
+
+</div><!--Grid structure ends-->
+
+<!-- Control Bar for demo purposes-->
+<div class="control-bar">
+  <button id="window-1">Close Tabs to the Right</button>
+	<button id="window-2">Split Right</button>
+</div>
 
 </body>
 
