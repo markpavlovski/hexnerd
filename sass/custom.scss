@@ -2,12 +2,16 @@
 $grey: #DDD;
 $white: rgba(255,255,255,1);
 $transparent: rgba(255,255,255,0); // Styles
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
-body {
+
+// Styles
+* {
   margin: 0;
   padding: 0;
-  transition: all 0.5s ease;
-  font-size: 0;
+  font-size:  12;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .grid-container {
@@ -38,10 +42,12 @@ header {
   display: flex;
   justify-content: end;
   justify-self: center;
+  padding-left: 40px;
+
 
   li {
     color: rgba(0,0,0,0.2);
-    margin-right: 40px;
+    margin-right: 35px;
     list-style-type: none;
     display: inline;
     line-height: 100px;
@@ -74,6 +80,7 @@ main {
   .card {
     display: inline-block;
     background-color: $grey;
+    cursor: pointer;
 
     &.square {
       width: 100px;
@@ -127,6 +134,7 @@ aside {
   z-index: -1;
   opacity: 0;
   transition: opacity 0.5s ease;
+  cursor: pointer;
 
   &.show {
     opacity: 1;
@@ -140,19 +148,11 @@ aside {
   z-index: -1;
   opacity: 0;
   transition: opacity 0.5s ease;
-  height: 100vh;
-  width: 100%;
-  justify-self: center;
   display: flex;
   justify-content: space-between;
-  align-content: center;
-
 
   &.show {
     opacity: 1;
-    height: 100vh;
-    display: flex;
-    align-content: center;
   }
 
   .arrow {
@@ -160,18 +160,25 @@ aside {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 90px;
-    cursor: pointer;
     transition: all 0.5s ease;
-    align-content: center;
     line-height: 100vh;
-    display: inline-block;
+    cursor: pointer;
 
     &:hover {
       color: rgba(255,255,255,.45);
     }
+  }
 
-    &.left {
-    }
+  .middle {
+    color: rgba(255,255,255,.7);
+    font-size: 30px;
+    line-height: 100vh;
+    //
+    // .card {
+    //   background-color: red;
+    //   height: 200px;
+    // }
+
   }
 }
 
