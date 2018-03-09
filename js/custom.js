@@ -6,6 +6,9 @@ window.setTimeout(()=>{
 	document.querySelector('.grey-fade').style = 'opacity: 0'
 },1200)
 
-
+function toggleAside(){
+	document.querySelector("aside").classList.toggle("unhidden")
+	document.querySelector(".grey-fade").classList.toggle("unhidden")
+}
 // Trigger for the right side bar:
 // document.querySelector("aside").classList.toggle("unhidden")

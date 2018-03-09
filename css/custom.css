@@ -20,28 +20,6 @@
     z-index: -1;
     width: 0%; } }
 
-@keyframes grey-fade-in {
-  0% {
-    z-index: -1;
-    opacity: 0%; }
-  1% {
-    z-index: 4;
-    opacity: 0%; }
-  100% {
-    z-index: 4;
-    opacity: 100%; } }
-
-@keyframes grey-fade-out {
-  0% {
-    z-index: 4;
-    opacity: 100%; }
-  99% {
-    z-index: 4;
-    opacity: 0%; }
-  100% {
-    z-index: -1;
-    opacity: 0%; } }
-
 body {
   margin: 0;
   padding: 0;
