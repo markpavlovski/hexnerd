@@ -1,21 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  transition: all .5s ease;
-  font-size: 0px; }
+  transition: all 0.5s ease;
+  font-size: 0; }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px 1fr;
-  grid-gap: 0px 0px;
+  grid-gap: 0 0;
   height: 100vh; }
 
 nav {
   background-color: white;
   grid-column: 1 /span 3;
   grid-row: 1 /span 2;
-  box-shadow: 16px 0px 24px 2px rgba(0, 0, 0, 0.14), 6px 0px 30px 5px rgba(0, 0, 0, 0.12), 8px 0px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 16px 0 24px 2px rgba(0, 0, 0, 0.14), 6px 0 30px 5px rgba(0, 0, 0, 0.12), 8px 0 10px -5px rgba(0, 0, 0, 0.3);
   z-index: 2;
   margin-top: -200px; }
   nav li {
@@ -36,7 +36,7 @@ header {
     line-height: 100px;
     font-size: 30px;
     cursor: pointer;
-    transition: all .5s ease; }
+    transition: all 0.5s ease; }
     header li:hover {
       color: rgba(0, 0, 0, 0.4); }
     header li i {
@@ -78,7 +78,7 @@ aside {
   background-color: #fafafa;
   grid-column: 8 /span 12;
   grid-row: 1 /span 2;
-  box-shadow: -16px 0px 24px 2px rgba(0, 0, 0, 0.07), -6px 0px 30px 5px rgba(0, 0, 0, 0.06), -8px 0px 10px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: -16px 0 24px 2px rgba(0, 0, 0, 0.07), -6px 0 30px 5px rgba(0, 0, 0, 0.06), -8px 0 10px -5px rgba(0, 0, 0, 0.15);
   margin-top: -2px;
   margin-bottom: -2px;
   justify-self: start;
@@ -88,7 +88,7 @@ aside {
   transition: margin 0.5s ease;
   display: none; }
   aside.show {
-    margin-left: 0%; }
+    margin-left: 0; }
 
 .fade {
   background-color: rgba(0, 0, 0, 0.5);
@@ -96,7 +96,7 @@ aside {
   grid-row: 1 /span 2;
   z-index: -1;
   opacity: 0;
-  transition: opacity .5s ease; }
+  transition: opacity 0.5s ease; }
   .fade.show {
     opacity: 1; }
 
@@ -104,11 +104,32 @@ aside {
   background-color: #bada55;
   grid-column: 1 /span 12;
   grid-row: 1 /span 2;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity .5s ease; }
+  z-index: 99;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  height: 100vh;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
   .full-screen.show {
-    opacity: 1; }
+    opacity: 1;
+    height: 100vh;
+    display: flex;
+    align-content: center; }
+  .full-screen .arrow {
+    color: rgba(255, 255, 255, 0.3);
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 90px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    align-content: center;
+    line-height: 100vh;
+    display: inline-block; }
+    .full-screen .arrow:hover {
+      color: rgba(255, 255, 255, 0.45); }
 
 .z4 {
   z-index: 4 !important;
