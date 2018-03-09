@@ -1,25 +1,3 @@
-@keyframes slide-in {
-  0% {
-    z-index: -1;
-    width: 0%; }
-  1% {
-    z-index: 5;
-    width: 0%; }
-  100% {
-    z-index: 5;
-    width: 100%; } }
-
-@keyframes slide-out {
-  0% {
-    z-index: 4;
-    width: 100%; }
-  99% {
-    z-index: 4;
-    width: 0%; }
-  100% {
-    z-index: -1;
-    width: 0%; } }
-
 body {
   margin: 0;
   padding: 0;
@@ -45,7 +23,7 @@ nav {
     font-size: 20px; }
 
 header {
-  background: linear-gradient(#ededed, rgba(255, 255, 255, 0));
+  background: linear-gradient(#e6e6e6, white);
   grid-column: 4 /span 12;
   grid-row: 1; }
   header li {
@@ -73,18 +51,26 @@ aside {
   box-shadow: -16px 0px 24px 2px rgba(0, 0, 0, 0.07), -6px 0px 30px 5px rgba(0, 0, 0, 0.06), -8px 0px 10px -5px rgba(0, 0, 0, 0.15);
   margin-top: -2px;
   margin-bottom: -2px;
-  justify-self: end;
+  justify-self: start;
   z-index: -1;
-  width: 0%;
-  animation: slide-out 0.2s ease 0.2s both; }
-  aside.unhidden {
-    animation: slide-in 0.2s ease 0.2s both; }
+  width: 100%;
+  margin-left: 100%;
+  transition: margin 0.5s ease; }
+  aside.show {
+    margin-left: 0%; }
 
-.grey-fade {
+.fade {
   background-color: rgba(0, 0, 0, 0.4);
   grid-column: 1 /span 12;
   grid-row: 1 /span 2;
-  z-index: 4;
-  opacity: 0; }
-  .grey-fade.unhidden {
-    animation: grey-fade-in 0.2s ease 0.2s both; }
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s ease; }
+  .fade.show {
+    opacity: 1; }
+
+.z4 {
+  z-index: 4 !important; }
+
+.z5 {
+  z-index: 5 !important; }

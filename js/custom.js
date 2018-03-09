@@ -1,14 +1,34 @@
 console.log("Loaded custom JS")
-window.setTimeout(()=>{
-	console.log(document.querySelector('aside'))
-	console.log(document.querySelector('.grey-fade'))
-	document.querySelector('aside').style = 'opacity: 1'
-	document.querySelector('.grey-fade').style = 'opacity: 0'
-},1200)
 
-function toggleAside(){
-	document.querySelector("aside").classList.toggle("unhidden")
-	document.querySelector(".grey-fade").classList.toggle("unhidden")
+function showAside() {
+
+  const aside = document.querySelector("aside")
+  const fade = document.querySelector(".fade")
+
+  // Initial fade is set to opacity: 0; z-index: -1
+  fade.classList.add("z4")
+  window.setTimeout(() => {
+    fade.classList.add("show")
+  }, 5)
+
+  // Initial aside is set to margin 100%, z-index -1
+  aside.classList.add("z5")
+  window.setTimeout(() => {
+    aside.classList.add("show")
+  }, 5)
+
 }
-// Trigger for the right side bar:
-// document.querySelector("aside").classList.toggle("unhidden")
+
+function hideAside() {
+  const aside = document.querySelector("aside")
+  const fade = document.querySelector(".fade")
+
+  // Initial aside is set to margin 100%, z-index -1
+  aside.classList.remove("show")
+	window.setTimeout(()=>aside.classList.remove("z5"),500)
+
+  // Initial fade is set to opacity: 0; z-index: -1
+  fade.classList.remove("show")
+	window.setTimeout(()=>fade.classList.remove("z4"),500)
+
+}
