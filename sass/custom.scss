@@ -36,6 +36,7 @@ nav {
   z-index: 2;
   margin-top: -200px;
 
+
   li {
     font-size: 20px;
   }
@@ -48,10 +49,28 @@ header {
   background: $white;
   grid-column: 4 /span 12;
   grid-row: 1;
+  display: flex;
+  justify-content: end;
+  justify-self: center;
 
   li {
-    font-size: 10px;
+    color: rgba(0,0,0,0.2);
+    margin-right: 40px;
+    list-style-type: none;
+    display: inline;
+    line-height: 100px;
+    font-size: 30px;
+
+    //
+    // &:last-of-type{
+    //   margin-right: 0px;
+    // }
+
+    i {
+      font-size: 30px;
+    }
   }
+
 }
 
 main {
@@ -61,15 +80,20 @@ main {
   overflow: auto;
   padding-left: 40px;
   padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+
 
 
   .card {
     display: inline-block;
     background-color: $grey;
-    width: 200px;
-    height: 100px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    width: 280px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-right: 30px;
   }
 }
 
