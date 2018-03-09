@@ -26,7 +26,7 @@ body {
 
 
 nav {
-  background-color: darken($white, 22%);
+  background-color: $white;
   grid-column: 1 /span 3;
   grid-row: 1 /span 2;
   box-shadow:
@@ -34,18 +34,18 @@ nav {
     6px 0px 30px 5px rgba(0, 0, 0, 0.12),
     8px 0px 10px -5px rgba(0, 0, 0, 0.3);
   z-index: 2;
-  margin-top: -2px;
-  margin-bottom: -2px;
-
+  margin-top: -200px;
 
   li {
     font-size: 20px;
   }
 
+
+
 }
 
 header {
-  background: linear-gradient(darken($white,10%), $white);
+  background: $white;
   grid-column: 4 /span 12;
   grid-row: 1;
 
@@ -90,6 +90,7 @@ aside {
   width: 100%;
   margin-left: 100%;
   transition: margin 0.5s ease;
+  display:none;
 
   &.show{
     margin-left: 0%;
@@ -98,7 +99,22 @@ aside {
 }
 
 .fade {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
+  grid-column: 1 /span 12;
+  grid-row: 1 /span 2;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s ease;
+
+  &.show{
+    opacity: 1;
+  }
+}
+
+
+
+.full-screen {
+  background-color: #bada55;
   grid-column: 1 /span 12;
   grid-row: 1 /span 2;
   z-index: -1;
@@ -112,7 +128,13 @@ aside {
 
 .z4 {
   z-index: 4 !important;
+  display: block !important;
 }
 .z5 {
   z-index: 5 !important;
+  display: block !important;
+}
+.z6 {
+  z-index: 5 !important;
+  display: block !important;
 }
