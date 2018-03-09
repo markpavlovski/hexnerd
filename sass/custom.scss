@@ -60,11 +60,12 @@ header {
     display: inline;
     line-height: 100px;
     font-size: 30px;
+    cursor: pointer;
+    transition: all .5s ease;
 
-    //
-    // &:last-of-type{
-    //   margin-right: 0px;
-    // }
+    &:hover {
+      color: rgba(0,0,0,0.4);
+    }
 
     i {
       font-size: 30px;

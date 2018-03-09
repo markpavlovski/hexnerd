@@ -1,3 +1,4 @@
+'use strict'
 console.log("Loaded custom JS")
 
 // Values for display include wide, square, line
@@ -8,7 +9,6 @@ const state = {
   full: false,
 	display: "wide"
 }
-
 
 
 // Side bar transitions
@@ -57,10 +57,25 @@ function hideFull() {
 
 function display(mode){
 	const cards = document.querySelectorAll(".card")
-	console.log(cards)
 	for (let i = 0; i < cards.length; i++){
 		cards[i].classList.remove(state.display)
 		cards[i].classList.add(mode)
 	}
 	state.display = mode
 }
+
+
+
+// Event Handlers
+document.querySelector(".wide").addEventListener("click",()=> display("wide"))
+document.querySelector(".square").addEventListener("click",()=> display("square"))
+document.querySelector(".strip").addEventListener("click",()=> display("strip"))
+document.querySelector(".full").addEventListener("click",()=> showFull())
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+  console.log('key: ' + keyName);
+
+  if (keyName === 'Escape' || keyName.toLowerCase() === 'q') hideFull()
+
+});
