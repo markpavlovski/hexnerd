@@ -137,8 +137,8 @@ aside {
   background-color: #bada55;
   grid-column: 1 /span 12;
   grid-row: 1 /span 2;
-  z-index: 99;
-  opacity: 1;
+  z-index: -1;
+  opacity: 0;
   transition: opacity 0.5s ease;
   height: 100vh;
   width: 100%;
@@ -157,8 +157,8 @@ aside {
 
   .arrow {
     color: rgba(255,255,255,.3);
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 90px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -166,9 +166,11 @@ aside {
     line-height: 100vh;
     display: inline-block;
 
-
     &:hover {
       color: rgba(255,255,255,.45);
+    }
+
+    &.left {
     }
   }
 }
@@ -185,5 +187,4 @@ aside {
 
 .z6 {
   z-index: 5 !important;
-  display: block !important;
 }
