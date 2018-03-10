@@ -10,6 +10,43 @@ const state = {
   display: "wide"
 }
 
+const colors = {
+  classic6: {
+    names: Object.keys(classicHex).filter((key) => (classicHex[key].include)),
+    include: true
+  },
+  leetNeat6: {
+    names: Object.keys(leetNeat).filter((key) => (leetNeat[key].include)),
+    include: true
+  },
+  leetDirty6: {
+    names: Object.keys(leetDirty).filter((key) => (leetDirty[key].include)),
+    include: true
+  }
+}
+
+
+// Create cards
+
+
+const card = document.createElement("div")
+card.classList.add("card")
+card.classList.add("wide")
+
+const main = document.querySelector("main")
+for (let key in colors) {
+  if (colors[key].include) {
+    colors[key].names.forEach((value) => {
+      console.log(value)
+      const newCard = card.cloneNode(true)
+      newCard.style = `background-color: #${value}`
+      main.appendChild(newCard)
+    })
+  }
+}
+
+
+
 
 // Side bar transitions
 function showAside() {
@@ -104,35 +141,35 @@ var xDown = null;
 var yDown = null;
 
 function handleTouchStart(evt) {
-    xDown = evt.touches[0].clientX;
-    yDown = evt.touches[0].clientY;
+  xDown = evt.touches[0].clientX;
+  yDown = evt.touches[0].clientY;
 };
 
 function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
+  if (!xDown || !yDown) {
+    return;
+  }
 
-    var xUp = evt.touches[0].clientX;
-    var yUp = evt.touches[0].clientY;
+  var xUp = evt.touches[0].clientX;
+  var yUp = evt.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
+  var xDiff = xDown - xUp;
+  var yDiff = yDown - yUp;
 
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
-            /* left swipe */
-        } else {
-            /* right swipe */
-        }
+  if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
+    if (xDiff > 0) {
+      /* left swipe */
     } else {
-        if ( yDiff > 0 ) {
-            hideFull()
-        } else {
-            /* down swipe */
-        }
+      /* right swipe */
     }
-    /* reset values */
-    xDown = null;
-    yDown = null;
+  } else {
+    if (yDiff > 0) {
+      hideFull()
+    } else {
+      /* down swipe */
+    }
+  }
+  /* reset values */
+  xDown = null;
+  yDown = null;
 };

@@ -104,6 +104,11 @@ main {
       height: 60px;
       margin-bottom: 10px;
     }
+
+    &.hidden {
+      display: none !important;
+    }
+
   }
 }
 // Right Menu
