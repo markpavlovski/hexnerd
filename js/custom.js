@@ -173,3 +173,7 @@ function handleTouchMove(evt) {
   xDown = null;
   yDown = null;
 };
+
+
+// testing
+showAside()

@@ -85,6 +85,24 @@ aside {
   display: none; }
   aside.show {
     margin-left: 0; }
+  aside .mug {
+    background-image: url("https://ctl.s6img.com/society6/img/VUbQbBz5ZcB816Zy6cGn_mzw32I/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-0064/a/26460799_2840505/~~/sassquatch-8tp-mugs.jpg");
+    background-size: 100%;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  aside h1 {
+    width: 100%;
+    display: block;
+    margin: auto; }
+  aside .description {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .fade {
   background-color: rgba(0, 0, 0, 0.5);
