@@ -126,28 +126,73 @@ aside {
   transition: opacity 0.5s ease;
   display: grid;
   grid-template-columns: 100px 1fr 100px;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: 100px 1fr 200px;
   grid-gap: 0 0;
-  justify-items: stretch;
-  height: 100vh; }
+  height: 100vh;
+  width: 100%; }
   .full-screen.show {
     opacity: 1; }
-  .full-screen .top.left {
-    grid-row: 1 /span 1;
-    grid-column: 1 /span 1;
-    background-color: red; }
-  .full-screen .middle.left {
-    grid-row: 2 /span 2;
-    grid-column: 1 /span 1; }
-  .full-screen .middle.center {
-    grid-row: 2 /span 2;
-    grid-column: 2 /span 2; }
-  .full-screen .middle.right {
-    grid-row: 2 /span 2;
-    grid-column: 3 /span 3; }
-  .full-screen .bottom.center {
-    grid-row: 3 /span 3;
-    grid-column: 2 /span 2; }
+  .full-screen .top {
+    justify-self: start;
+    align-self: start; }
+    .full-screen .top.left {
+      grid-row: 1;
+      grid-column: 1; }
+    .full-screen .top .esc {
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      color: #bada55;
+      font-size: 10px;
+      padding: 10px;
+      width: 50px;
+      cursor: pointer;
+      margin: 30px;
+      transition: all 0.5s ease; }
+      .full-screen .top .esc:hover {
+        background-color: rgba(255, 255, 255, 0.45); }
+  .full-screen .middle {
+    justify-self: center;
+    align-self: center; }
+    .full-screen .middle.left {
+      grid-row: 2;
+      grid-column: 1; }
+    .full-screen .middle.center {
+      grid-row: 2;
+      grid-column: 2; }
+    .full-screen .middle.right {
+      grid-row: 2;
+      grid-column: 3; }
+    .full-screen .middle .arrow {
+      color: rgba(255, 255, 255, 0.15);
+      font-size: 90px;
+      transition: all 0.5s ease;
+      cursor: pointer; }
+      .full-screen .middle .arrow:hover {
+        color: rgba(255, 255, 255, 0.45); }
+    .full-screen .middle .card {
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 10px;
+      color: #bada55;
+      font-size: 20px;
+      padding: 30px; }
+  .full-screen .bottom {
+    justify-self: center;
+    align-self: end; }
+    .full-screen .bottom.center {
+      grid-row: 3;
+      grid-column: 2; }
+    .full-screen .bottom .space {
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      color: #bada55;
+      font-size: 10px;
+      padding: 15px;
+      width: 500px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      transition: all 0.5s ease; }
+      .full-screen .bottom .space:hover {
+        background-color: rgba(255, 255, 255, 0.45); }
 
 .z4 {
   z-index: 4 !important;
