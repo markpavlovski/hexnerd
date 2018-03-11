@@ -134,17 +134,59 @@ aside {
   .middle {
     grid-row: 2;
     grid-column: 1;
-    background-color: blue;
+    justify-self: center;
+    align-self: start;
+
+    .desription {
+      margin-top: 20px;
+      width: 220px;
+
+      h1 {
+        display: block;
+        margin: 10px 0;
+      }
+      h2 {
+        margin-top: 50px;
+        line-height: 30px;
+      }
+      h4 {
+        display: block;
+        margin: 10px 0 0 0;
+      }
+      h5 {
+        display: block;
+        margin: 0 0 10px 0;
+      }
+      p {
+        display: block;
+        margin-top: 10px;
+      }
+    }
   }
 
   .bottom {
     grid-row: 3;
     grid-column: 1;
-    background-color: green;
+    justify-self: center;
+    align-self: center;
+
+    .favorite {
+      border-radius: 10px;
+      border: 2px solid rgba(51,51,51,0.5);
+      color: #515151;
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 15px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: rgb(51,51,51);
+        // box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        color: rgb(200,200,200);
+      }
+    }
   }
-
-
-
   //   .name {
   //     width: 250px;
   //     margin: 30px auto;
@@ -162,10 +204,6 @@ aside {
   //     }
   //   }
   // }
-
-
-
-
 }
 
 .fade {
@@ -223,7 +261,6 @@ aside {
       &:hover {
         background-color: rgba(255,255,255,.45);
         // box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-
       }
     }
   }
@@ -305,7 +342,7 @@ aside {
   z-index: 5 !important;
   display: grid;
   grid-template-columns: 400px 1fr;
-  grid-template-rows: 300px 1fr 80px;
+  grid-template-rows: 300px 1fr 100px;
   grid-gap: 0 0;
   height: 100vh;
   width: 100%;
