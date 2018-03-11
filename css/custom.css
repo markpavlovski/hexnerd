@@ -171,10 +171,11 @@ aside {
         color: rgba(255, 255, 255, 0.45); }
     .full-screen .middle .card {
       background-color: rgba(255, 255, 255, 0.75);
-      border-radius: 10px;
+      border-radius: 20px;
       color: #bada55;
       font-size: 20px;
-      padding: 30px; }
+      padding: 70px;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
   .full-screen .bottom {
     justify-self: center;
     align-self: end; }
