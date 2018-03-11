@@ -176,5 +176,5 @@ function handleTouchMove(evt) {
 
 
 // testing
-// showAside()
-showFull()
+showAside()
+// showFull()
