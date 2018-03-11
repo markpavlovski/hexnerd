@@ -117,17 +117,30 @@ aside {
   .top {
     grid-row: 1;
     grid-column: 1;
-    justify-self: center;
-    align-self: center;
 
-    .mug {
-      background-image: url("https://ctl.s6img.com/society6/img/VUbQbBz5ZcB816Zy6cGn_mzw32I/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-0064/a/26460799_2840505/~~/sassquatch-8tp-mugs.jpg");
-      background-size: 100%;
-      border-radius: 20px;
-      border: 1px solid rgba(0,0,0,0.05);
-      width: 220px;
-      height: 220px;
-      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+
+    &.color {
+      justify-self: center;
+      align-self: center;
+      .mug {
+        background-image: url("https://ctl.s6img.com/society6/img/VUbQbBz5ZcB816Zy6cGn_mzw32I/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-0064/a/26460799_2840505/~~/sassquatch-8tp-mugs.jpg");
+        background-size: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(0,0,0,0.05);
+        width: 220px;
+        height: 220px;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &.filter {
+      justify-self: center;
+      align-self: start;
+
+      h1 {
+        margin: 50px 0px;
+      }
+
     }
   }
 
@@ -145,18 +158,22 @@ aside {
         display: block;
         margin: 10px 0;
       }
+
       h2 {
         margin-top: 50px;
         line-height: 30px;
       }
+
       h4 {
         display: block;
-        margin: 10px 0 0 0;
+        margin: 10px 0 0;
       }
+
       h5 {
         display: block;
-        margin: 0 0 10px 0;
+        margin: 0 0 10px;
       }
+
       p {
         display: block;
         margin-top: 10px;
