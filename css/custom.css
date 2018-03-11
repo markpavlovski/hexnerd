@@ -111,7 +111,7 @@ aside {
         aside .top.filter .filters .switch {
           margin: 30px 0px; }
           aside .top.filter .filters .switch.nested {
-            margin-left: 30px; }
+            margin-left: 60px; }
   aside .middle {
     grid-row: 2;
     grid-column: 1;
