@@ -71,7 +71,9 @@ function displayCards() {
   card.classList.add("wide")
 
   for (let key in {
-      "#ca7": colors["#ca7"]
+      "#ca7": colors["#ca7"],
+      "#ba6dad": colors["#ba6dad"]
+
     }) {
 
     let displayFlag = false
@@ -83,24 +85,29 @@ function displayCards() {
     } else if (colors[key]['favorite'] && state.filter['favorite']) {
       displayFlag = true
     }
+    //
+    // if (state.filter.curated) {
+    //   for (let property in state.filter) {
+    //     // console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
+    //     if ((property !== "curated") && colors[key][property] && state.filter[property] && colors[key].curated) {
+    //         displayFlag = true
+    //     }
+    //   }
+    // } else {
+    //   for (let property in state.filter) {
+    //     // console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
+    //     if ((property !== "curated") && colors[key][property] && state.filter[property]) {
+    //         displayFlag = true
+    //     }
+    //   }
+    // }
+      for (let property in state.filter) {
+        if (!['favorite','featured','alpha','triple', 'curated'].includes(property)){
+          // if ()
+        }
+      }
 
-    if (state.filter.curated) {
-      for (let property in state.filter) {
-        console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
-        if ((property !== "curated") && colors[key][property] && state.filter[property] && colors[key].curated) {
-          if (colors[key].alpha === state.filter.alpha && colors[key].triple === state.filter.triple ) {
-            displayFlag = true
-          }
-        }
-      }
-    } else {
-      for (let property in state.filter) {
-        console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
-        if ((property !== "curated") && colors[key][property] && state.filter[property]) {
-          displayFlag = true
-        }
-      }
-    }
+
 
 
     // const displayFlag = colors[key].curated
