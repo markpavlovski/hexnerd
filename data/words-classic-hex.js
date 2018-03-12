@@ -2,7 +2,7 @@ const classic = {
   '#accede': {
     word: 'accede',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -11,7 +11,7 @@ const classic = {
   '#afaced': {
     word: 'afaced',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -20,7 +20,7 @@ const classic = {
   '#bacaba': {
     word: 'bacaba',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -29,7 +29,7 @@ const classic = {
   '#baccae': {
     word: 'baccae',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -38,7 +38,7 @@ const classic = {
   '#baffed': {
     word: 'baffed',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -47,7 +47,7 @@ const classic = {
   '#beaded': {
     word: 'beaded',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -56,7 +56,7 @@ const classic = {
   '#bedaff': {
     word: 'bedaff',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -65,7 +65,7 @@ const classic = {
   '#bedded': {
     word: 'bedded',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -74,7 +74,7 @@ const classic = {
   '#bedead': {
     word: 'bedead',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: true,
     featured: false,
@@ -83,7 +83,7 @@ const classic = {
   '#bedeaf': {
     word: 'bedeaf',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -92,7 +92,7 @@ const classic = {
   '#beebee': {
     word: 'beebee',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -101,7 +101,7 @@ const classic = {
   '#beefed': {
     word: 'beefed',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: true,
     featured: false,
@@ -110,7 +110,7 @@ const classic = {
   '#cabbed': {
     word: 'cabbed',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -119,7 +119,7 @@ const classic = {
   '#cadded': {
     word: 'cadded',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -128,7 +128,7 @@ const classic = {
   '#dabbed': {
     word: 'dabbed',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: true,
     featured: false,
@@ -137,7 +137,7 @@ const classic = {
   '#daffed': {
     word: 'daffed',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -146,7 +146,7 @@ const classic = {
   '#decade': {
     word: 'decade',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: true,
     featured: false,
@@ -155,7 +155,7 @@ const classic = {
   '#decede': {
     word: 'decede',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -164,7 +164,7 @@ const classic = {
   '#deeded': {
     word: 'deeded',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -173,7 +173,7 @@ const classic = {
   '#deface': {
     word: 'deface',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: true,
     featured: false,
@@ -182,7 +182,7 @@ const classic = {
   '#defade': {
     word: 'defade',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -191,7 +191,7 @@ const classic = {
   '#efface': {
     word: 'efface',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -200,7 +200,7 @@ const classic = {
   '#facade': {
     word: 'facade',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: true,
     featured: false,
@@ -209,7 +209,7 @@ const classic = {
   '#feeded': {
     word: 'feeded',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: false,
     curated: false,
     featured: false,
@@ -218,7 +218,7 @@ const classic = {
   '#bff': {
     word: 'bff',
     type: 'classic',
-    tripple: true,
+    triple: true,
     alpha: false,
     curated: true,
     featured: true,
@@ -227,7 +227,7 @@ const classic = {
   '#abba': {
     word: 'abba',
     type: 'classic',
-    tripple: true,
+    triple: true,
     alpha: true,
     curated: true,
     featured: true,
@@ -236,7 +236,7 @@ const classic = {
   '#fabaceae': {
     word: 'fabaceae',
     type: 'classic',
-    tripple: false,
+    triple: false,
     alpha: true,
     curated: true,
     featured: false,

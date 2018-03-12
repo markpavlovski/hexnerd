@@ -11,12 +11,11 @@ const state = {
     curated: true,
 
     featured: true,
-    favorites: true,
+    favorite: true,
 
     classic: true,
     neat: true,
     dirty: false,
-    composite: false,
     native: false,
 
     alpha: false,
@@ -46,39 +45,60 @@ Object.assign(colors, classic)
 Object.assign(colors, neat)
 Object.assign(colors, dirty)
 console.log("Colors loaded:", Object.keys(colors).length)
-
+for (let key in colors){
+  colors[key].classic = colors[key].type === "classic"
+  colors[key].neat = colors[key].type === "neat"
+  colors[key].dirty = colors[key].type === "dirty"
+  colors[key].native = colors[key].type === "native"
+}
 
 
 // Create cards
 
+function clearCards() {
+  const main = document.querySelector("main")
+  while (main.firstElementChild) {
+    main.removeChild(main.childNodes[0])
+  }
+}
+
 function displayCards() {
 
   clearCards()
-
   const main = document.querySelector("main")
   const card = document.createElement("div")
   card.classList.add("card")
   card.classList.add("wide")
 
-  for (let key in colors) {
-    if (colors[key].curated) {
-        console.log(colors[key].word)
-        const newCard = card.cloneNode(true)
-        newCard.style = `background-color: ${key}`
-        main.appendChild(newCard)
+  for (let key in {"#ca7":colors["#ca7"]}) {
+
+    let displayFlag = false
+    if (colors[key]['featured'] && state.filter['featured']){
+      displayFlag = true
+    } else if (colors[key]['favorite'] && state.filter['favorite']){
+      displayFlag = true
+    } else {
+    for (let property in state.filter){
+      console.log(property, colors[key][property],state.filter[property])
+      if ( colors[key][property] && state.filter[property]){
+        displayFlag = true
+      }
+      console.log("flag: ", displayFlag)
+    }
+  }
+
+
+    // const displayFlag = colors[key].curated
+    if (displayFlag) {
+      console.log(colors[key].word)
+      const newCard = card.cloneNode(true)
+      newCard.style = `background-color: ${key}`
+      main.appendChild(newCard)
     }
   }
 
 }
 
-function clearCards() {
-  const main = document.querySelector("main")
-  while (main.firstElementChild) {
-    main.removeChild(main.childNodes[0]);
-  }
-}
-
-displayCards()
 
 
 
@@ -109,6 +129,8 @@ function hideAside() {
   state.aside = false
 }
 
+
+
 // Full screen mode
 function showFull() {
   const fullScreen = document.querySelector(".full-screen")
@@ -123,6 +145,8 @@ function hideFull() {
   window.setTimeout(() => fullScreen.classList.remove("z6"), 500)
   state.full = false
 }
+
+
 
 // Switch between grid systems
 
@@ -146,7 +170,6 @@ function setFilters() {
     if (state.filter[key]) document.querySelector(`.switch.${key} input`).checked = true
   }
 }
-setFilters()
 
 function getFilters() {
   for (let key in state.filter) {
@@ -183,26 +206,17 @@ document.addEventListener('keydown', (event) => {
 
 // Listen for filter changes
 document.querySelector(".filters").addEventListener("click", (event) => {
-  if (event.target.closest(".switch")) getFilters()
+  if (event.target.closest(".switch")) {
+    getFilters()
+    displayCards()
+  }
 })
-
-
-
-
-
 
 
 
 
 // Handle mobile
 
-
-
-// function isMobileDevice() {
-//     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-// };
-//
-// alert(isMobileDevice())
 
 document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
@@ -245,6 +259,8 @@ function handleTouchMove(evt) {
 };
 
 
-// testing
+// Behaviour on Load
+setFilters()
+displayCards()
 showAside()
 // showFull()
