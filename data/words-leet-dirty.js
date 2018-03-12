@@ -1,4476 +1,5784 @@
 const leetDirty = {
-  'abac07': {
+  '#abac07': {
     word: 'abacot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'aba7ed': {
+  '#aba7ed': {
     word: 'abated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'aba7e5': {
+  '#aba7e5': {
     word: 'abates',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abba7e': {
+  '#abba7e': {
     word: 'abbate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abbe57': {
+  '#abbe57': {
     word: 'abbest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abb075': {
+  '#abb075': {
     word: 'abbots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abb077': {
+  '#abb077': {
     word: 'abbott',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abde57': {
+  '#abde57': {
     word: 'abdest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abed6e': {
+  '#abed6e': {
     word: 'abedge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'abe66e': {
+  '#abe66e': {
     word: 'abegge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ab1a7e': {
+  '#ab1a7e': {
     word: 'ablate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ab1e57': {
+  '#ab1e57': {
     word: 'ablest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'aca7e5': {
+  '#aca7e5': {
     word: 'acates',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'acc057': {
+  '#acc057': {
     word: 'accost',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ace7a1': {
+  '#ace7a1': {
     word: 'acetal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ace71a': {
+  '#ace71a': {
     word: 'acetla',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ace701': {
+  '#ace701': {
     word: 'acetol',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ac7aea': {
+  '#ac7aea': {
     word: 'actaea',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ada6e5': {
+  '#ada6e5': {
     word: 'adages',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ada1a7': {
+  '#ada1a7': {
     word: 'adalat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ade57e': {
+  '#ade57e': {
     word: 'adeste',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'afe7a1': {
+  '#afe7a1': {
     word: 'afetal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'affec7': {
+  '#affec7': {
     word: 'affect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'af10a7': {
+  '#af10a7': {
     word: 'afloat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'af7aba': {
+  '#af7aba': {
     word: 'aftaba',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'af705a': {
+  '#af705a': {
     word: 'aftosa',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a6ace5': {
+  '#a6ace5': {
     word: 'agaces',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a6a7e5': {
+  '#a6a7e5': {
     word: 'agates',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a66e57': {
+  '#a66e57': {
     word: 'aggest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a61a05': {
+  '#a61a05': {
     word: 'aglaos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a61eaf': {
+  '#a61eaf': {
     word: 'agleaf',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a61e75': {
+  '#a61e75': {
     word: 'aglets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a1a6a0': {
+  '#a1a6a0': {
     word: 'alagao',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a1a7ed': {
+  '#a1a7ed': {
     word: 'alated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a1ba7a': {
+  '#a1ba7a': {
     word: 'albata',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a1e77e': {
+  '#a1e77e': {
     word: 'alette',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a16a7e': {
+  '#a16a7e': {
     word: 'algate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a16ed0': {
+  '#a16ed0': {
     word: 'algedo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a11ec7': {
+  '#a11ec7': {
     word: 'allect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a11e6e': {
+  '#a11e6e': {
     word: 'allege',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a11075': {
+  '#a11075': {
     word: 'allots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a5be57': {
+  '#a5be57': {
     word: 'asbest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a5c075': {
+  '#a5c075': {
     word: 'ascots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a5fa57': {
+  '#a5fa57': {
     word: 'asfast',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a55a7e': {
+  '#a55a7e': {
     word: 'assate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a55e75': {
+  '#a55e75': {
     word: 'assets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a57a7e': {
+  '#a57a7e': {
     word: 'astate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a7aba1': {
+  '#a7aba1': {
     word: 'atabal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a7abe6': {
+  '#a7abe6': {
     word: 'atabeg',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a7e1e5': {
+  '#a7e1e5': {
     word: 'ateles',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a71a71': {
+  '#a71a71': {
     word: 'atlatl',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a70115': {
+  '#a70115': {
     word: 'atolls',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a7055a': {
+  '#a7055a': {
     word: 'atossa',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a77ea1': {
+  '#a77ea1': {
     word: 'atteal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'a77e57': {
+  '#a77e57': {
     word: 'attest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bab007': {
+  '#bab007': {
     word: 'baboot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bada6a': {
+  '#bada6a': {
     word: 'badaga',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bad6ed': {
+  '#bad6ed': {
     word: 'badged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bad6e5': {
+  '#bad6e5': {
     word: 'badges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba6a55': {
+  '#ba6a55': {
     word: 'bagass',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba6dad': {
+  '#ba6dad': {
     word: 'bagdad',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba6e15': {
+  '#ba6e15': {
     word: 'bagels',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba66ed': {
+  '#ba66ed': {
     word: 'bagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba60b0': {
+  '#ba60b0': {
     word: 'bagobo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba1a7a': {
+  '#ba1a7a': {
     word: 'balata',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba1a7e': {
+  '#ba1a7e': {
     word: 'balate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba1e7e': {
+  '#ba1e7e': {
     word: 'balete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba11a7': {
+  '#ba11a7': {
     word: 'ballat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba11e7': {
+  '#ba11e7': {
     word: 'ballet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba1107': {
+  '#ba1107': {
     word: 'ballot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba5a17': {
+  '#ba5a17': {
     word: 'basalt',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba5e57': {
+  '#ba5e57': {
     word: 'basest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba506a': {
+  '#ba506a': {
     word: 'basoga',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba507e': {
+  '#ba507e': {
     word: 'basote',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba55e7': {
+  '#ba55e7': {
     word: 'basset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba57ed': {
+  '#ba57ed': {
     word: 'basted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba57e5': {
+  '#ba57e5': {
     word: 'bastes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba7a7a': {
+  '#ba7a7a': {
     word: 'batata',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba7e11': {
+  '#ba7e11': {
     word: 'batell',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba7e7e': {
+  '#ba7e7e': {
     word: 'batete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba71e7': {
+  '#ba71e7': {
     word: 'batlet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba77ed': {
+  '#ba77ed': {
     word: 'batted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba77e1': {
+  '#ba77e1': {
     word: 'battel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ba771e': {
+  '#ba771e': {
     word: 'battle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bea61e': {
+  '#bea61e': {
     word: 'beagle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bea575': {
+  '#bea575': {
     word: 'beasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bea7ae': {
+  '#bea7ae': {
     word: 'beatae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bea7a5': {
+  '#bea7a5': {
     word: 'beatas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bea7ee': {
+  '#bea7ee': {
     word: 'beatee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'beb107': {
+  '#beb107': {
     word: 'beblot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bec106': {
+  '#bec106': {
     word: 'beclog',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bec057': {
+  '#bec057': {
     word: 'becost',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bedeb7': {
+  '#bedeb7': {
     word: 'bedebt',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bed017': {
+  '#bed017': {
     word: 'bedolt',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bed07e': {
+  '#bed07e': {
     word: 'bedote',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bee71e': {
+  '#bee71e': {
     word: 'beetle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bef1a6': {
+  '#bef1a6': {
     word: 'beflag',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bef065': {
+  '#bef065': {
     word: 'befogs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be6a11': {
+  '#be6a11': {
     word: 'begall',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be6a55': {
+  '#be6a55': {
     word: 'begass',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be6a75': {
+  '#be6a75': {
     word: 'begats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be6e75': {
+  '#be6e75': {
     word: 'begets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be66ed': {
+  '#be66ed': {
     word: 'begged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be61ad': {
+  '#be61ad': {
     word: 'beglad',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be60b5': {
+  '#be60b5': {
     word: 'begobs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be1a6e': {
+  '#be1a6e': {
     word: 'belage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be1a57': {
+  '#be1a57': {
     word: 'belast',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be1a7e': {
+  '#be1a7e': {
     word: 'belate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be1ef7': {
+  '#be1ef7': {
     word: 'beleft',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be16ae': {
+  '#be16ae': {
     word: 'belgae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be16a5': {
+  '#be16a5': {
     word: 'belgas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be17ed': {
+  '#be17ed': {
     word: 'belted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be5e75': {
+  '#be5e75': {
     word: 'besets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be5007': {
+  '#be5007': {
     word: 'besoot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be5075': {
+  '#be5075': {
     word: 'besots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be57ab': {
+  '#be57ab': {
     word: 'bestab',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be57ad': {
+  '#be57ad': {
     word: 'bestad',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be57ed': {
+  '#be57ed': {
     word: 'bested',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be7e11': {
+  '#be7e11': {
     word: 'betell',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be7e15': {
+  '#be7e15': {
     word: 'betels',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be7055': {
+  '#be7055': {
     word: 'betoss',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be77a5': {
+  '#be77a5': {
     word: 'bettas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'be77ed': {
+  '#be77ed': {
     word: 'betted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b1a575': {
+  '#b1a575': {
     word: 'blasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b1a77a': {
+  '#b1a77a': {
     word: 'blatta',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b1ea75': {
+  '#b1ea75': {
     word: 'bleats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b10a75': {
+  '#b10a75': {
     word: 'bloats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b10770': {
+  '#b10770': {
     word: 'blotto',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0a575': {
+  '#b0a575': {
     word: 'boasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0a7ed': {
+  '#b0a7ed': {
     word: 'boated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0a7e1': {
+  '#b0a7e1': {
     word: 'boatel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0bca7': {
+  '#b0bca7': {
     word: 'bobcat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0b1e7': {
+  '#b0b1e7': {
     word: 'boblet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0ca6e': {
+  '#b0ca6e': {
     word: 'bocage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0de6a': {
+  '#b0de6a': {
     word: 'bodega',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b066ed': {
+  '#b066ed': {
     word: 'bogged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0661e': {
+  '#b0661e': {
     word: 'boggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b061ed': {
+  '#b061ed': {
     word: 'bogled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b061e5': {
+  '#b061e5': {
     word: 'bogles',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b061e7': {
+  '#b061e7': {
     word: 'boglet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0607a': {
+  '#b0607a': {
     word: 'bogota',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b01e7e': {
+  '#b01e7e': {
     word: 'bolete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b017ed': {
+  '#b017ed': {
     word: 'bolted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b017e1': {
+  '#b017e1': {
     word: 'boltel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b00575': {
+  '#b00575': {
     word: 'boosts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b007ed': {
+  '#b007ed': {
     word: 'booted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b007ee': {
+  '#b007ee': {
     word: 'bootee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b007e5': {
+  '#b007e5': {
     word: 'bootes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0071e': {
+  '#b0071e': {
     word: 'bootle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b055e7': {
+  '#b055e7': {
     word: 'bosset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b057a1': {
+  '#b057a1': {
     word: 'bostal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b07e15': {
+  '#b07e15': {
     word: 'botels',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b07e7e': {
+  '#b07e7e': {
     word: 'botete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'b0771e': {
+  '#b0771e': {
     word: 'bottle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cab1e7': {
+  '#cab1e7': {
     word: 'cablet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cab075': {
+  '#cab075': {
     word: 'cabots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cac7a1': {
+  '#cac7a1': {
     word: 'cactal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cade75': {
+  '#cade75': {
     word: 'cadets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cad6ed': {
+  '#cad6ed': {
     word: 'cadged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cad6e5': {
+  '#cad6e5': {
     word: 'cadges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca6e07': {
+  '#ca6e07': {
     word: 'cageot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca11a7': {
+  '#ca11a7': {
     word: 'callat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca11e7': {
+  '#ca11e7': {
     word: 'callet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca1107': {
+  '#ca1107': {
     word: 'callot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca5a7e': {
+  '#ca5a7e': {
     word: 'casate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca57ed': {
+  '#ca57ed': {
     word: 'casted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca57e5': {
+  '#ca57e5': {
     word: 'castes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca571e': {
+  '#ca571e': {
     word: 'castle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca7a10': {
+  '#ca7a10': {
     word: 'catalo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca7505': {
+  '#ca7505': {
     word: 'catsos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca77ed': {
+  '#ca77ed': {
     word: 'catted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ca771e': {
+  '#ca771e': {
     word: 'cattle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ce57a5': {
+  '#ce57a5': {
     word: 'cestas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ce5705': {
+  '#ce5705': {
     word: 'cestos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c1a575': {
+  '#c1a575': {
     word: 'clasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c1ea75': {
+  '#c1ea75': {
     word: 'cleats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c1ed6e': {
+  '#c1ed6e': {
     word: 'cledge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c1ef75': {
+  '#c1ef75': {
     word: 'clefts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c10075': {
+  '#c10075': {
     word: 'cloots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c105e7': {
+  '#c105e7': {
     word: 'closet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0ac75': {
+  '#c0ac75': {
     word: 'coacts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0a6ed': {
+  '#c0a6ed': {
     word: 'coaged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0a6e1': {
+  '#c0a6e1': {
     word: 'coagel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0a575': {
+  '#c0a575': {
     word: 'coasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0a7ed': {
+  '#c0a7ed': {
     word: 'coated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0a7ee': {
+  '#c0a7ee': {
     word: 'coatee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0ba17': {
+  '#c0ba17': {
     word: 'cobalt',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0be60': {
+  '#c0be60': {
     word: 'cobego',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c066ed': {
+  '#c066ed': {
     word: 'cogged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c0661e': {
+  '#c0661e': {
     word: 'coggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c01a6e': {
+  '#c01a6e': {
     word: 'colage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c01a7e': {
+  '#c01a7e': {
     word: 'colate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c011a7': {
+  '#c011a7': {
     word: 'collat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c011e7': {
+  '#c011e7': {
     word: 'collet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c01065': {
+  '#c01065': {
     word: 'cologs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c05ce7': {
+  '#c05ce7': {
     word: 'coscet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c05ea7': {
+  '#c05ea7': {
     word: 'coseat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c05e75': {
+  '#c05e75': {
     word: 'cosets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c055e7': {
+  '#c055e7': {
     word: 'cosset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c057ae': {
+  '#c057ae': {
     word: 'costae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c057a1': {
+  '#c057a1': {
     word: 'costal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c057ed': {
+  '#c057ed': {
     word: 'costed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c07e1e': {
+  '#c07e1e': {
     word: 'cotele',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c075e7': {
+  '#c075e7': {
     word: 'cotset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c077ae': {
+  '#c077ae': {
     word: 'cottae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c077a5': {
+  '#c077a5': {
     word: 'cottas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c077ed': {
+  '#c077ed': {
     word: 'cotted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'c5ec75': {
+  '#c5ec75': {
     word: 'csects',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'dab1e7': {
+  '#dab1e7': {
     word: 'dablet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da6aba': {
+  '#da6aba': {
     word: 'dagaba',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da66ed': {
+  '#da66ed': {
     word: 'dagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da661e': {
+  '#da661e': {
     word: 'daggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da60ba': {
+  '#da60ba': {
     word: 'dagoba',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da60e5': {
+  '#da60e5': {
     word: 'dagoes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da1a6a': {
+  '#da1a6a': {
     word: 'dalaga',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'da7705': {
+  '#da7705': {
     word: 'dattos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'deba7e': {
+  '#deba7e': {
     word: 'debate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'deb7ed': {
+  '#deb7ed': {
     word: 'debted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'deb7ee': {
+  '#deb7ee': {
     word: 'debtee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'deca57': {
+  '#deca57': {
     word: 'decast',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'deca7e': {
+  '#deca7e': {
     word: 'decate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'dec0a7': {
+  '#dec0a7': {
     word: 'decoat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'dec0c7': {
+  '#dec0c7': {
     word: 'decoct',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'defa75': {
+  '#defa75': {
     word: 'defats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'defea7': {
+  '#defea7': {
     word: 'defeat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'defec7': {
+  '#defec7': {
     word: 'defect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'def065': {
+  '#def065': {
     word: 'defogs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de6a6e': {
+  '#de6a6e': {
     word: 'degage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de6a55': {
+  '#de6a55': {
     word: 'degass',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de66ed': {
+  '#de66ed': {
     word: 'degged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de601d': {
+  '#de601d': {
     word: 'degold',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de1a7e': {
+  '#de1a7e': {
     word: 'delate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de1e7e': {
+  '#de1e7e': {
     word: 'delete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de1f75': {
+  '#de1f75': {
     word: 'delfts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de17a1': {
+  '#de17a1': {
     word: 'deltal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de17a5': {
+  '#de17a5': {
     word: 'deltas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de5a17': {
+  '#de5a17': {
     word: 'desalt',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de7ec7': {
+  '#de7ec7': {
     word: 'detect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'de7e57': {
+  '#de7e57': {
     word: 'detest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd0a7ed': {
+  '#d0a7ed': {
     word: 'doated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd0d6ed': {
+  '#d0d6ed': {
     word: 'dodged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd0d6e5': {
+  '#d0d6e5': {
     word: 'dodges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd0d1e7': {
+  '#d0d1e7': {
     word: 'dodlet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd06a7e': {
+  '#d06a7e': {
     word: 'dogate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd066ed': {
+  '#d066ed': {
     word: 'dogged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd066e7': {
+  '#d066e7': {
     word: 'dogget',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd0661e': {
+  '#d0661e': {
     word: 'doggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd061e6': {
+  '#d061e6': {
     word: 'dogleg',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd00c07': {
+  '#d00c07': {
     word: 'doocot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd05a6e': {
+  '#d05a6e': {
     word: 'dosage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd07a6e': {
+  '#d07a6e': {
     word: 'dotage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd07a7e': {
+  '#d07a7e': {
     word: 'dotate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd071e7': {
+  '#d071e7': {
     word: 'dotlet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd077ed': {
+  '#d077ed': {
     word: 'dotted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd077e1': {
+  '#d077e1': {
     word: 'dottel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd0771e': {
+  '#d0771e': {
     word: 'dottle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'd5ec75': {
+  '#d5ec75': {
     word: 'dsects',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ea61ed': {
+  '#ea61ed': {
     word: 'eagled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ea61e5': {
+  '#ea61e5': {
     word: 'eagles',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ea61e7': {
+  '#ea61e7': {
     word: 'eaglet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ea57ed': {
+  '#ea57ed': {
     word: 'easted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ea7a6e': {
+  '#ea7a6e': {
     word: 'eatage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ebbe75': {
+  '#ebbe75': {
     word: 'ebbets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ec1a75': {
+  '#ec1a75': {
     word: 'eclats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'effa7e': {
+  '#effa7e': {
     word: 'effate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'effec7': {
+  '#effec7': {
     word: 'effect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'effe7e': {
+  '#effe7e': {
     word: 'effete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'ef7e57': {
+  '#ef7e57': {
     word: 'eftest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e6e57a': {
+  '#e6e57a': {
     word: 'egesta',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e6e575': {
+  '#e6e575': {
     word: 'egests',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e1a7ed': {
+  '#e1a7ed': {
     word: 'elated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e1a7e5': {
+  '#e1a7e5': {
     word: 'elates',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e1de57': {
+  '#e1de57': {
     word: 'eldest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e1ec70': {
+  '#e1ec70': {
     word: 'electo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e1ec75': {
+  '#e1ec75': {
     word: 'elects',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e06aea': {
+  '#e06aea': {
     word: 'eogaea',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e05a7e': {
+  '#e05a7e': {
     word: 'eosate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e5c075': {
+  '#e5c075': {
     word: 'escots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e57ad0': {
+  '#e57ad0': {
     word: 'estado',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e57afa': {
+  '#e57afa': {
     word: 'estafa',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e57a11': {
+  '#e57a11': {
     word: 'estall',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e57a7e': {
+  '#e57a7e': {
     word: 'estate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e57a75': {
+  '#e57a75': {
     word: 'estats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e570c5': {
+  '#e570c5': {
     word: 'estocs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e70ffe': {
+  '#e70ffe': {
     word: 'etoffe',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'e771ed': {
+  '#e771ed': {
     word: 'ettled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'face7e': {
+  '#face7e': {
     word: 'facete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'face75': {
+  '#face75': {
     word: 'facets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fad6ed': {
+  '#fad6ed': {
     word: 'fadged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fad6e5': {
+  '#fad6e5': {
     word: 'fadges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa6a1d': {
+  '#fa6a1d': {
     word: 'fagald',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa66ed': {
+  '#fa66ed': {
     word: 'fagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa6607': {
+  '#fa6607': {
     word: 'faggot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa6075': {
+  '#fa6075': {
     word: 'fagots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa6077': {
+  '#fa6077': {
     word: 'fagott',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa5ce7': {
+  '#fa5ce7': {
     word: 'fascet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa57ed': {
+  '#fa57ed': {
     word: 'fasted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa7a1e': {
+  '#fa7a1e': {
     word: 'fatale',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa7a15': {
+  '#fa7a15': {
     word: 'fatals',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa7505': {
+  '#fa7505': {
     word: 'fatsos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fa77ed': {
+  '#fa77ed': {
     word: 'fatted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fea575': {
+  '#fea575': {
     word: 'feasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fe17ed': {
+  '#fe17ed': {
     word: 'felted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fe57ae': {
+  '#fe57ae': {
     word: 'festae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fe57a1': {
+  '#fe57a1': {
     word: 'festal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fe77ed': {
+  '#fe77ed': {
     word: 'fetted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'fe771e': {
+  '#fe771e': {
     word: 'fettle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f1a7ed': {
+  '#f1a7ed': {
     word: 'flated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f1ed6e': {
+  '#f1ed6e': {
     word: 'fledge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f1ee75': {
+  '#f1ee75': {
     word: 'fleets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f10a75': {
+  '#f10a75': {
     word: 'floats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f10d6e': {
+  '#f10d6e': {
     word: 'flodge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f107a5': {
+  '#f107a5': {
     word: 'flotas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f0d6e1': {
+  '#f0d6e1': {
     word: 'fodgel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f0e7a1': {
+  '#f0e7a1': {
     word: 'foetal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f06d06': {
+  '#f06d06': {
     word: 'fogdog',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f066ed': {
+  '#f066ed': {
     word: 'fogged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f01a7e': {
+  '#f01a7e': {
     word: 'folate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f007ed': {
+  '#f007ed': {
     word: 'footed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f0071e': {
+  '#f0071e': {
     word: 'footle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'f055e7': {
+  '#f055e7': {
     word: 'fosset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6abbed': {
+  '#6abbed': {
     word: 'gabbed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6abb1e': {
+  '#6abb1e': {
     word: 'gabble',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ab6ab': {
+  '#6ab6ab': {
     word: 'gabgab',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ab1ed': {
+  '#6ab1ed': {
     word: 'gabled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ab1e5': {
+  '#6ab1e5': {
     word: 'gables',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ab1e7': {
+  '#6ab1e7': {
     word: 'gablet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6adaba': {
+  '#6adaba': {
     word: 'gadaba',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6adaea': {
+  '#6adaea': {
     word: 'gadaea',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6adbee': {
+  '#6adbee': {
     word: 'gadbee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6added': {
+  '#6added': {
     word: 'gadded',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ad6e7': {
+  '#6ad6e7': {
     word: 'gadget',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6affed': {
+  '#6affed': {
     word: 'gaffed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6affe5': {
+  '#6affe5': {
     word: 'gaffes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6aff1e': {
+  '#6aff1e': {
     word: 'gaffle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a6a7e': {
+  '#6a6a7e': {
     word: 'gagate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a66ed': {
+  '#6a66ed': {
     word: 'gagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a661e': {
+  '#6a661e': {
     word: 'gaggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a1a60': {
+  '#6a1a60': {
     word: 'galago',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a1eae': {
+  '#6a1eae': {
     word: 'galeae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a1ea5': {
+  '#6a1ea5': {
     word: 'galeas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a1e6a': {
+  '#6a1e6a': {
     word: 'galega',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a1e0d': {
+  '#6a1e0d': {
     word: 'galeod',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a16a1': {
+  '#6a16a1': {
     word: 'galgal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a11ed': {
+  '#6a11ed': {
     word: 'galled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a11e7': {
+  '#6a11e7': {
     word: 'gallet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a1007': {
+  '#6a1007': {
     word: 'galoot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a01ed': {
+  '#6a01ed': {
     word: 'gaoled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a5ba6': {
+  '#6a5ba6': {
     word: 'gasbag',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a55ed': {
+  '#6a55ed': {
     word: 'gassed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a55e5': {
+  '#6a55e5': {
     word: 'gasses',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6a57ed': {
+  '#6a57ed': {
     word: 'gasted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ea7a5': {
+  '#6ea7a5': {
     word: 'geatas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6edac7': {
+  '#6edac7': {
     word: 'gedact',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6ee575': {
+  '#6ee575': {
     word: 'geests',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e66ee': {
+  '#6e66ee': {
     word: 'geggee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e1ada': {
+  '#6e1ada': {
     word: 'gelada',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e1a7e': {
+  '#6e1a7e': {
     word: 'gelate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e1ded': {
+  '#6e1ded': {
     word: 'gelded',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e1ee5': {
+  '#6e1ee5': {
     word: 'gelees',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e11ed': {
+  '#6e11ed': {
     word: 'gelled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e105e': {
+  '#6e105e': {
     word: 'gelose',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e0da1': {
+  '#6e0da1': {
     word: 'geodal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e0de5': {
+  '#6e0de5': {
     word: 'geodes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e57ae': {
+  '#6e57ae': {
     word: 'gestae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e57ed': {
+  '#6e57ed': {
     word: 'gested',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6e57e5': {
+  '#6e57e5': {
     word: 'gestes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ace5': {
+  '#61ace5': {
     word: 'glaces',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ade5': {
+  '#61ade5': {
     word: 'glades',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61a601': {
+  '#61a601': {
     word: 'glagol',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ebae': {
+  '#61ebae': {
     word: 'glebae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61eba1': {
+  '#61eba1': {
     word: 'glebal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ebe5': {
+  '#61ebe5': {
     word: 'glebes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ede5': {
+  '#61ede5': {
     word: 'gledes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ed6e': {
+  '#61ed6e': {
     word: 'gledge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61eed5': {
+  '#61eed5': {
     word: 'gleeds',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61ee75': {
+  '#61ee75': {
     word: 'gleets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610a75': {
+  '#610a75': {
     word: 'gloats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610ba1': {
+  '#610ba1': {
     word: 'global',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610bed': {
+  '#610bed': {
     word: 'globed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610be5': {
+  '#610be5': {
     word: 'globes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610ea1': {
+  '#610ea1': {
     word: 'gloeal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610665': {
+  '#610665': {
     word: 'gloggs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '61055a': {
+  '#61055a': {
     word: 'glossa',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '610575': {
+  '#610575': {
     word: 'glosts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60aded': {
+  '#60aded': {
     word: 'goaded',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60a1ed': {
+  '#60a1ed': {
     word: 'goaled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60a1ee': {
+  '#60a1ee': {
     word: 'goalee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60a7ee': {
+  '#60a7ee': {
     word: 'goatee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60bbed': {
+  '#60bbed': {
     word: 'gobbed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60bbe7': {
+  '#60bbe7': {
     word: 'gobbet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60bb1e': {
+  '#60bb1e': {
     word: 'gobble',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60b1e7': {
+  '#60b1e7': {
     word: 'goblet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60b0e5': {
+  '#60b0e5': {
     word: 'goboes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60dded': {
+  '#60dded': {
     word: 'godded',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60d1e7': {
+  '#60d1e7': {
     word: 'godlet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60e7ae': {
+  '#60e7ae': {
     word: 'goetae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60ff1e': {
+  '#60ff1e': {
     word: 'goffle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60661e': {
+  '#60661e': {
     word: 'goggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60610000000': {
+  '#60610000000': {
     word: 'goglet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '601fed': {
+  '#601fed': {
     word: 'golfed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '600fed': {
+  '#600fed': {
     word: 'goofed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '600601': {
+  '#600601': {
     word: 'googol',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6001de': {
+  '#6001de': {
     word: 'goolde',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6005ed': {
+  '#6005ed': {
     word: 'goosed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '600500000': {
+  '#600500000': {
     word: 'gooses',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '6007ee': {
+  '#6007ee': {
     word: 'gootee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '60510000000': {
+  '#60510000000': {
     word: 'goslet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ac701': {
+  '#1ac701': {
     word: 'lactol',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1a66ed': {
+  '#1a66ed': {
     word: 'lagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1a55e7': {
+  '#1a55e7': {
     word: 'lasset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1a57ed': {
+  '#1a57ed': {
     word: 'lasted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1a7e57': {
+  '#1a7e57': {
     word: 'latest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ea575': {
+  '#1ea575': {
     word: 'leasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ed6ed': {
+  '#1ed6ed': {
     word: 'ledged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ed6e5': {
+  '#1ed6e5': {
     word: 'ledges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ed6e7': {
+  '#1ed6e7': {
     word: 'ledget',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ee67e': {
+  '#1ee67e': {
     word: 'leegte',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1ee71e': {
+  '#1ee71e': {
     word: 'leetle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e6a15': {
+  '#1e6a15': {
     word: 'legals',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e6a7e': {
+  '#1e6a7e': {
     word: 'legate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e6a70': {
+  '#1e6a70': {
     word: 'legato',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e66ed': {
+  '#1e66ed': {
     word: 'legged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e61e7': {
+  '#1e61e7': {
     word: 'leglet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e70ff': {
+  '#1e70ff': {
     word: 'letoff',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1e77ed': {
+  '#1e77ed': {
     word: 'letted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10ba7a': {
+  '#10ba7a': {
     word: 'lobata',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10ba7e': {
+  '#10ba7e': {
     word: 'lobate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10ca7e': {
+  '#10ca7e': {
     word: 'locate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10d6ed': {
+  '#10d6ed': {
     word: 'lodged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10d6e5': {
+  '#10d6e5': {
     word: 'lodges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10f7ed': {
+  '#10f7ed': {
     word: 'lofted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1066a7': {
+  '#1066a7': {
     word: 'loggat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1066ed': {
+  '#1066ed': {
     word: 'logged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1066ed': {
+  '#1066ed': {
     word: 'logget',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '10g1e7': {
+  '#10g1e7': {
     word: 'loglet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '106106': {
+  '#106106': {
     word: 'loglog',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '106000000': {
+  '#106000000': {
     word: 'logoes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1060ff': {
+  '#1060ff': {
     word: 'logoff',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1007ed': {
+  '#1007ed': {
     word: 'looted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '107a5e': {
+  '#107a5e': {
     word: 'lotase',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '1077ed': {
+  '#1077ed': {
     word: 'lotted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '107705': {
+  '#107705': {
     word: 'lottos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b1a57': {
+  '#0b1a57': {
     word: 'oblast',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b1a7a': {
+  '#0b1a7a': {
     word: 'oblata',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b1a7e': {
+  '#0b1a7e': {
     word: 'oblate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b01e7': {
+  '#0b01e7': {
     word: 'obolet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b57e7': {
+  '#0b57e7': {
     word: 'obstet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b7ec7': {
+  '#0b7ec7': {
     word: 'obtect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0b7e57': {
+  '#0b7e57': {
     word: 'obtest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0ce107': {
+  '#0ce107': {
     word: 'ocelot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c07ea': {
+  '#0c07ea': {
     word: 'ocotea',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c7ad5': {
+  '#0c7ad5': {
     word: 'octads',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c7ec7': {
+  '#0c7ec7': {
     word: 'octect',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c7e75': {
+  '#0c7e75': {
     word: 'octets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c70ad': {
+  '#0c70ad': {
     word: 'octoad',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c70de': {
+  '#0c70de': {
     word: 'octode',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0c705e': {
+  '#0c705e': {
     word: 'octose',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0dde57': {
+  '#0dde57': {
     word: 'oddest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0de1e7': {
+  '#0de1e7': {
     word: 'odelet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0ff1e7': {
+  '#0ff1e7': {
     word: 'offlet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0ff5e7': {
+  '#0ff5e7': {
     word: 'offset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0f1e7e': {
+  '#0f1e7e': {
     word: 'oflete',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0f7e57': {
+  '#0f7e57': {
     word: 'oftest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '06d0ad': {
+  '#06d0ad': {
     word: 'ogdoad',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '06d0a5': {
+  '#06d0a5': {
     word: 'ogdoas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '061a1a': {
+  '#061a1a': {
     word: 'oglala',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '01de57': {
+  '#01de57': {
     word: 'oldest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '01ea7e': {
+  '#01ea7e': {
     word: 'oleate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '01fac7': {
+  '#01fac7': {
     word: 'olfact',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0061ea': {
+  '#0061ea': {
     word: 'ooglea',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '05a6e5': {
+  '#05a6e5': {
     word: 'osages',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '057ea1': {
+  '#057ea1': {
     word: 'osteal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '0te110': {
+  '#0te110': {
     word: 'otello',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5abba7': {
+  '#5abba7': {
     word: 'sabbat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ab075': {
+  '#5ab075': {
     word: 'sabots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5aca7e': {
+  '#5aca7e': {
     word: 'sacate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5afe57': {
+  '#5afe57': {
     word: 'safest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a6e57': {
+  '#5a6e57': {
     word: 'sagest',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a66ed': {
+  '#5a66ed': {
     word: 'sagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a1a60': {
+  '#5a1a60': {
     word: 'salago',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a11e7': {
+  '#5a11e7': {
     word: 'sallet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a17ed': {
+  '#5a17ed': {
     word: 'salted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a17ee': {
+  '#5a17ee': {
     word: 'saltee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5a771e': {
+  '#5a771e': {
     word: 'sattle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ca1e7': {
+  '#5ca1e7': {
     word: 'scalet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ca775': {
+  '#5ca775': {
     word: 'scatts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5c1a7e': {
+  '#5c1a7e': {
     word: 'sclate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5c0106': {
+  '#5c0106': {
     word: 'scolog',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5c0075': {
+  '#5c0075': {
     word: 'scoots',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5c07a1': {
+  '#5c07a1': {
     word: 'scotal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5eaba6': {
+  '#5eaba6': {
     word: 'seabag',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ead06': {
+  '#5ead06': {
     word: 'seadog',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ea1e7': {
+  '#5ea1e7': {
     word: 'sealet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ea7ed': {
+  '#5ea7ed': {
     word: 'seated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5eba60': {
+  '#5eba60': {
     word: 'sebago',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5eba7e': {
+  '#5eba7e': {
     word: 'sebate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5eda7e': {
+  '#5eda7e': {
     word: 'sedate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ed6ed': {
+  '#5ed6ed': {
     word: 'sedged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5ed6e5': {
+  '#5ed6e5': {
     word: 'sedges',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e66ed': {
+  '#5e66ed': {
     word: 'segged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e1a60': {
+  '#5e1a60': {
     word: 'selago',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e1ec7': {
+  '#5e1ec7': {
     word: 'select',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e57e7': {
+  '#5e57e7': {
     word: 'sestet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e70ff': {
+  '#5e70ff': {
     word: 'setoff',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e705e': {
+  '#5e705e': {
     word: 'setose',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e77ee': {
+  '#5e77ee': {
     word: 'settee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e771e': {
+  '#5e771e': {
     word: 'settle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5e7705': {
+  '#5e7705': {
     word: 'settos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '51a7ed': {
+  '#51a7ed': {
     word: 'slated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '51a7e5': {
+  '#51a7e5': {
     word: 'slates',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '51ed6e': {
+  '#51ed6e': {
     word: 'sledge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '51ee75': {
+  '#51ee75': {
     word: 'sleets',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '510d6e': {
+  '#510d6e': {
     word: 'slodge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5107ed': {
+  '#5107ed': {
     word: 'sloted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '50ca6e': {
+  '#50ca6e': {
     word: 'socage',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '50f7a5': {
+  '#50f7a5': {
     word: 'softas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5066ed': {
+  '#5066ed': {
     word: 'sogged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '501a7e': {
+  '#501a7e': {
     word: 'solate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '501da7': {
+  '#501da7': {
     word: 'soldat',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '501f6e': {
+  '#501f6e': {
     word: 'solfge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '050160': {
+  '#050160': {
     word: 'solgel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5006ee': {
+  '#5006ee': {
     word: 'soogee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5007ed': {
+  '#5007ed': {
     word: 'sooted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '507015': {
+  '#507015': {
     word: 'sotols',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5077ed': {
+  '#5077ed': {
     word: 'sotted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ab1e': {
+  '#57ab1e': {
     word: 'stable',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ac7e': {
+  '#57ac7e': {
     word: 'stacte',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57adda': {
+  '#57adda': {
     word: 'stadda',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ade5': {
+  '#57ade5': {
     word: 'stades',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ad1e': {
+  '#57ad1e': {
     word: 'stadle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57aff5': {
+  '#57aff5': {
     word: 'staffs',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a6ed': {
+  '#57a6ed': {
     word: 'staged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a6e5': {
+  '#57a6e5': {
     word: 'stages',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a1a6': {
+  '#57a1a6': {
     word: 'stalag',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a1ed': {
+  '#57a1ed': {
     word: 'staled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a1e5': {
+  '#57a1e5': {
     word: 'stales',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a115': {
+  '#57a115': {
     word: 'stalls',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a5e5': {
+  '#57a5e5': {
     word: 'stases',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a7a1': {
+  '#57a7a1': {
     word: 'statal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a7ed': {
+  '#57a7ed': {
     word: 'stated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57a7e5': {
+  '#57a7e5': {
     word: 'states',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ead5': {
+  '#57ead5': {
     word: 'steads',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ea15': {
+  '#57ea15': {
     word: 'steals',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57eed5': {
+  '#57eed5': {
     word: 'steeds',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ee1e': {
+  '#57ee1e': {
     word: 'steele',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57ee15': {
+  '#57ee15': {
     word: 'steels',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57e1ae': {
+  '#57e1ae': {
     word: 'stelae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57e1e5': {
+  '#57e1e5': {
     word: 'steles',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57e11a': {
+  '#57e11a': {
     word: 'stella',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '570a75': {
+  '#570a75': {
     word: 'stoats',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '570d6e': {
+  '#570d6e': {
     word: 'stodge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5701ae': {
+  '#5701ae': {
     word: 'stolae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5701a5': {
+  '#5701a5': {
     word: 'stolas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '5701ed': {
+  '#5701ed': {
     word: 'stoled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '570100000': {
+  '#570100000': {
     word: 'stoles',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '57006e': {
+  '#57006e': {
     word: 'stooge',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '570015': {
+  '#570015': {
     word: 'stools',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7abbed': {
+  '#7abbed': {
     word: 'tabbed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ab1a5': {
+  '#7ab1a5': {
     word: 'tablas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ab1ed': {
+  '#7ab1ed': {
     word: 'tabled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ab1e5': {
+  '#7ab1e5': {
     word: 'tables',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ab1e7': {
+  '#7ab1e7': {
     word: 'tablet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ab005': {
+  '#7ab005': {
     word: 'taboos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ab007': {
+  '#7ab007': {
     word: 'taboot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7aff1e': {
+  '#7aff1e': {
     word: 'taffle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a6a1a': {
+  '#7a6a1a': {
     word: 'tagala',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a6a10': {
+  '#7a6a10': {
     word: 'tagalo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a66ed': {
+  '#7a66ed': {
     word: 'tagged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a661e': {
+  '#7a661e': {
     word: 'taggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a61e7': {
+  '#7a61e7': {
     word: 'taglet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a1b07': {
+  '#7a1b07': {
     word: 'talbot',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a1ced': {
+  '#7a1ced': {
     word: 'talced',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a11e5': {
+  '#7a11e5': {
     word: 'talles',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a11e7': {
+  '#7a11e7': {
     word: 'tallet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a1101': {
+  '#7a1101': {
     word: 'tallol',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a105e': {
+  '#7a105e': {
     word: 'talose',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a5ca1': {
+  '#7a5ca1': {
     word: 'tascal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a51e7': {
+  '#7a51e7': {
     word: 'taslet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a55a1': {
+  '#7a55a1': {
     word: 'tassal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a55e1': {
+  '#7a55e1': {
     word: 'tassel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a55e5': {
+  '#7a55e5': {
     word: 'tasses',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a55e7': {
+  '#7a55e7': {
     word: 'tasset',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a5500': {
+  '#7a5500': {
     word: 'tassoo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a57ed': {
+  '#7a57ed': {
     word: 'tasted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a57e5': {
+  '#7a57e5': {
     word: 'tastes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a7beb': {
+  '#7a7beb': {
     word: 'tatbeb',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a7005': {
+  '#7a7005': {
     word: 'tatoos',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a77ed': {
+  '#7a77ed': {
     word: 'tatted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a771e': {
+  '#7a771e': {
     word: 'tattle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7a7700': {
+  '#7a7700': {
     word: 'tattoo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ea61e': {
+  '#7ea61e': {
     word: 'teagle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ea5ed': {
+  '#7ea5ed': {
     word: 'teased',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ea5e1': {
+  '#7ea5e1': {
     word: 'teasel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ea5e5': {
+  '#7ea5e5': {
     word: 'teases',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ea51e': {
+  '#7ea51e': {
     word: 'teasle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ea7ed': {
+  '#7ea7ed': {
     word: 'teated',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ebbad': {
+  '#7ebbad': {
     word: 'tebbad',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ebbe7': {
+  '#7ebbe7': {
     word: 'tebbet',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ec7a1': {
+  '#7ec7a1': {
     word: 'tectal',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7edded': {
+  '#7edded': {
     word: 'tedded',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7eed1e': {
+  '#7eed1e': {
     word: 'teedle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7ee7ee': {
+  '#7ee7ee': {
     word: 'teetee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e1e6a': {
+  '#7e1e6a': {
     word: 'telega',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e11ee': {
+  '#7e11ee': {
     word: 'tellee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e51a5': {
+  '#7e51a5': {
     word: 'teslas',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e55e1': {
+  '#7e55e1': {
     word: 'tessel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e57ae': {
+  '#7e57ae': {
     word: 'testae',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e57a0': {
+  '#7e57a0': {
     word: 'testao',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e57ed': {
+  '#7e57ed': {
     word: 'tested',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e57ee': {
+  '#7e57ee': {
     word: 'testee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7e57e5': {
+  '#7e57e5': {
     word: 'testes',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70a575': {
+  '#70a575': {
     word: 'toasts',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70a70a': {
+  '#70a70a': {
     word: 'toatoa',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70dd1e': {
+  '#70dd1e': {
     word: 'toddle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70e70e': {
+  '#70e70e': {
     word: 'toetoe',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70ffee': {
+  '#70ffee': {
     word: 'toffee',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '706aed': {
+  '#706aed': {
     word: 'togaed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '706a7a': {
+  '#706a7a': {
     word: 'togata',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '706a7e': {
+  '#706a7e': {
     word: 'togate',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7066ed': {
+  '#7066ed': {
     word: 'togged',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '070660': {
+  '#070660': {
     word: 'toggel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70661e': {
+  '#70661e': {
     word: 'toggle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '701ed0': {
+  '#701ed0': {
     word: 'toledo',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7011ed': {
+  '#7011ed': {
     word: 'tolled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '070150': {
+  '#070150': {
     word: 'tolsel',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7017ec': {
+  '#7017ec': {
     word: 'toltec',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '700d1e': {
+  '#700d1e': {
     word: 'toodle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7001ed': {
+  '#7001ed': {
     word: 'tooled',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7007ed': {
+  '#7007ed': {
     word: 'tooted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70071e': {
+  '#70071e': {
     word: 'tootle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7055ed': {
+  '#7055ed': {
     word: 'tossed',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  't055ed': {
+  '#t055ed': {
     word: 'tosses',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7057a0': {
+  '#7057a0': {
     word: 'tostao',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '707a15': {
+  '#707a15': {
     word: 'totals',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '7077ed': {
+  '#7077ed': {
     word: 'totted',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '70771e': {
+  '#70771e': {
     word: 'tottle',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '75ade5': {
+  '#75ade5': {
     word: 'tsades',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  '75e75e': {
+  '#75e75e': {
     word: 'tsetse',
-    type: 'd-leet',
-    length: 6,
+    type: 'dirty',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: false,
+    featured: false,
+    favorite: false
+  },
+  '#ca7': {
+    word: 'cat',
+    type: 'dirty',
+    tripple: true,
+    alpha: false,
+    curated: true,
+    featured: false,
+    favorite: false
+  },
+  '#1ee7': {
+    word: 'leet',
+    type: 'dirty',
+    tripple: true,
+    alpha: true,
+    curated: true,
+    featured: true,
+    favorite: false
+  },
+  '#defea7ed': {
+    word: 'defeated',
+    type: 'dirty',
+    tripple: false,
+    alpha: true,
+    curated: true,
+    featured: false,
+    favorite: false
   }
+
+
+
 }
 console.log("leetDirty loaded")

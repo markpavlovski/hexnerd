@@ -1,171 +1,246 @@
 const classicHex = {
-  'accede': {
+  '#accede': {
     word: 'accede',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'afaced': {
+  '#afaced': {
     word: 'afaced',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bacaba': {
+  '#bacaba': {
     word: 'bacaba',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'baccae': {
+  '#baccae': {
     word: 'baccae',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'baffed': {
+  '#baffed': {
     word: 'baffed',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'beaded': {
+  '#beaded': {
     word: 'beaded',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'bedaff': {
+  '#bedaff': {
     word: 'bedaff',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bedded': {
+  '#bedded': {
     word: 'bedded',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'bedead': {
+  '#bedead': {
     word: 'bedead',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'bedeaf': {
+  '#bedeaf': {
     word: 'bedeaf',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'beebee': {
+  '#beebee': {
     word: 'beebee',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'beefed': {
+  '#beefed': {
     word: 'beefed',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'cabbed': {
+  '#cabbed': {
     word: 'cabbed',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'cadded': {
+  '#cadded': {
     word: 'cadded',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'dabbed': {
+  '#dabbed': {
     word: 'dabbed',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'daffed': {
+  '#daffed': {
     word: 'daffed',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'decade': {
+  '#decade': {
     word: 'decade',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'decede': {
+  '#decede': {
     word: 'decede',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'deeded': {
+  '#deeded': {
     word: 'deeded',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'deface': {
+  '#deface': {
     word: 'deface',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'defade': {
+  '#defade': {
     word: 'defade',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'efface': {
+  '#efface': {
     word: 'efface',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
   },
-  'facade': {
+  '#facade': {
     word: 'facade',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: true
+    curated: true,
+    featured: false,
+    favorite: false
   },
-  'feeded': {
+  '#feeded': {
     word: 'feeded',
-    type: 'classic-hex',
-    length: 6,
+    type: 'classic',
+    tripple: false,
     alpha: false,
-    include: false
+    curated: false,
+    featured: false,
+    favorite: false
+  },
+  '#bff': {
+    word: 'bff',
+    type: 'classic',
+    tripple: true,
+    alpha: false,
+    curated: true,
+    featured: true,
+    favorite: false
+  },
+  '#abba': {
+    word: 'abba',
+    type: 'classic',
+    tripple: true,
+    alpha: true,
+    curated: true,
+    featured: true,
+    favorite: false
+  },
+  '#fabaceae': {
+    word: 'fabaceae',
+    type: 'classic',
+    tripple: false,
+    alpha: true,
+    curated: true,
+    featured: false,
+    favorite: false
   },
 }
 console.log("classicHex loaded")
