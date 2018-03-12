@@ -1,7 +1,7 @@
 'use strict'
 console.log("Loaded custom JS")
 
-// Values for display include wide, square, line
+// Set up state tracking
 const state = {
   fade: false,
   aside: false,
@@ -23,43 +23,49 @@ const state = {
     triple: false,
   }
 }
+//
+// const colors = {
+//   classic6: {
+//     names: Object.keys(classicHex).filter((key) => (classicHex[key].include)),
+//     include: true
+//   },
+//   leetNeat6: {
+//     names: Object.keys(leetNeat).filter((key) => (leetNeat[key].include)),
+//     include: true
+//   },
+//   leetDirty6: {
+//     names: Object.keys(leetDirty).filter((key) => (leetDirty[key].include)),
+//     include: true
+//   }
+// }
 
-const colors = {
-  classic6: {
-    names: Object.keys(classicHex).filter((key) => (classicHex[key].include)),
-    include: true
-  },
-  leetNeat6: {
-    names: Object.keys(leetNeat).filter((key) => (leetNeat[key].include)),
-    include: true
-  },
-  leetDirty6: {
-    names: Object.keys(leetDirty).filter((key) => (leetDirty[key].include)),
-    include: true
-  }
-}
+
+// Load data
+const colors = {}
+Object.assign(colors, classic)
+Object.assign(colors, neat)
+Object.assign(colors, dirty)
+console.log("Colors loaded:", Object.keys(colors).length)
+
 
 
 // Create cards
 
 function displayCards() {
 
+  clearCards()
+
+  const main = document.querySelector("main")
   const card = document.createElement("div")
   card.classList.add("card")
   card.classList.add("wide")
 
-  const main = document.querySelector("main")
-
-  clearCards()
-
   for (let key in colors) {
-    if (colors[key].include) {
-      colors[key].names.forEach((value) => {
-        // console.log(value)
+    if (colors[key].curated) {
+        console.log(colors[key].word)
         const newCard = card.cloneNode(true)
-        newCard.style = `background-color: #${value}`
+        newCard.style = `background-color: ${key}`
         main.appendChild(newCard)
-      })
     }
   }
 

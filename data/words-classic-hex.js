@@ -1,10 +1,10 @@
-const classicHex = {
+const classic = {
   '#accede': {
     word: 'accede',
     type: 'classic',
     tripple: false,
     alpha: false,
-    curated: true,
+    curated: false,
     featured: false,
     favorite: false
   },
@@ -22,7 +22,7 @@ const classicHex = {
     type: 'classic',
     tripple: false,
     alpha: false,
-    curated: true,
+    curated: false,
     featured: false,
     favorite: false
   },
@@ -31,7 +31,7 @@ const classicHex = {
     type: 'classic',
     tripple: false,
     alpha: false,
-    curated: true,
+    curated: false,
     featured: false,
     favorite: false
   },
@@ -49,7 +49,7 @@ const classicHex = {
     type: 'classic',
     tripple: false,
     alpha: false,
-    curated: true,
+    curated: false,
     featured: false,
     favorite: false
   },
@@ -157,7 +157,7 @@ const classicHex = {
     type: 'classic',
     tripple: false,
     alpha: false,
-    curated: true,
+    curated: false,
     featured: false,
     favorite: false
   },
@@ -243,4 +243,4 @@ const classicHex = {
     favorite: false
   },
 }
-console.log("classicHex loaded")
+console.log("classic object loaded")

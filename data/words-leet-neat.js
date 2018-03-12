@@ -1,4 +1,4 @@
-const leetNeat = {
+const neat = {
   '#abaca5': {
     word: 'abacas',
     type: 'neat',
@@ -3204,4 +3204,4 @@ const leetNeat = {
     favorite: false
   }
 }
-console.log("leetNeat object loaded")
+console.log("neat object loaded")

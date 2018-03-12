@@ -1,4 +1,4 @@
-const leetDirty = {
+const dirty = {
   '#abac07': {
     word: 'abacot',
     type: 'dirty',
@@ -5781,4 +5781,4 @@ const leetDirty = {
 
 
 }
-console.log("leetDirty loaded")
+console.log("dirty object loaded")
