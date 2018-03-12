@@ -42,23 +42,37 @@ const colors = {
 
 // Create cards
 
+function displayCards() {
 
-const card = document.createElement("div")
-card.classList.add("card")
-card.classList.add("wide")
+  const card = document.createElement("div")
+  card.classList.add("card")
+  card.classList.add("wide")
 
-const main = document.querySelector("main")
-for (let key in colors) {
-  if (colors[key].include) {
-    colors[key].names.forEach((value) => {
-      console.log(value)
-      const newCard = card.cloneNode(true)
-      newCard.style = `background-color: #${value}`
-      main.appendChild(newCard)
-    })
+  const main = document.querySelector("main")
+
+  clearCards()
+
+  for (let key in colors) {
+    if (colors[key].include) {
+      colors[key].names.forEach((value) => {
+        // console.log(value)
+        const newCard = card.cloneNode(true)
+        newCard.style = `background-color: #${value}`
+        main.appendChild(newCard)
+      })
+    }
+  }
+
+}
+
+function clearCards() {
+  const main = document.querySelector("main")
+  while (main.firstElementChild) {
+    main.removeChild(main.childNodes[0]);
   }
 }
 
+displayCards()
 
 
 
@@ -121,18 +135,19 @@ function display(mode) {
 
 // Filters
 
-function setFilters(){
+function setFilters() {
   for (let key in state.filter) {
     if (state.filter[key]) document.querySelector(`.switch.${key} input`).checked = true
   }
 }
 setFilters()
 
-function getFilters(){
+function getFilters() {
   for (let key in state.filter) {
     state.filter[key] = document.querySelector(`.switch.${key} input`).checked
   }
 }
+
 
 
 
@@ -164,8 +179,6 @@ document.addEventListener('keydown', (event) => {
 document.querySelector(".filters").addEventListener("click", (event) => {
   if (event.target.closest(".switch")) getFilters()
 })
-
-
 
 
 
