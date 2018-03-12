@@ -10,7 +10,7 @@ const state = {
   filter: {
     curated: true,
 
-    fatured: true,
+    featured: true,
     favorites: true,
 
     classic: true,
@@ -19,10 +19,8 @@ const state = {
     composite: false,
     native: false,
 
-    fullRGB: true,
-    shortRGB: false,
-    fullRGBA: false,
-    shortRGBA: false
+    alpha: false,
+    triple: false,
   }
 }
 
@@ -119,6 +117,28 @@ function display(mode) {
 
 
 
+
+
+// Filters
+
+function setFilters(){
+  for (let key in state.filter) {
+    if (state.filter[key]) document.querySelector(`.switch.${key} input`).checked = true
+  }
+}
+setFilters()
+
+function getFilters(){
+  for (let key in state.filter) {
+    state.filter[key] = document.querySelector(`.switch.${key} input`).checked
+  }
+}
+
+
+
+
+
+
 // Event Handlers
 document.querySelector(".wide").addEventListener("click", () => display("wide"))
 document.querySelector(".square").addEventListener("click", () => display("square"))
@@ -131,19 +151,30 @@ document.querySelector("main").addEventListener("click", (event) => {
 
 document.querySelector(".fade").addEventListener("click", () => hideAside())
 
-
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   console.log('key: ' + keyName);
-
   if (keyName === 'Escape' || keyName.toLowerCase() === 'q') hideFull()
+})
 
-});
+document.querySelector(".filters").addEventListener("click", (event) => {
+  if (event.target.closest(".switch")) getFilters()
+})
 
 
-// detect mobile
-//
-//
+
+
+
+
+
+
+
+
+
+// Handle mobile
+
+
+
 // function isMobileDevice() {
 //     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 // };
