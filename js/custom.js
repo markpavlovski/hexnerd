@@ -45,7 +45,7 @@ Object.assign(colors, classic)
 Object.assign(colors, neat)
 Object.assign(colors, dirty)
 console.log("Colors loaded:", Object.keys(colors).length)
-for (let key in colors){
+for (let key in colors) {
   colors[key].classic = colors[key].type === "classic"
   colors[key].neat = colors[key].type === "neat"
   colors[key].dirty = colors[key].type === "dirty"
@@ -70,22 +70,34 @@ function displayCards() {
   card.classList.add("card")
   card.classList.add("wide")
 
-  for (let key in {"#ca7":colors["#ca7"]}) {
+  for (let key in {"#ca7": colors["#ca7"]}) {
 
     let displayFlag = false
-    if (colors[key]['featured'] && state.filter['featured']){
+    console.log(displayFlag);
+    console.log(colors[key]['featured'] && state.filter['featured']);
+
+    if (colors[key]['featured'] && state.filter['featured']) {
       displayFlag = true
-    } else if (colors[key]['favorite'] && state.filter['favorite']){
+    } else if (colors[key]['favorite'] && state.filter['favorite']) {
       displayFlag = true
-    } else {
-    for (let property in state.filter){
-      console.log(property, colors[key][property],state.filter[property])
-      if ( colors[key][property] && state.filter[property]){
-        displayFlag = true
-      }
-      console.log("flag: ", displayFlag)
     }
-  }
+
+    if (state.filter.curated) {
+      for (let property in state.filter) {
+        console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
+        if ((property !== "curated") && colors[key][property] && state.filter[property] && colors[key].curated) {
+          displayFlag = true
+        }
+      }
+    } else {
+      for (let property in state.filter) {
+        console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
+        if (colors[key][property] && state.filter[property]) {
+          displayFlag = true
+        }
+        // console.log("flag: ", displayFlag)
+      }
+    }
 
 
     // const displayFlag = colors[key].curated
