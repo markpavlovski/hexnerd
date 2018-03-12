@@ -110,8 +110,8 @@ aside {
         margin-top: 60px; }
         aside .top.filter .filters .switch {
           margin: 30px 0px; }
-          aside .top.filter .filters .switch.nested {
-            margin-left: 60px; }
+          aside .top.filter .filters .switch.classic, aside .top.filter .filters .switch.RGBA {
+            margin-top: 55px; }
   aside .middle {
     grid-row: 2;
     grid-column: 1;
@@ -217,7 +217,7 @@ aside {
       .full-screen .middle .arrow:hover {
         color: rgba(255, 255, 255, 0.45); }
     .full-screen .middle .card {
-      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(255, 255, 255, 0.85);
       border-radius: 20px;
       color: #bada55;
       font-size: 20px;

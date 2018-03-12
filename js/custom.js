@@ -3,11 +3,27 @@ console.log("Loaded custom JS")
 
 // Values for display include wide, square, line
 const state = {
-  nav: true,
   fade: false,
   aside: false,
   full: false,
-  display: "wide"
+  display: "wide",
+  filter: {
+    curated: true,
+
+    fatured: true,
+    favorites: true,
+
+    classic: true,
+    neat: true,
+    dirty: false,
+    composite: false,
+    native: false,
+
+    fullRGB: true,
+    shortRGB: false,
+    fullRGBA: false,
+    shortRGBA: false
+  }
 }
 
 const colors = {

@@ -150,8 +150,8 @@ aside {
         .switch {
           margin: 30px 0px;
 
-          &.nested {
-            margin-left: 60px;
+          &.classic, &.RGBA {
+            margin-top: 55px;
           }
         }
       }
@@ -327,7 +327,7 @@ aside {
     }
 
     .card {
-      background-color: rgba(255,255,255,.75);
+      background-color: rgba(255,255,255,.85);
       border-radius: 20px;
       color: #bada55;
       font-size: 20px;
