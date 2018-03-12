@@ -70,7 +70,9 @@ function displayCards() {
   card.classList.add("card")
   card.classList.add("wide")
 
-  for (let key in {"#ca7": colors["#ca7"]}) {
+  for (let key in {
+      "#ca7": colors["#ca7"]
+    }) {
 
     let displayFlag = false
     console.log(displayFlag);
@@ -86,16 +88,17 @@ function displayCards() {
       for (let property in state.filter) {
         console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
         if ((property !== "curated") && colors[key][property] && state.filter[property] && colors[key].curated) {
-          displayFlag = true
+          if (colors[key].alpha === state.filter.alpha && colors[key].triple === state.filter.triple ) {
+            displayFlag = true
+          }
         }
       }
     } else {
       for (let property in state.filter) {
         console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
-        if (colors[key][property] && state.filter[property]) {
+        if ((property !== "curated") && colors[key][property] && state.filter[property]) {
           displayFlag = true
         }
-        // console.log("flag: ", displayFlag)
       }
     }
 
