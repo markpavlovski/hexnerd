@@ -140,23 +140,27 @@ function getFilters(){
 
 
 // Event Handlers
+
+// Switch between display modes:
 document.querySelector(".wide").addEventListener("click", () => display("wide"))
 document.querySelector(".square").addEventListener("click", () => display("square"))
 document.querySelector(".strip").addEventListener("click", () => display("strip"))
 document.querySelector(".full").addEventListener("click", () => showFull())
 
+// Toggle Slider:
 document.querySelector("main").addEventListener("click", (event) => {
   if (event.target.classList.contains("card")) showAside()
 })
-
 document.querySelector(".fade").addEventListener("click", () => hideAside())
 
+// Return from Full Screen Mode
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   console.log('key: ' + keyName);
   if (keyName === 'Escape' || keyName.toLowerCase() === 'q') hideFull()
 })
 
+// Listen for filter changes
 document.querySelector(".filters").addEventListener("click", (event) => {
   if (event.target.closest(".switch")) getFilters()
 })
