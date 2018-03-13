@@ -22,21 +22,6 @@ const state = {
     triple: false,
   }
 }
-//
-// const colors = {
-//   classic6: {
-//     names: Object.keys(classicHex).filter((key) => (classicHex[key].include)),
-//     include: true
-//   },
-//   leetNeat6: {
-//     names: Object.keys(leetNeat).filter((key) => (leetNeat[key].include)),
-//     include: true
-//   },
-//   leetDirty6: {
-//     names: Object.keys(leetDirty).filter((key) => (leetDirty[key].include)),
-//     include: true
-//   }
-// }
 
 
 // Load data
