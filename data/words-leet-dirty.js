@@ -4,7 +4,7 @@ const dirty = {
     type: 'dirty',
     triple: false,
     alpha: false,
-    curated: false,
+    curated: true,
     featured: false,
     favorite: false
   },
@@ -5765,7 +5765,7 @@ const dirty = {
     triple: true,
     alpha: true,
     curated: true,
-    featured: true,
+    featured: false,
     favorite: false
   },
   '#defea7ed': {

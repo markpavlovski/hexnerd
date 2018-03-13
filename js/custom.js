@@ -72,40 +72,54 @@ function displayCards() {
 
   for (let key in {
       "#ca7": colors["#ca7"],
-      "#ba6dad": colors["#ba6dad"]
-
+      "#1ee7": colors["#1ee7"],
+      "#defea7ed": colors["#defea7ed"],
+      "#abac07": colors["#abac07"],
+      // "#ba6dad": colors["#ba6dad"],
     }) {
 
     let displayFlag = false
-    console.log(displayFlag);
-    console.log(colors[key]['featured'] && state.filter['featured']);
 
     if (colors[key]['featured'] && state.filter['featured']) {
       displayFlag = true
     } else if (colors[key]['favorite'] && state.filter['favorite']) {
       displayFlag = true
     }
-    //
-    // if (state.filter.curated) {
-    //   for (let property in state.filter) {
-    //     // console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
-    //     if ((property !== "curated") && colors[key][property] && state.filter[property] && colors[key].curated) {
-    //         displayFlag = true
-    //     }
-    //   }
-    // } else {
-    //   for (let property in state.filter) {
-    //     // console.log(property, colors[key][property] && state.filter[property], colors[key][property], state.filter[property])
-    //     if ((property !== "curated") && colors[key][property] && state.filter[property]) {
-    //         displayFlag = true
-    //     }
-    //   }
-    // }
+
+    if (state.filter.curated && colors[key].curated) {
+      console.log("curated")
+
       for (let property in state.filter) {
-        if (!['favorite','featured','alpha','triple', 'curated'].includes(property)){
-          // if ()
+        if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
+          console.log(property);
+          if (state.filter[property] && colors[key][property]) {
+            console.log(state.filter.alpha, state.filter.triple)
+            console.log(`color: ${key}, state-alpha: ${state.filter.alpha}, state-triple: ${state.filter.triple}, color-alpha: ${colors[key].alpha}, color-triple: ${colors[key].triple}`)
+            if (state.filter.alpha && state.filter.triple) {
+              displayFlag = true
+            } else if (state.filter.alpha && !state.filter.triple) {
+              if (!colors[key].triple) displayFlag = true
+            } else if (!state.filter.alpha && state.filter.triple) {
+              if (!colors[key].alpha) displayFlag = true
+            } else {
+              if (!colors[key].alpha && !colors[key].triple) displayFlag = true
+            }
+          }
         }
       }
+
+    } else {
+      console.log("not curated")
+
+
+      for (let property in state.filter) {
+        if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
+          console.log(property);
+        }
+      }
+
+    }
+
 
 
 
