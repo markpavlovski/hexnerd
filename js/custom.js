@@ -82,14 +82,9 @@ function displayCards() {
     }
 
     if (state.filter.curated && colors[key].curated) {
-      console.log("curated")
-
       for (let property in state.filter) {
         if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
-          console.log(property);
           if (state.filter[property] && colors[key][property]) {
-            console.log(state.filter.alpha, state.filter.triple)
-            console.log(`color: ${key}, state-alpha: ${state.filter.alpha}, state-triple: ${state.filter.triple}, color-alpha: ${colors[key].alpha}, color-triple: ${colors[key].triple}`)
             if (state.filter.alpha && state.filter.triple) {
               displayFlag = true
             } else if (state.filter.alpha && !state.filter.triple) {
@@ -104,17 +99,10 @@ function displayCards() {
       }
 
     }
-    if (!state.filter.curated){
-      console.log("not curated")
-
-
-
+    if (!state.filter.curated) {
       for (let property in state.filter) {
         if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
-          console.log(property);
           if (state.filter[property] && colors[key][property]) {
-            console.log(state.filter.alpha, state.filter.triple)
-            console.log(`color: ${key}, state-alpha: ${state.filter.alpha}, state-triple: ${state.filter.triple}, color-alpha: ${colors[key].alpha}, color-triple: ${colors[key].triple}`)
             if (state.filter.alpha && state.filter.triple) {
               displayFlag = true
             } else if (state.filter.alpha && !state.filter.triple) {
@@ -136,7 +124,6 @@ function displayCards() {
 
     // const displayFlag = colors[key].curated
     if (displayFlag) {
-      console.log(colors[key].word)
       const newCard = card.cloneNode(true)
       newCard.style = `background-color: ${key}`
       newCard.innerText = `
