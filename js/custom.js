@@ -359,7 +359,11 @@ document.querySelector(".fade").addEventListener("click", () => {
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   console.log('key: ' + keyName);
-  if (keyName === 'Escape' || keyName.toLowerCase() === 'q') hideFull()
+  if (keyName === 'Escape' || keyName.toLowerCase() === 'q') {
+    hideFull()
+    hideMug()
+    hideFilters()
+  }
 })
 
 // Listen for filter changes
@@ -383,7 +387,6 @@ function getMugPage(mugImagePath){
   const end = mugImagePath.indexOf("-mugs.jpg")
   return "https://society6.com/product/"+mugImagePath.slice(start,end)+"_mug"
 }
-// https://society6.com/product/coffee1155242_mug
 
 // Handle mobile
 
