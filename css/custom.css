@@ -100,7 +100,6 @@ aside {
       aside .top.color.block {
         display: block; }
       aside .top.color .mug {
-        background-image: url("https://ctl.s6img.com/society6/img/Jb07fMNxyXZdjuDUuFlv_oVyaVo/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-original-art-uploads/society6/uploads/misc/fcb52e79d62b4c688c80e8b3dc6a3644/~~/coffee1155242-mugs.jpg");
         background-size: 100%;
         border-radius: 20px;
         border: 1px solid rgba(0, 0, 0, 0.05);
@@ -138,19 +137,12 @@ aside {
         display: block; }
       aside .middle .description h1 {
         display: block;
-        margin: 10px 0; }
+        margin: 40px 0px 20px 0;
+        color: #333333; }
       aside .middle .description h2 {
-        margin-top: 50px;
-        line-height: 30px; }
-      aside .middle .description h4 {
-        display: block;
-        margin: 10px 0 0; }
-      aside .middle .description h5 {
-        display: block;
-        margin: 0 0 10px; }
-      aside .middle .description p {
-        display: block;
-        margin-top: 10px; }
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #333333; }
   aside .bottom {
     grid-row: 3;
     grid-column: 1;
@@ -163,9 +155,10 @@ aside {
       font-size: 15px;
       text-transform: uppercase;
       padding: 15px;
-      cursor: pointer;
+      cursor: auto;
       transition: all 0.3s ease;
-      display: none; }
+      display: none;
+      opacity: 0; }
       aside .bottom .favorite.block {
         display: block; }
       aside .bottom .favorite:hover {

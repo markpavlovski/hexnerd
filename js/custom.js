@@ -184,7 +184,15 @@ function showMug(target) {
   middle.classList.add("block")
   footer.classList.add("block")
 
+  console.log("color:", color, mugImages[color])
+  if (mugImages[color]) {
+    header.querySelector(".mug").style = `background-image:  url("${mugImages[color]}")`
+  } else {
+    header.querySelector(".mug").style = `background-color: ${color}`
+  }
   middle.querySelector("#color").innerText = color.toUpperCase()
+  middle.querySelector("#name").innerText = `word: ${colors[color].word}`.toUpperCase()
+
 
   if (color[0] === "#") {
     let decimal = {
@@ -221,7 +229,7 @@ function showMug(target) {
         decimal.r = parseInt(color[1] + color[1], 16)
         decimal.g = parseInt(color[2] + color[2], 16)
         decimal.b = parseInt(color[3] + color[3], 16)
-        decimal.a = Math.round((parseInt(color[4]+color[4], 16) + 1) / 256 * 100) / 100
+        decimal.a = Math.round((parseInt(color[4] + color[4], 16) + 1) / 256 * 100) / 100
 
         break
       default:
@@ -358,8 +366,17 @@ document.querySelector("aside").addEventListener("click", (event) => {
   }
 })
 
+// Click on a mug
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
+    const mug = event.target
+    // mug.classList
+  }
+})
 
 
+
+// https://society6.com/product/coffee1155242_mug
 
 // Handle mobile
 
@@ -410,3 +427,4 @@ setFilters()
 displayCards()
 // showAside()
 // showFull()
+showMug(document.querySelector(".card"))

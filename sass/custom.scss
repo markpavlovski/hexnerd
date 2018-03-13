@@ -133,10 +133,8 @@ aside {
         display:block;
       }
 
-
-
       .mug {
-        background-image: url("https://ctl.s6img.com/society6/img/Jb07fMNxyXZdjuDUuFlv_oVyaVo/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-original-art-uploads/society6/uploads/misc/fcb52e79d62b4c688c80e8b3dc6a3644/~~/coffee1155242-mugs.jpg");
+        // background-image: url("");
         background-size: 100%;
         border-radius: 20px;
         border: 1px solid rgba(0,0,0,0.05);
@@ -197,28 +195,16 @@ aside {
 
       h1 {
         display: block;
-        margin: 10px 0;
+        margin: 40px 0px 20px 0;
+        color: rgba(51,51,51,1)
       }
 
       h2 {
-        margin-top: 50px;
-        line-height: 30px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: rgba(51,51,51,1)
       }
 
-      h4 {
-        display: block;
-        margin: 10px 0 0;
-      }
-
-      h5 {
-        display: block;
-        margin: 0 0 10px;
-      }
-
-      p {
-        display: block;
-        margin-top: 10px;
-      }
     }
   }
 
@@ -235,9 +221,10 @@ aside {
       font-size: 15px;
       text-transform: uppercase;
       padding: 15px;
-      cursor: pointer;
+      cursor: auto;
       transition: all 0.3s ease;
       display: none;
+      opacity: 0;
 
 
       &.block{
