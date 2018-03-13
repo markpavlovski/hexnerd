@@ -75,7 +75,7 @@ function displayCards() {
       "#1ee7": colors["#1ee7"],
       "#defea7ed": colors["#defea7ed"],
       "#abac07": colors["#abac07"],
-      // "#ba6dad": colors["#ba6dad"],
+      "#ba6dad": colors["#ba6dad"],
     }) {
 
     let displayFlag = false
@@ -108,13 +108,28 @@ function displayCards() {
         }
       }
 
-    } else {
+    }
+    if (!state.filter.curated){
       console.log("not curated")
+
 
 
       for (let property in state.filter) {
         if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
           console.log(property);
+          if (state.filter[property] && colors[key][property]) {
+            console.log(state.filter.alpha, state.filter.triple)
+            console.log(`color: ${key}, state-alpha: ${state.filter.alpha}, state-triple: ${state.filter.triple}, color-alpha: ${colors[key].alpha}, color-triple: ${colors[key].triple}`)
+            if (state.filter.alpha && state.filter.triple) {
+              displayFlag = true
+            } else if (state.filter.alpha && !state.filter.triple) {
+              if (!colors[key].triple) displayFlag = true
+            } else if (!state.filter.alpha && state.filter.triple) {
+              if (!colors[key].alpha) displayFlag = true
+            } else {
+              if (!colors[key].alpha && !colors[key].triple) displayFlag = true
+            }
+          }
         }
       }
 
