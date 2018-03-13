@@ -79,8 +79,6 @@ aside {
   grid-column: 8 /span 12;
   grid-row: 1 /span 2;
   box-shadow: -16px 0 24px 2px rgba(0, 0, 0, 0.07), -6px 0 30px 5px rgba(0, 0, 0, 0.06), -8px 0 10px -5px rgba(0, 0, 0, 0.15);
-  margin-top: -2px;
-  margin-bottom: -2px;
   justify-self: start;
   z-index: -1;
   width: 100%;
@@ -96,10 +94,8 @@ aside {
     aside .top.color {
       justify-self: center;
       align-self: center;
-      opacity: 0;
+      opacity: 1;
       display: none; }
-      aside .top.color.show {
-        opacity: 1; }
       aside .top.color.block {
         display: block; }
       aside .top.color .mug {
@@ -113,11 +109,9 @@ aside {
     aside .top.filter {
       justify-self: center;
       align-self: start;
-      opacity: .05;
+      opacity: 1;
       display: none;
       transition: opacity .3s ease; }
-      aside .top.filter.show {
-        opacity: 1; }
       aside .top.filter.block {
         display: block; }
       aside .top.filter h1 {
@@ -137,10 +131,8 @@ aside {
     aside .middle .description {
       margin-top: 20px;
       width: 220px;
-      opacity: 0;
+      opacity: 1;
       display: none; }
-      aside .middle .description.show {
-        opacity: 1; }
       aside .middle .description.block {
         display: block; }
       aside .middle .description h1 {
@@ -172,10 +164,7 @@ aside {
       padding: 15px;
       cursor: pointer;
       transition: all 0.3s ease;
-      opacity: 0;
       display: none; }
-      aside .bottom .favorite.show {
-        opacity: 1; }
       aside .bottom .favorite.block {
         display: block; }
       aside .bottom .favorite:hover {
