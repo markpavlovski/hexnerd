@@ -276,6 +276,18 @@ function hideMug() {
 // Full screen mode
 function showFull() {
   const fullScreen = document.querySelector(".full-screen")
+  const name = fullScreen.querySelector(".card h1")
+  const selected = state.selected
+  const text = fullScreen.querySelectorAll("h1")
+
+  name.innerText = selected.id.toUpperCase()
+  fullScreen.style = `background-color: ${selected.id}`
+  for (let  i=0; i< text.length; i++){
+    text[i].style = `color: ${selected.id};`
+  }
+
+
+
   fullScreen.classList.add("z6")
   window.setTimeout(() => fullScreen.classList.add("show"), 5)
   state.full = true
@@ -382,10 +394,10 @@ document.addEventListener('click', (event) => {
   }
 })
 
-function getMugPage(mugImagePath){
+function getMugPage(mugImagePath) {
   const start = mugImagePath.indexOf("~~/") + 3
   const end = mugImagePath.indexOf("-mugs.jpg")
-  return "https://society6.com/product/"+mugImagePath.slice(start,end)+"_mug"
+  return "https://society6.com/product/" + mugImagePath.slice(start, end) + "_mug"
 }
 
 // Handle mobile
@@ -436,5 +448,5 @@ function handleTouchMove(evt) {
 setFilters()
 displayCards()
 // showAside()
-// showFull()
-showMug(document.querySelector(".card"))
+showFull()
+// showMug(document.querySelector(".card"))

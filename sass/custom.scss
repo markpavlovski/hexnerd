@@ -303,7 +303,7 @@ aside {
     }
 
     .esc {
-      background-color: rgba(255,255,255,.25);
+      background-color: rgba(255,255,255,1);
       border-radius: 10px;
       color: #bada55;
       font-size: 10px;
@@ -314,7 +314,7 @@ aside {
       transition: all 0.5s ease;
 
       &:hover {
-        background-color: rgba(255,255,255,.45);
+        background-color: rgba(255,255,255,.75);
         // box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
       }
     }
@@ -340,22 +340,24 @@ aside {
     }
 
     .arrow {
-      color: rgba(255,255,255,.15);
+      color: rgba(255,255,255,1);
       font-size: 90px;
       transition: all 0.5s ease;
       cursor: pointer;
 
       &:hover {
-        color: rgba(255,255,255,.45);
+        color: rgba(255,255,255,.75);
       }
     }
 
     .card {
-      background-color: rgba(255,255,255,.85);
+      background-color: rgba(255,255,255,1);
       border-radius: 20px;
       color: #bada55;
       font-size: 20px;
       padding: 70px;
+      width: 180px;
+      text-align: center;
       box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
     }
   }
@@ -370,7 +372,7 @@ aside {
     }
 
     .space {
-      background-color: rgba(255,255,255,.25);
+      background-color: rgba(255,255,255,1);
       border-radius: 8px;
       color: #bada55;
       font-size: 10px;
@@ -381,7 +383,7 @@ aside {
       transition: all 0.5s ease;
 
       &:hover {
-        background-color: rgba(255,255,255,.45);
+        background-color: rgba(255,255,255,.75);
         // box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
       }
     }

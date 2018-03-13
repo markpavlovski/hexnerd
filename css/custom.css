@@ -200,7 +200,7 @@ aside {
       grid-row: 1;
       grid-column: 1; }
     .full-screen .top .esc {
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: white;
       border-radius: 10px;
       color: #bada55;
       font-size: 10px;
@@ -210,7 +210,7 @@ aside {
       margin: 30px;
       transition: all 0.5s ease; }
       .full-screen .top .esc:hover {
-        background-color: rgba(255, 255, 255, 0.45); }
+        background-color: rgba(255, 255, 255, 0.75); }
   .full-screen .middle {
     justify-self: center;
     align-self: center; }
@@ -224,18 +224,20 @@ aside {
       grid-row: 2;
       grid-column: 3; }
     .full-screen .middle .arrow {
-      color: rgba(255, 255, 255, 0.15);
+      color: white;
       font-size: 90px;
       transition: all 0.5s ease;
       cursor: pointer; }
       .full-screen .middle .arrow:hover {
-        color: rgba(255, 255, 255, 0.45); }
+        color: rgba(255, 255, 255, 0.75); }
     .full-screen .middle .card {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: white;
       border-radius: 20px;
       color: #bada55;
       font-size: 20px;
       padding: 70px;
+      width: 180px;
+      text-align: center;
       box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
   .full-screen .bottom {
     justify-self: center;
@@ -244,7 +246,7 @@ aside {
       grid-row: 3;
       grid-column: 2; }
     .full-screen .bottom .space {
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: white;
       border-radius: 8px;
       color: #bada55;
       font-size: 10px;
@@ -254,7 +256,7 @@ aside {
       cursor: pointer;
       transition: all 0.5s ease; }
       .full-screen .bottom .space:hover {
-        background-color: rgba(255, 255, 255, 0.45); }
+        background-color: rgba(255, 255, 255, 0.75); }
 
 .z4 {
   z-index: 4 !important;
