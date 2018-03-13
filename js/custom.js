@@ -233,7 +233,7 @@ document.addEventListener('keydown', (event) => {
 })
 
 // Listen for filter changes
-document.querySelector(".filters").addEventListener("click", (event) => {
+document.querySelector("aside").addEventListener("click", (event) => {
   if (event.target.closest(".switch")) {
     getFilters()
     displayCards()
