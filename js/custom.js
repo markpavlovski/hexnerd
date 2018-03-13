@@ -20,7 +20,8 @@ const state = {
 
     alpha: false,
     triple: false,
-  }
+  },
+  selected: null
 }
 
 
@@ -125,6 +126,8 @@ function displayCards() {
       main.appendChild(newCard)
     }
   }
+
+  state.selected = main.firstElementChild
 
 }
 
@@ -259,6 +262,8 @@ function getFilters() {
 
 // Event Handlers
 
+
+// Display Modes
 document.querySelector("header").addEventListener("click", (event) => {
   const view = event.target.closest("li")
   if (view) {
@@ -271,10 +276,15 @@ document.querySelector("header").addEventListener("click", (event) => {
 })
 
 
-// Toggle Slider:
+// Handle card clicks
 document.querySelector("main").addEventListener("click", (event) => {
-  if (event.target.classList.contains("card")) showMug(event.target.id)
+  if (event.target.classList.contains("card")) {
+    state.selected = event.target
+    showMug(event.target.id)
+  }
 })
+
+// Return from slider
 document.querySelector(".fade").addEventListener("click", () => {
   hideFilters()
   hideMug()
