@@ -158,16 +158,26 @@ function hideAside() {
 }
 
 function showFilters(){
+  showAside()
   const filters = document.querySelector(".top.filter")
   filters.classList.add("block")
   window.setTimeout(() => filters.classList.add("show"), 10)
 }
 function hideFilters(){
+  hideAside()
   const filters = document.querySelector(".top.filter")
   filters.classList.remove("show")
   window.setTimeout(() => filters.classList.remove("block"), 300)
 }
-function showMug(){
+
+function showMug(target){
+  showAside()
+
+  const color = target;
+  console.log(color)
+
+
+
   const header = document.querySelector(".top.color")
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
@@ -180,22 +190,19 @@ function showMug(){
     header.classList.add("show")
     middle.classList.add("show")
     footer.classList.add("show")
-  }, 10)
+  }, 5)
 }
 function hideMug(){
+  hideAside()
   const header = document.querySelector(".top.color")
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
 
-  header.classList.remove("block")
-  middle.classList.remove("block")
-  footer.classList.remove("block")
-
   window.setTimeout(() => {
-    header.classList.remove("show")
-    middle.classList.remove("show")
-    footer.classList.remove("show")
-  }, 10)
+    header.classList.remove("block")
+    middle.classList.remove("block")
+    footer.classList.remove("block")
+  }, 1000)
 }
 
 
@@ -333,5 +340,5 @@ function handleTouchMove(evt) {
 // Behaviour on Load
 setFilters()
 displayCards()
-showAside()
+// showAside()
 // showFull()
