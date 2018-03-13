@@ -8,18 +8,18 @@ const state = {
   full: false,
   display: "wide",
   filter: {
-    curated: false,
+    curated: true,
 
     featured: true,
     favorite: true,
 
     classic: false,
     neat: false,
-    dirty: false,
+    dirty: true,
     native: false,
 
-    alpha: false,
-    triple: false,
+    alpha: true,
+    triple: true,
   },
   selected: null
 }
@@ -173,21 +173,74 @@ function hideFilters() {
   window.setTimeout(() => filters.classList.remove("block"), 300)
 }
 
-function showMug(targetId) {
+function showMug(target) {
   showAside()
 
-  const color = targetId;
-  console.log(color)
-
-
-
+  const color = target.id;
   const header = document.querySelector(".top.color")
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
-
   header.classList.add("block")
   middle.classList.add("block")
   footer.classList.add("block")
+
+  middle.querySelector("#color").innerText = color.toUpperCase()
+
+  if (color[0] === "#") {
+    let decimal = {
+      r: 255,
+      g: 255,
+      b: 255,
+      a: 1
+
+    }
+    let percent = {
+      r: 100,
+      g: 100,
+      b: 100,
+      a: 1
+    }
+    switch (color.length - 1) {
+      case 6:
+        decimal.r = parseInt(color.slice(1, 3), 16)
+        decimal.g = parseInt(color.slice(3, 5), 16)
+        decimal.b = parseInt(color.slice(5), 16)
+        break
+      case 8:
+        decimal.r = parseInt(color.slice(1, 3), 16)
+        decimal.g = parseInt(color.slice(3, 5), 16)
+        decimal.b = parseInt(color.slice(5, 7), 16)
+        decimal.a = Math.round((parseInt(color.slice(7), 16) + 1) / 256 * 100) / 100
+        break
+      case 3:
+        decimal.r = parseInt(color[1] + color[1], 16)
+        decimal.g = parseInt(color[2] + color[2], 16)
+        decimal.b = parseInt(color[3] + color[3], 16)
+        break
+      case 4:
+        decimal.r = parseInt(color[1] + color[1], 16)
+        decimal.g = parseInt(color[2] + color[2], 16)
+        decimal.b = parseInt(color[3] + color[3], 16)
+        decimal.a = Math.round((parseInt(color[4]+color[4], 16) + 1) / 256 * 100) / 100
+
+        break
+      default:
+        middle.querySelector("#decimal").innerText
+    }
+
+    percent.r = Math.round((decimal.r + 1) / 256 * 100)
+    percent.g = Math.round((decimal.g + 1) / 256 * 100)
+    percent.b = Math.round((decimal.b + 1) / 256 * 100)
+
+    if ((color.length - 1) % 3 === 0) {
+      middle.querySelector("#decimal").innerText = `RGB(${decimal.r},${decimal.g},${decimal.b})`
+      middle.querySelector("#percent").innerText = `RGB(${percent.r}%,${percent.g}%,${percent.b}%)`
+    } else {
+      middle.querySelector("#decimal").innerText = `RGBA(${decimal.r},${decimal.g},${decimal.b},${decimal.a})`
+      middle.querySelector("#percent").innerText = `RGBA(${percent.r}%,${percent.g}%,${percent.b}%,${decimal.a})`
+    }
+
+  }
 
 }
 
@@ -276,11 +329,11 @@ document.querySelector("header").addEventListener("click", (event) => {
 })
 
 
-// Handle card clicks
+// Display mug slider
 document.querySelector("main").addEventListener("click", (event) => {
   if (event.target.classList.contains("card")) {
     state.selected = event.target
-    showMug(event.target.id)
+    showMug(event.target)
   }
 })
 
