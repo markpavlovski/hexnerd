@@ -111,6 +111,7 @@ function displayCards() {
     if (displayFlag) {
       const newCard = card.cloneNode(true)
       newCard.style = `background-color: ${key}`
+      newCard.id = key
       newCard.innerText = `
         Key: ${key} \n
         Word: ${colors[key].word} \n
@@ -170,10 +171,10 @@ function hideFilters(){
   window.setTimeout(() => filters.classList.remove("block"), 300)
 }
 
-function showMug(target){
+function showMug(targetId){
   showAside()
 
-  const color = target;
+  const color = targetId;
   console.log(color)
 
 
@@ -263,17 +264,26 @@ function getFilters() {
 
 // Event Handlers
 
-// Switch between display modes:
-document.querySelector(".wide").addEventListener("click", () => display("wide"))
-document.querySelector(".square").addEventListener("click", () => display("square"))
-document.querySelector(".strip").addEventListener("click", () => display("strip"))
-document.querySelector(".full").addEventListener("click", () => showFull())
+document.querySelector("header").addEventListener("click", (event) => {
+  const view = event.target.closest("li")
+  if (view) {
+    if (view.classList.contains("filter")) showFilters()
+    if (view.classList.contains("wide")) display("wide")
+    if (view.classList.contains("square")) display("square")
+    if (view.classList.contains("strip")) display("strip")
+    if (view.classList.contains("full")) showFull()
+  }
+})
+
 
 // Toggle Slider:
 document.querySelector("main").addEventListener("click", (event) => {
-  if (event.target.classList.contains("card")) showAside()
+  if (event.target.classList.contains("card")) showMug(event.target.id)
 })
-document.querySelector(".fade").addEventListener("click", () => hideAside())
+document.querySelector(".fade").addEventListener("click", () => {
+  hideFilters()
+  hideMug()
+})
 
 // Return from Full Screen Mode
 document.addEventListener('keydown', (event) => {
