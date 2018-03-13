@@ -180,15 +180,19 @@ function showMug(target) {
   const header = document.querySelector(".top.color")
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
+  const mug = header.querySelector(".mug")
   header.classList.add("block")
   middle.classList.add("block")
   footer.classList.add("block")
 
   console.log("color:", color, mugImages[color])
   if (mugImages[color]) {
-    header.querySelector(".mug").style = `background-image:  url("${mugImages[color]}")`
+    mug.style = `background-image:  url("${mugImages[color]}")`
+    mug.classList.add("pointer")
   } else {
-    header.querySelector(".mug").style = `background-color: ${color}`
+    mug.style = `background-color: ${color}`
+    mug.classList.remove("pointer")
+
   }
   middle.querySelector("#color").innerText = color.toUpperCase()
   middle.querySelector("#name").innerText = `word: ${colors[color].word}`.toUpperCase()
@@ -369,13 +373,16 @@ document.querySelector("aside").addEventListener("click", (event) => {
 // Click on a mug
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
-    const mug = event.target
-    // mug.classList
+    const mugImage = mugImages[state.selected.id]
+    window.open(`${getMugPage(mugImage)}`, '_blank')
   }
 })
 
-
-
+function getMugPage(mugImagePath){
+  const start = mugImagePath.indexOf("~~/") + 3
+  const end = mugImagePath.indexOf("-mugs.jpg")
+  return "https://society6.com/product/"+mugImagePath.slice(start,end)+"_mug"
+}
 // https://society6.com/product/coffee1155242_mug
 
 // Handle mobile
