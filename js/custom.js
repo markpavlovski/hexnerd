@@ -157,6 +157,49 @@ function hideAside() {
   state.aside = false
 }
 
+function showFilters(){
+  const filters = document.querySelector(".top.filter")
+  filters.classList.add("block")
+  window.setTimeout(() => filters.classList.add("show"), 10)
+}
+function hideFilters(){
+  const filters = document.querySelector(".top.filter")
+  filters.classList.remove("show")
+  window.setTimeout(() => filters.classList.remove("block"), 300)
+}
+function showMug(){
+  const header = document.querySelector(".top.color")
+  const middle = document.querySelector(".middle .description")
+  const footer = document.querySelector(".bottom .favorite")
+
+  header.classList.add("block")
+  middle.classList.add("block")
+  footer.classList.add("block")
+
+  window.setTimeout(() => {
+    header.classList.add("show")
+    middle.classList.add("show")
+    footer.classList.add("show")
+  }, 10)
+}
+function hideMug(){
+  const header = document.querySelector(".top.color")
+  const middle = document.querySelector(".middle .description")
+  const footer = document.querySelector(".bottom .favorite")
+
+  header.classList.remove("block")
+  middle.classList.remove("block")
+  footer.classList.remove("block")
+
+  window.setTimeout(() => {
+    header.classList.remove("show")
+    middle.classList.remove("show")
+    footer.classList.remove("show")
+  }, 10)
+}
+
+
+
 
 
 // Full screen mode

@@ -127,6 +127,17 @@ aside {
     &.color {
       justify-self: center;
       align-self: center;
+      opacity: 0;
+      display: none;
+
+      &.show{
+        opacity: 1;
+      }
+      &.block{
+        display:block;
+      }
+
+
 
       .mug {
         background-image: url("https://ctl.s6img.com/society6/img/VUbQbBz5ZcB816Zy6cGn_mzw32I/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-0064/a/26460799_2840505/~~/sassquatch-8tp-mugs.jpg");
@@ -142,6 +153,16 @@ aside {
     &.filter {
       justify-self: center;
       align-self: start;
+      opacity: .05;
+      display: none;
+      transition: opacity .3s ease;
+
+      &.show{
+        opacity: 1;
+      }
+      &.block{
+        display:block;
+      }
 
       h1 {
         margin: 80px 0 50px;
@@ -151,8 +172,10 @@ aside {
         width: 300px;
         margin-top: 60px;
 
+
         .switch {
           margin: 30px 0px;
+
 
           &.featured, &.classic, &.alpha {
             margin-top: 55px;
@@ -168,9 +191,18 @@ aside {
     justify-self: center;
     align-self: start;
 
-    .desription {
+    .description {
       margin-top: 20px;
       width: 220px;
+      opacity: 0;
+      display: none;
+
+      &.show{
+        opacity: 1;
+      }
+      &.block{
+        display:block;
+      }
 
       h1 {
         display: block;
@@ -213,7 +245,16 @@ aside {
       text-transform: uppercase;
       padding: 15px;
       cursor: pointer;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
+      opacity: 0;
+      display: none;
+
+      &.show{
+        opacity: 1;
+      }
+      &.block{
+        display:block;
+      }
 
       &:hover {
         background-color: rgb(51,51,51);
