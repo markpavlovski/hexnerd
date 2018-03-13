@@ -383,7 +383,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#baff1e': {
@@ -1382,7 +1382,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#c0ff1e': {

@@ -71,13 +71,7 @@ function displayCards() {
   card.classList.add("wide")
   card.innerText = ""
 
-  for (let key in {
-      "#ca7": colors["#ca7"],
-      "#1ee7": colors["#1ee7"],
-      "#defea7ed": colors["#defea7ed"],
-      "#abac07": colors["#abac07"],
-      "#ba6dad": colors["#ba6dad"],
-    }) {
+  for (let key in colors) {
 
     let displayFlag = false
 
