@@ -113,7 +113,7 @@ function displayCards() {
       newCard.style = `background-color: ${key}`
       newCard.id = key
       newCard.innerText = `
-        Key: ${key} \n
+        Key: ${key.toUpperCase()} \n
         Word: ${colors[key].word} \n
         Type: ${colors[key].type} \n
         Alpha: ${colors[key].alpha} \n
