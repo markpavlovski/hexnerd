@@ -59,7 +59,10 @@ main {
       width: 280px;
       height: 200px;
       margin-bottom: 30px;
-      margin-right: 30px; }
+      margin-right: 30px;
+      padding-left: 15px;
+      font-size: 12px;
+      line-height: 12px; }
     main .card.strip {
       background-color: #DDD;
       display: block;

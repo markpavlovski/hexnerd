@@ -69,6 +69,7 @@ function displayCards() {
   const card = document.createElement("div")
   card.classList.add("card")
   card.classList.add("wide")
+  card.innerText = ""
 
   for (let key in {
       "#ca7": colors["#ca7"],
@@ -144,6 +145,16 @@ function displayCards() {
       console.log(colors[key].word)
       const newCard = card.cloneNode(true)
       newCard.style = `background-color: ${key}`
+      newCard.innerText = `
+        Key: ${key} \n
+        Word: ${colors[key].word} \n
+        Type: ${colors[key].type} \n
+        Alpha: ${colors[key].alpha} \n
+        Triple: ${colors[key].triple} \n
+        Curated: ${colors[key].curated} \n
+        Featured: ${colors[key].featured} \n
+        Favorite: ${colors[key].favorite} \n
+      `
       main.appendChild(newCard)
     }
   }
