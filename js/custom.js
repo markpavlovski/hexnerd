@@ -8,13 +8,13 @@ const state = {
   full: false,
   display: "wide",
   filter: {
-    curated: true,
+    curated: false,
 
     featured: true,
     favorite: true,
 
-    classic: true,
-    neat: true,
+    classic: false,
+    neat: false,
     dirty: false,
     native: false,
 

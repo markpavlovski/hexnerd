@@ -59,6 +59,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: start;
   justify-self: center;
 
   .card {
