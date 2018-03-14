@@ -248,11 +248,11 @@ function showMug(target) {
     percent.b = Math.round((decimal.b + 1) / 256 * 100)
 
     if ((color.length - 1) % 3 === 0) {
-      middle.querySelector("#decimal").innerText = `RGB(${decimal.r},${decimal.g},${decimal.b})`
-      middle.querySelector("#percent").innerText = `RGB(${percent.r}%,${percent.g}%,${percent.b}%)`
+      middle.querySelector("#decimal").innerText = `RGB ${decimal.r} ${decimal.g} ${decimal.b}`
+      middle.querySelector("#percent").innerText = `RGB ${percent.r}% ${percent.g}% ${percent.b}%`
     } else {
-      middle.querySelector("#decimal").innerText = `RGBA(${decimal.r},${decimal.g},${decimal.b},${decimal.a})`
-      middle.querySelector("#percent").innerText = `RGBA(${percent.r}%,${percent.g}%,${percent.b}%,${decimal.a})`
+      middle.querySelector("#decimal").innerText = `RGBA ${decimal.r} ${decimal.g} ${decimal.b} ${decimal.a}`
+      middle.querySelector("#percent").innerText = `RGBA ${percent.r}% ${percent.g}% ${percent.b}% ${decimal.a}`
     }
 
   }
