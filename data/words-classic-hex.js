@@ -104,7 +104,7 @@ const classic = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#cabbed': {
@@ -149,7 +149,7 @@ const classic = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#decede': {
@@ -176,7 +176,7 @@ const classic = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#defade': {

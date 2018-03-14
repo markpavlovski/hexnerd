@@ -94,7 +94,7 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
+    curated: true,
     featured: false,
     favorite: false
   },
@@ -347,7 +347,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#babe15': {
@@ -725,7 +725,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#b1eed5': {
@@ -805,8 +805,8 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
-    featured: false,
+    curated: true,
+    featured: true,
     favorite: false
   },
   '#b01d05': {
@@ -842,7 +842,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#b00d1e': {
@@ -868,8 +868,8 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
-    featured: false,
+    curated: true,
+    featured: true,
     favorite: false
   },
   '#caba1a': {
@@ -1211,7 +1211,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#c105e5': {
@@ -1499,7 +1499,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#dace10': {
@@ -1562,7 +1562,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#da11e5': {
@@ -1643,7 +1643,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#dec011': {
@@ -1715,7 +1715,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#d0bbed': {
@@ -1777,8 +1777,8 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
-    featured: false,
+    curated: true,
+    featured: true,
     favorite: false
   },
   '#d011ed': {
@@ -1814,7 +1814,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#d00d1e': {
@@ -1823,7 +1823,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#d001ee': {
@@ -2021,7 +2021,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#faece5': {
@@ -2030,7 +2030,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#faff1e': {
@@ -2120,7 +2120,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#fe11ed': {
@@ -2273,7 +2273,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#f055ae': {
@@ -2372,7 +2372,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#1a5505': {
@@ -2453,7 +2453,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#10afed': {
@@ -2561,7 +2561,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#100fa5': {
@@ -2569,7 +2569,7 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
+    curated: true,
     featured: false,
     favorite: false
   },
@@ -2642,7 +2642,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#0de55a': {
@@ -2695,7 +2695,7 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
+    curated: true,
     featured: false,
     favorite: false
   },
@@ -2804,7 +2804,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#5a1e1e': {
@@ -2848,8 +2848,8 @@ const neat = {
     type: 'neat',
     triple: false,
     alpha: false,
-    curated: false,
-    featured: false,
+    curated: true,
+    featured: true,
     favorite: false
   },
   '#5a55e5': {
@@ -2966,7 +2966,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#5eabee': {
@@ -3119,7 +3119,7 @@ const neat = {
     triple: false,
     alpha: false,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   },
   '#501ea5': {
@@ -3200,7 +3200,7 @@ const neat = {
     triple: false,
     alpha: true,
     curated: true,
-    featured: false,
+    featured: true,
     favorite: false
   }
 }
