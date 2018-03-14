@@ -378,7 +378,26 @@ document.querySelector(".fade").addEventListener("click", () => {
   hideMug()
 })
 
-// Key presses in full screen mode
+
+
+// Listen for filter changes
+document.querySelector("aside").addEventListener("click", (event) => {
+  if (event.target.closest(".switch")) {
+    getFilters()
+    displayCards()
+  }
+})
+
+// Click on a mug
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
+    const mugImage = mugImages[state.selected.id]
+    window.open(`${getMugPage(mugImage)}`, '_blank')
+  }
+})
+
+
+// Key presses
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   console.log('key: ' + keyName);
@@ -423,23 +442,20 @@ document.addEventListener('keydown', (event) => {
       renderFull()
     }
   }
+  // if(!state.full){
+  //   if (keyName === " " && !state.aside) {
+  //     showFilters()
+  //   }
+  //   if (keyName === " " && state.aside) {
+  //     hideMug()
+  //     hideFilters()
+  //   }
+  // }
 })
 
-// Listen for filter changes
-document.querySelector("aside").addEventListener("click", (event) => {
-  if (event.target.closest(".switch")) {
-    getFilters()
-    displayCards()
-  }
-})
 
-// Click on a mug
-document.addEventListener('click', (event) => {
-  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
-    const mugImage = mugImages[state.selected.id]
-    window.open(`${getMugPage(mugImage)}`, '_blank')
-  }
-})
+
+
 
 // Handle mobile
 
