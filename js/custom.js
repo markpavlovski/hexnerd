@@ -396,6 +396,65 @@ document.addEventListener('click', (event) => {
   }
 })
 
+document.querySelector(".full-screen").addEventListener('click', (event) => {
+  const target = event.target.closest(".arrow") || event.target.closest(".esc")||event.target.closest(".space")|| event.target
+  console.log(target)
+  if (target.classList.contains("left")) {
+    goLeft()
+  }
+  if (target.classList.contains("right")) {
+    goRight()
+  }
+  if (target.classList.contains("space")) {
+    goRandom()
+  }
+  if (target.classList.contains("esc")) {
+    hideFull()
+  }
+})
+
+function goLeft() {
+  if (state.full) {
+    if (state.selected.previousElementSibling) {
+      state.selected = state.selected.previousElementSibling
+      console.log(state.selected.id)
+
+    } else {
+      console.log("loop!")
+      state.selected = state.selected.parentElement.lastElementChild
+      console.log(state.selected.id)
+    }
+    renderFull()
+  }
+}
+
+function goRight() {
+  if (state.full) {
+    if (state.selected.nextElementSibling) {
+      state.selected = state.selected.nextElementSibling
+      console.log(state.selected.id)
+
+    } else {
+      console.log("loop!")
+      state.selected = state.selected.parentElement.firstElementChild
+      console.log(state.selected.id)
+    }
+    renderFull()
+  }
+}
+
+function goRandom() {
+  if (state.full) {
+
+    const cards = document.querySelectorAll("main .card")
+    const index = Math.floor(Math.random() * Math.floor(cards.length))
+    console.log(index)
+    state.selected = cards[index]
+    console.log(state.selected.id)
+
+    renderFull()
+  }
+}
 
 // Key presses
 document.addEventListener('keydown', (event) => {
@@ -408,49 +467,15 @@ document.addEventListener('keydown', (event) => {
   }
   if (state.full) {
     if (keyName === "ArrowRight" || keyName === "ArrowUp") {
-      if (state.selected.nextElementSibling) {
-        state.selected = state.selected.nextElementSibling
-        console.log(state.selected.id)
-
-      } else {
-        console.log("loop!")
-        state.selected = state.selected.parentElement.firstElementChild
-        console.log(state.selected.id)
-      }
-      renderFull()
+      goRight()
     }
     if (keyName === "ArrowLeft" || keyName === "ArrowDown") {
-      if (state.selected.previousElementSibling) {
-        state.selected = state.selected.previousElementSibling
-        console.log(state.selected.id)
-
-      } else {
-        console.log("loop!")
-        state.selected = state.selected.parentElement.lastElementChild
-        console.log(state.selected.id)
-      }
-      renderFull()
+      goLeft()
     }
     if (keyName === " ") {
-
-        const cards = document.querySelectorAll("main .card")
-        const index = Math.floor(Math.random() * Math.floor(cards.length))
-        console.log(index)
-        state.selected = cards[index]
-        console.log(state.selected.id)
-
-      renderFull()
+      goRandom()
     }
   }
-  // if(!state.full){
-  //   if (keyName === " " && !state.aside) {
-  //     showFilters()
-  //   }
-  //   if (keyName === " " && state.aside) {
-  //     hideMug()
-  //     hideFilters()
-  //   }
-  // }
 })
 
 
