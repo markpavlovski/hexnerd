@@ -126,6 +126,7 @@ function displayCards() {
   }
 
   container.appendChild(main)
+  enableCardHiding()
   state.selected = main.firstElementChild
 
 }
@@ -423,12 +424,8 @@ document.querySelector(".full-screen").addEventListener('click', (event) => {
 function goLeft() {
   if (state.selected.previousElementSibling) {
     state.selected = state.selected.previousElementSibling
-    console.log(state.selected.id)
-
   } else {
-    console.log("loop!")
     state.selected = state.selected.parentElement.lastElementChild
-    console.log(state.selected.id)
   }
   if (state.full) renderFull()
   if (state.aside) showMug(state.selected)
@@ -437,12 +434,9 @@ function goLeft() {
 function goRight() {
   if (state.selected.nextElementSibling) {
     state.selected = state.selected.nextElementSibling
-    console.log(state.selected.id)
 
   } else {
-    console.log("loop!")
     state.selected = state.selected.parentElement.firstElementChild
-    console.log(state.selected.id)
   }
   if (state.full) renderFull()
   if (state.aside) showMug(state.selected)
@@ -451,30 +445,27 @@ function goRight() {
 function goRandom() {
   const cards = document.querySelectorAll("main .card")
   const index = Math.floor(Math.random() * Math.floor(cards.length))
-  console.log(index)
   state.selected = cards[index]
-  console.log(state.selected.id)
   if (state.full) renderFull()
   if (state.aside) showMug(state.selected)
 }
 
-setTimeout(() => {
-  document.querySelector("main").addEventListener("scroll", () => {
-    console.log("hi")
-    const cards = document.querySelectorAll(".card")
-    const titleBox = document.querySelector("header").getBoundingClientRect()
+function enableCardHiding(){
+    document.querySelector("main").addEventListener("scroll", () => {
+      const cards = document.querySelectorAll(".card")
+      const titleBox = document.querySelector("header").getBoundingClientRect()
 
-    // Toggle dissapearing cards
-    for (let i = 0; i < cards.length; i++) {
-      // console.log(cards[i])
-      if (titleBox.y + titleBox.height > cards[i].getBoundingClientRect().y) {
-        cards[i].classList.add("invisible")
-      } else {
-        cards[i].classList.remove("invisible")
+      // Toggle dissapearing cards
+      for (let i = 0; i < cards.length; i++) {
+        // console.log(cards[i])
+        if (titleBox.y + titleBox.height > cards[i].getBoundingClientRect().y) {
+          cards[i].classList.add("invisible")
+        } else {
+          cards[i].classList.remove("invisible")
+        }
       }
-    }
-  })
-}, 10)
+    })
+}
 
 
 
