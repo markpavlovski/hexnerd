@@ -11,15 +11,15 @@ const state = {
     curated: true,
 
     featured: true,
-    favorite: true,
+    favorite: false,
 
     classic: false,
     neat: false,
-    dirty: true,
+    dirty: false,
     native: false,
 
-    alpha: true,
-    triple: true,
+    alpha: false,
+    triple: false,
   },
   selected: null
 }
@@ -530,5 +530,5 @@ function handleTouchMove(evt) {
 setFilters()
 displayCards()
 // showAside()
-showFull()
+// showFull()
 // showMug(document.querySelector(".card"))
