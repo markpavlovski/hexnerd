@@ -128,8 +128,10 @@ aside {
         margin-top: 20px; }
         aside .top.filter .filters .switch {
           margin: 30px 0px; }
-          aside .top.filter .filters .switch.featured, aside .top.filter .filters .switch.classic, aside .top.filter .filters .switch.alpha {
+          aside .top.filter .filters .switch.featured, aside .top.filter .filters .switch.word-bank {
             margin-top: 55px; }
+          aside .top.filter .filters .switch.word-bank {
+            margin: 60px 0px 30px 0; }
   aside .middle {
     grid-row: 2;
     grid-column: 1;

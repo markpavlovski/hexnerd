@@ -179,9 +179,14 @@ aside {
           margin: 30px 0px;
 
 
-          &.featured, &.classic, &.alpha {
+          &.featured, &.word-bank {
             margin-top: 55px;
           }
+
+          &.word-bank{
+            margin: 60px 0px 30px 0;
+          }
+
         }
       }
     }

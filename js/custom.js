@@ -176,6 +176,7 @@ function showMug(target) {
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
   const mug = document.querySelector(".mug")
+  const swag = document.querySelector("#swag")
   const aside = header.closest("aside")
 
   header.classList.add("block")
@@ -187,11 +188,13 @@ function showMug(target) {
 
   console.log("color:", color, mugImages[color])
   if (mugImages[color]) {
-    mug.style = `background-image:  url("${mugImages[color]}")`
+    mug.style = `display:block; background-image:  url("${mugImages[color]}")`
+    swag.style ="display:block"
     mug.classList.add("pointer")
   } else {
-    mug.style = `background-color: ${color}`
+    mug.style = `display:none; background-color: ${color}`
     mug.classList.remove("pointer")
+    swag.style ="display:none"
 
   }
   middle.querySelector("#color").innerText = color.toUpperCase()
@@ -532,4 +535,4 @@ displayCards()
 // showAside()
 // showFull()
 // showMug(document.querySelector(".card"))
-showFilters()
+// showFilters()
