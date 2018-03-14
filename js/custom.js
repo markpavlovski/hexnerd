@@ -21,7 +21,8 @@ const state = {
     alpha: false,
     triple: false,
   },
-  selected: null
+  selected: null,
+  lastClick: 0
 }
 
 
@@ -436,6 +437,8 @@ document.querySelector("header").addEventListener("click", (event) => {
 // Display mug slider
 // Click on a mug
 document.addEventListener("click", (event) => {
+
+  console.log(event.timeStamp)
 
   if (event.target.classList.contains("card") || event.target.closest(".card") ) {
     console.log(event.target.closest(".card") || event.target)
