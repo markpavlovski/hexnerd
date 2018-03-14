@@ -119,10 +119,13 @@ aside {
       aside .top.filter.block {
         display: block; }
       aside .top.filter h1 {
-        margin: 80px 0 50px; }
+        margin: 200px -20px 50px;
+        text-transform: uppercase;
+        font-size: 45px;
+        color: white; }
       aside .top.filter .filters {
         width: 300px;
-        margin-top: 60px; }
+        margin-top: 20px; }
         aside .top.filter .filters .switch {
           margin: 30px 0px; }
           aside .top.filter .filters .switch.featured, aside .top.filter .filters .switch.classic, aside .top.filter .filters .switch.alpha {
