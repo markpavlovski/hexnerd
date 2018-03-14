@@ -132,6 +132,36 @@ function displayCards() {
 }
 
 
+function displayProducts() {
+
+  document.querySelector("main") && clearCards()
+  const container = document.querySelector(".grid-container")
+  const main = document.createElement("main")
+  const card = document.createElement("div")
+  card.classList.add("card")
+  card.classList.add("product")
+  card.innerText = ""
+
+  for (let key in colors) {
+    console.log(key)
+    if (mugImages[key]) {
+      const newCard = card.cloneNode(true)
+      newCard.style = `background-image:  url("${mugImages[key]}");`
+      newCard.id = key
+      console.log(key, (key.length - 1) % 3)
+      newCard.innerHTML = `
+        <h1>${key.toUpperCase()}</h1>
+        <h2>HEX RGB${ (key.length -1) % 3 ? "A" : ""}${ (key.length -1) < 6 ? " SHORTHAND" : ""}</h2>
+      `
+      main.appendChild(newCard)
+    }
+  }
+
+  container.appendChild(main)
+  enableCardHiding()
+  state.selected = main.firstElementChild
+
+}
 
 
 // Side bar transitions
@@ -324,6 +354,9 @@ function display(mode) {
   }
   state.display = mode
 }
+
+// Show products
+
 
 
 
