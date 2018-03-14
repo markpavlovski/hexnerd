@@ -352,75 +352,7 @@ function getMugPage(mugImagePath) {
 }
 
 
-
-
-
-
-// Event Handlers
-
-
-// Display Modes
-document.querySelector("header").addEventListener("click", (event) => {
-  const view = event.target.closest("li")
-  if (view) {
-    if (view.classList.contains("filter")) showFilters()
-    if (view.classList.contains("wide")) display("wide")
-    if (view.classList.contains("square")) display("square")
-    if (view.classList.contains("strip")) display("strip")
-    if (view.classList.contains("full")) showFull()
-  }
-})
-
-
-// Display mug slider
-document.addEventListener("click", (event) => {
-  if (event.target.classList.contains("card")) {
-    state.selected = event.target
-    showMug(event.target)
-  }
-})
-
-// Return from slider
-document.querySelector(".fade").addEventListener("click", () => {
-  hideFilters()
-  hideMug()
-})
-
-
-
-// Listen for filter changes
-document.querySelector("aside").addEventListener("click", (event) => {
-  if (event.target.closest(".switch")) {
-    getFilters()
-    displayCards()
-  }
-})
-
-// Click on a mug
-document.addEventListener('click', (event) => {
-  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
-    const mugImage = mugImages[state.selected.id]
-    window.open(`${getMugPage(mugImage)}`, '_blank')
-  }
-})
-
-document.querySelector(".full-screen").addEventListener('click', (event) => {
-  const target = event.target.closest(".arrow") || event.target.closest(".esc") || event.target.closest(".space") || event.target
-  console.log(target)
-  if (target.classList.contains("left")) {
-    goLeft()
-  }
-  if (target.classList.contains("right")) {
-    goRight()
-  }
-  if (target.classList.contains("space")) {
-    goRandom()
-  }
-  if (target.classList.contains("esc")) {
-    hideFull()
-  }
-})
-
+// Navigate Cards
 function goLeft() {
   if (state.selected.previousElementSibling) {
     state.selected = state.selected.previousElementSibling
@@ -450,6 +382,76 @@ function goRandom() {
   if (state.aside) showMug(state.selected)
 }
 
+
+
+
+// Event Handlers
+
+
+// Display Modes
+document.querySelector("header").addEventListener("click", (event) => {
+  const view = event.target.closest("li")
+  if (view) {
+    if (view.classList.contains("filter")) showFilters()
+    if (view.classList.contains("wide")) display("wide")
+    if (view.classList.contains("square")) display("square")
+    if (view.classList.contains("strip")) display("strip")
+    if (view.classList.contains("full")) showFull()
+  }
+})
+
+
+// Display mug slider
+// Click on a mug
+document.addEventListener("click", (event) => {
+
+  if (event.target.classList.contains("card") || event.target.closest(".card") ) {
+    console.log(event.target.closest(".card") || event.target)
+    state.selected = event.target.closest(".card") || event.target
+    showMug(state.selected)
+  }
+
+  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
+    const mugImage = mugImages[state.selected.id]
+    window.open(`${getMugPage(mugImage)}`, '_blank')
+  }
+
+})
+
+// Return from slider
+document.querySelector(".fade").addEventListener("click", () => {
+  hideFilters()
+  hideMug()
+})
+
+
+
+// Listen for filter changes
+document.querySelector("aside").addEventListener("click", (event) => {
+  if (event.target.closest(".switch")) {
+    getFilters()
+    displayCards()
+  }
+})
+
+
+document.querySelector(".full-screen").addEventListener('click', (event) => {
+  const target = event.target.closest(".arrow") || event.target.closest(".esc") || event.target.closest(".space") || event.target
+  console.log(target)
+  if (target.classList.contains("left")) {
+    goLeft()
+  }
+  if (target.classList.contains("right")) {
+    goRight()
+  }
+  if (target.classList.contains("space")) {
+    goRandom()
+  }
+  if (target.classList.contains("esc")) {
+    hideFull()
+  }
+})
+
 function enableCardHiding(){
     document.querySelector("main").addEventListener("scroll", () => {
       const cards = document.querySelectorAll(".card")
@@ -471,21 +473,24 @@ function enableCardHiding(){
 
 // Key presses
 document.addEventListener('keydown', (event) => {
-  event.preventDefault();
   const keyName = event.key;
   console.log('key: ' + keyName);
   if (keyName === 'Escape' || keyName.toLowerCase() === 'q') {
+    event.preventDefault();
     hideFull()
     hideMug()
     hideFilters()
   }
   if (keyName === "ArrowRight" || keyName === "ArrowUp") {
+    event.preventDefault();
     goRight()
   }
   if (keyName === "ArrowLeft" || keyName === "ArrowDown") {
+    event.preventDefault();
     goLeft()
   }
   if (keyName === " ") {
+    event.preventDefault();
     goRandom()
   }
 })

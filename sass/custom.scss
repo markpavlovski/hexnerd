@@ -10,7 +10,10 @@ $transparent: rgba(255,255,255,0); // Styles
   font-size: 12;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  &::selection { background: #bada55; }
 }
+
+
 
 .grid-container {
   display: grid;
@@ -131,7 +134,6 @@ aside {
   transition: margin 0.5s ease;
   display: none;
   overflow: auto;
-
 
   &.show {
     margin-left: 0;
@@ -464,6 +466,11 @@ aside {
 .z6 {
   z-index: 5 !important;
 }
+
+
+
+
+
 
 
 // Materialize lever style from  https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css
