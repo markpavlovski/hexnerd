@@ -421,17 +421,17 @@ document.querySelector(".full-screen").addEventListener('click', (event) => {
 })
 
 function goLeft() {
-    if (state.selected.previousElementSibling) {
-      state.selected = state.selected.previousElementSibling
-      console.log(state.selected.id)
+  if (state.selected.previousElementSibling) {
+    state.selected = state.selected.previousElementSibling
+    console.log(state.selected.id)
 
-    } else {
-      console.log("loop!")
-      state.selected = state.selected.parentElement.lastElementChild
-      console.log(state.selected.id)
-    }
-    if (state.full) renderFull()
-    if (state.aside) showMug(state.selected)
+  } else {
+    console.log("loop!")
+    state.selected = state.selected.parentElement.lastElementChild
+    console.log(state.selected.id)
+  }
+  if (state.full) renderFull()
+  if (state.aside) showMug(state.selected)
 }
 
 function goRight() {
@@ -458,8 +458,29 @@ function goRandom() {
   if (state.aside) showMug(state.selected)
 }
 
+setTimeout(() => {
+  document.querySelector("main").addEventListener("scroll", () => {
+    console.log("hi")
+    const cards = document.querySelectorAll(".card")
+    const titleBox = document.querySelector("header").getBoundingClientRect()
+
+    // Toggle dissapearing cards
+    for (let i = 0; i < cards.length; i++) {
+      // console.log(cards[i])
+      if (titleBox.y + titleBox.height > cards[i].getBoundingClientRect().y) {
+        cards[i].classList.add("invisible")
+      } else {
+        cards[i].classList.remove("invisible")
+      }
+    }
+  })
+}, 10)
+
+
+
 // Key presses
 document.addEventListener('keydown', (event) => {
+  event.preventDefault();
   const keyName = event.key;
   console.log('key: ' + keyName);
   if (keyName === 'Escape' || keyName.toLowerCase() === 'q') {
@@ -474,7 +495,6 @@ document.addEventListener('keydown', (event) => {
     goLeft()
   }
   if (keyName === " ") {
-    event.preventDefault();
     goRandom()
   }
 })

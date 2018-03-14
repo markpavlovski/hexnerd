@@ -50,12 +50,15 @@ main {
   main .card {
     display: inline-block;
     background-color: #DDD;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: opacity 2s ease; }
     main .card.square {
       width: 100px;
       height: 100px;
       margin-bottom: 10px;
       margin-right: 10px; }
+    main .card.invisible {
+      opacity: 0 !important; }
     main .card.wide {
       width: 280px;
       height: 180px;

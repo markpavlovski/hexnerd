@@ -66,12 +66,17 @@ main {
     display: inline-block;
     background-color: $grey;
     cursor: pointer;
+    transition: opacity 2s ease;
 
     &.square {
       width: 100px;
       height: 100px;
       margin-bottom: 10px;
       margin-right: 10px;
+    }
+
+    &.invisible {
+      opacity: 0 !important;
     }
 
     &.wide {
