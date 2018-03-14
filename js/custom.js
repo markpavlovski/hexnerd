@@ -42,6 +42,7 @@ for (let key in colors) {
 // Create cards
 
 function clearCards() {
+  const container = document.querySelector(".grid-container")
   const main = document.querySelector("main")
   while (main.firstElementChild) {
     main.removeChild(main.childNodes[0])
@@ -50,8 +51,9 @@ function clearCards() {
 
 function displayCards() {
 
-  clearCards()
-  const main = document.querySelector("main")
+  document.querySelector("main") && clearCards()
+  const container = document.querySelector(".grid-container")
+  const main = document.createElement("main")
   const card = document.createElement("div")
   card.classList.add("card")
   card.classList.add("wide")
@@ -122,6 +124,7 @@ function displayCards() {
     }
   }
 
+  container.appendChild(main)
   state.selected = main.firstElementChild
 
 }
@@ -368,7 +371,7 @@ document.querySelector("header").addEventListener("click", (event) => {
 
 
 // Display mug slider
-document.querySelector("main").addEventListener("click", (event) => {
+document.addEventListener("click", (event) => {
   if (event.target.classList.contains("card")) {
     state.selected = event.target
     showMug(event.target)
