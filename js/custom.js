@@ -388,7 +388,7 @@ document.addEventListener('keydown', (event) => {
     hideFilters()
   }
   if (state.full) {
-    if (keyName === "ArrowRight") {
+    if (keyName === "ArrowRight" || keyName === "ArrowUp") {
       if (state.selected.nextElementSibling) {
         state.selected = state.selected.nextElementSibling
         console.log(state.selected.id)
@@ -400,7 +400,7 @@ document.addEventListener('keydown', (event) => {
       }
       renderFull()
     }
-    if (keyName === "ArrowLeft") {
+    if (keyName === "ArrowLeft" || keyName === "ArrowDown") {
       if (state.selected.previousElementSibling) {
         state.selected = state.selected.previousElementSibling
         console.log(state.selected.id)
@@ -410,6 +410,16 @@ document.addEventListener('keydown', (event) => {
         state.selected = state.selected.parentElement.lastElementChild
         console.log(state.selected.id)
       }
+      renderFull()
+    }
+    if (keyName === " ") {
+
+        const cards = document.querySelectorAll("main .card")
+        const index = Math.floor(Math.random() * Math.floor(cards.length))
+        console.log(index)
+        state.selected = cards[index]
+        console.log(state.selected.id)
+
       renderFull()
     }
   }
