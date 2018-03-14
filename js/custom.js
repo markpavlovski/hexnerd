@@ -426,9 +426,8 @@ document.querySelector("header").addEventListener("click", (event) => {
   const view = event.target.closest("li")
   if (view) {
     if (view.classList.contains("filter")) showFilters()
-    if (view.classList.contains("wide")) display("wide")
-    if (view.classList.contains("square")) display("square")
-    if (view.classList.contains("strip")) display("strip")
+    if (view.classList.contains("wide")) displayCards()
+    if (view.classList.contains("products")) displayProducts()
     if (view.classList.contains("full")) showFull()
   }
 })
