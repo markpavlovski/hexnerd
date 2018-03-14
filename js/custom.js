@@ -176,9 +176,14 @@ function showMug(target) {
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
   const mug = header.querySelector(".mug")
+  const aside = header.closest("aside")
+
   header.classList.add("block")
   middle.classList.add("block")
   footer.classList.add("block")
+
+
+  aside.style = `linear-gradient(to bottom, red 260px, rgba(255,255,255,1) 0px);`
 
   console.log("color:", color, mugImages[color])
   if (mugImages[color]) {
@@ -526,4 +531,4 @@ setFilters()
 displayCards()
 // showAside()
 // showFull()
-// showMug(document.querySelector(".card"))
+showMug(document.querySelector(".card"))
