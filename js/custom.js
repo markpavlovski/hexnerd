@@ -47,6 +47,7 @@ function clearCards() {
   while (main.firstElementChild) {
     main.removeChild(main.childNodes[0])
   }
+  container.removeChild(main)
 }
 
 function displayCards() {
@@ -115,7 +116,7 @@ function displayCards() {
       const newCard = card.cloneNode(true)
       newCard.style = `background: linear-gradient(to bottom, ${key} 130px, white 0px);`
       newCard.id = key
-      console.log(key, (key.length -1) % 3)
+      console.log(key, (key.length - 1) % 3)
       newCard.innerHTML = `
         <h1>${key.toUpperCase()}</h1>
         <h2>HEX RGB${ (key.length -1) % 3 ? "A" : ""}${ (key.length -1) < 6 ? " SHORTHAND" : ""}</h2>
@@ -192,12 +193,12 @@ function showMug(target) {
   console.log("color:", color, mugImages[color])
   if (mugImages[color]) {
     mug.style = `display:block; background-image:  url("${mugImages[color]}")`
-    swag.style ="display:block"
+    swag.style = "display:block"
     mug.classList.add("pointer")
   } else {
     mug.style = `display:none; background-color: ${color}`
     mug.classList.remove("pointer")
-    swag.style ="display:none"
+    swag.style = "display:none"
 
   }
   middle.querySelector("#color").innerText = color.toUpperCase()
@@ -403,7 +404,7 @@ document.addEventListener('click', (event) => {
 })
 
 document.querySelector(".full-screen").addEventListener('click', (event) => {
-  const target = event.target.closest(".arrow") || event.target.closest(".esc")||event.target.closest(".space")|| event.target
+  const target = event.target.closest(".arrow") || event.target.closest(".esc") || event.target.closest(".space") || event.target
   console.log(target)
   if (target.classList.contains("left")) {
     goLeft()
@@ -420,7 +421,6 @@ document.querySelector(".full-screen").addEventListener('click', (event) => {
 })
 
 function goLeft() {
-  if (state.full) {
     if (state.selected.previousElementSibling) {
       state.selected = state.selected.previousElementSibling
       console.log(state.selected.id)
@@ -430,36 +430,32 @@ function goLeft() {
       state.selected = state.selected.parentElement.lastElementChild
       console.log(state.selected.id)
     }
-    renderFull()
-  }
+    if (state.full) renderFull()
+    if (state.aside) showMug(state.selected)
 }
 
 function goRight() {
-  if (state.full) {
-    if (state.selected.nextElementSibling) {
-      state.selected = state.selected.nextElementSibling
-      console.log(state.selected.id)
+  if (state.selected.nextElementSibling) {
+    state.selected = state.selected.nextElementSibling
+    console.log(state.selected.id)
 
-    } else {
-      console.log("loop!")
-      state.selected = state.selected.parentElement.firstElementChild
-      console.log(state.selected.id)
-    }
-    renderFull()
+  } else {
+    console.log("loop!")
+    state.selected = state.selected.parentElement.firstElementChild
+    console.log(state.selected.id)
   }
+  if (state.full) renderFull()
+  if (state.aside) showMug(state.selected)
 }
 
 function goRandom() {
-  if (state.full) {
-
-    const cards = document.querySelectorAll("main .card")
-    const index = Math.floor(Math.random() * Math.floor(cards.length))
-    console.log(index)
-    state.selected = cards[index]
-    console.log(state.selected.id)
-
-    renderFull()
-  }
+  const cards = document.querySelectorAll("main .card")
+  const index = Math.floor(Math.random() * Math.floor(cards.length))
+  console.log(index)
+  state.selected = cards[index]
+  console.log(state.selected.id)
+  if (state.full) renderFull()
+  if (state.aside) showMug(state.selected)
 }
 
 // Key presses
@@ -471,16 +467,15 @@ document.addEventListener('keydown', (event) => {
     hideMug()
     hideFilters()
   }
-  if (state.full) {
-    if (keyName === "ArrowRight" || keyName === "ArrowUp") {
-      goRight()
-    }
-    if (keyName === "ArrowLeft" || keyName === "ArrowDown") {
-      goLeft()
-    }
-    if (keyName === " ") {
-      goRandom()
-    }
+  if (keyName === "ArrowRight" || keyName === "ArrowUp") {
+    goRight()
+  }
+  if (keyName === "ArrowLeft" || keyName === "ArrowDown") {
+    goLeft()
+  }
+  if (keyName === " ") {
+    event.preventDefault();
+    goRandom()
   }
 })
 
