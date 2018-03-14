@@ -111,17 +111,12 @@ function displayCards() {
     // const displayFlag = colors[key].curated
     if (displayFlag) {
       const newCard = card.cloneNode(true)
-      newCard.style = `background-color: ${key}`
+      newCard.style = `background: linear-gradient(to bottom, ${key} 130px, white 0px);`
       newCard.id = key
-      newCard.innerText = `
-        Key: ${key.toUpperCase()} \n
-        Word: ${colors[key].word} \n
-        Type: ${colors[key].type} \n
-        Alpha: ${colors[key].alpha} \n
-        Triple: ${colors[key].triple} \n
-        Curated: ${colors[key].curated} \n
-        Featured: ${colors[key].featured} \n
-        Favorite: ${colors[key].favorite} \n
+      console.log(key, (key.length -1) % 3)
+      newCard.innerHTML = `
+        <h1>${key.toUpperCase()}</h1>
+        <h2>HEX RGB${ (key.length -1) % 3 ? "A" : ""}${ (key.length -1) < 6 ? " SHORTHAND" : ""}</h2>
       `
       main.appendChild(newCard)
     }
