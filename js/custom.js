@@ -175,7 +175,7 @@ function showMug(target) {
   const header = document.querySelector(".top.color")
   const middle = document.querySelector(".middle .description")
   const footer = document.querySelector(".bottom .favorite")
-  const mug = header.querySelector(".mug")
+  const mug = document.querySelector(".mug")
   const aside = header.closest("aside")
 
   header.classList.add("block")
@@ -183,7 +183,7 @@ function showMug(target) {
   footer.classList.add("block")
 
 
-  aside.style = `linear-gradient(to bottom, red 260px, rgba(255,255,255,1) 0px);`
+  aside.style = `background: linear-gradient(to bottom, ${color} 260px, rgba(255,255,255,1) 0px);`
 
   console.log("color:", color, mugImages[color])
   if (mugImages[color]) {
@@ -195,7 +195,7 @@ function showMug(target) {
 
   }
   middle.querySelector("#color").innerText = color.toUpperCase()
-  middle.querySelector("#name").innerText = `word: ${colors[color].word}`.toUpperCase()
+  middle.querySelector("#name").innerText = `HEX RGB${ (color.length -1) % 3 ? "A" : ""}${ (color.length -1) < 6 ? " SHORTHAND" : ""}`.toUpperCase()
 
 
   if (color[0] === "#") {

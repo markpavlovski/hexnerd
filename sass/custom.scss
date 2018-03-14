@@ -149,20 +149,6 @@ aside {
         display:block;
       }
 
-      .mug {
-        // background-image: url("");
-        background-size: 100%;
-        border-radius: 20px;
-        border: 1px solid rgba(0,0,0,0.05);
-        width: 220px;
-        height: 220px;
-        display: none;
-        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-
-        &.pointer {
-          cursor: pointer;
-        }
-      }
     }
 
     &.filter {
@@ -206,7 +192,7 @@ aside {
 
     .description {
       margin-top: 20px;
-      width: 220px;
+      width: 300px;
       opacity: 1;
       display: none;
 
@@ -214,16 +200,58 @@ aside {
         display:block;
       }
 
-      h1 {
+      h1#color {
         display: block;
-        margin: 40px 0px 20px 0;
-        color: rgba(51,51,51,1)
+        margin: -30px 110px 20px 0;
+        color: rgba(51,51,51,1);
+        font-size: 45px;
+        text-align: right;
       }
 
-      h2 {
-        margin-bottom: 10px;
-        font-size: 12px;
-        color: rgba(51,51,51,1)
+      h1#heading {
+        margin: -20px 110px 20px 0;
+        font-size: 18px;
+        color: rgba(51,51,51,1);
+        text-align:left;
+      }
+
+      h1#swag {
+        margin: 40px 110px 20px 0;
+        font-size: 18px;
+        color: rgba(51,51,51,1);
+        text-align:left;
+      }
+
+      h2#name {
+        margin: -20px 110px 100px 0;
+        font-size: 16px;
+        color: rgba(51,51,51,1);
+        text-align:right;
+      }
+
+      h2#decimal, h2#percent {
+        margin: 0px 0px 0px 0px;
+        font-size: 14px;
+        color: rgba(51,51,51,1);
+        text-align:left;
+      }
+
+
+
+      .mug {
+        // background-image: url("");
+        margin: 30px 0px -100px -10px;
+        background-size: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(0,0,0,0.05);
+        width: 220px;
+        height: 220px;
+        // display: none;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+
+        &.pointer {
+          cursor: pointer;
+        }
       }
 
     }

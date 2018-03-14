@@ -110,16 +110,6 @@ aside {
       height: 100%; }
       aside .top.color.block {
         display: block; }
-      aside .top.color .mug {
-        background-size: 100%;
-        border-radius: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        width: 220px;
-        height: 220px;
-        display: none;
-        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
-        aside .top.color .mug.pointer {
-          cursor: pointer; }
     aside .top.filter {
       justify-self: center;
       align-self: start;
@@ -144,19 +134,47 @@ aside {
     align-self: start; }
     aside .middle .description {
       margin-top: 20px;
-      width: 220px;
+      width: 300px;
       opacity: 1;
       display: none; }
       aside .middle .description.block {
         display: block; }
-      aside .middle .description h1 {
+      aside .middle .description h1#color {
         display: block;
-        margin: 40px 0px 20px 0;
-        color: #333333; }
-      aside .middle .description h2 {
-        margin-bottom: 10px;
-        font-size: 12px;
-        color: #333333; }
+        margin: -30px 110px 20px 0;
+        color: #333333;
+        font-size: 45px;
+        text-align: right; }
+      aside .middle .description h1#heading {
+        margin: -20px 110px 20px 0;
+        font-size: 18px;
+        color: #333333;
+        text-align: left; }
+      aside .middle .description h1#swag {
+        margin: 40px 110px 20px 0;
+        font-size: 18px;
+        color: #333333;
+        text-align: left; }
+      aside .middle .description h2#name {
+        margin: -20px 110px 100px 0;
+        font-size: 16px;
+        color: #333333;
+        text-align: right; }
+      aside .middle .description h2#decimal, aside .middle .description h2#percent {
+        margin: 0px 0px 0px 0px;
+        font-size: 14px;
+        color: #333333;
+        text-align: left; }
+      aside .middle .description .mug {
+        margin: 30px 0px -100px -10px;
+        background-size: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        width: 220px;
+        height: 220px;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
+        aside .middle .description .mug.pointer {
+          cursor: pointer; }
   aside .bottom {
     grid-row: 3;
     grid-column: 1;
