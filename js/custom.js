@@ -271,23 +271,12 @@ function hideMug() {
 
 
 
-
-
 // Full screen mode
 function showFull() {
+
+  renderFull()
+
   const fullScreen = document.querySelector(".full-screen")
-  const name = fullScreen.querySelector(".card h1")
-  const selected = state.selected
-  const text = fullScreen.querySelectorAll("h1")
-
-  name.innerText = selected.id.toUpperCase()
-  fullScreen.style = `background-color: ${selected.id}`
-  for (let  i=0; i< text.length; i++){
-    text[i].style = `color: ${selected.id};`
-  }
-
-
-
   fullScreen.classList.add("z6")
   window.setTimeout(() => fullScreen.classList.add("show"), 5)
   state.full = true
@@ -299,6 +288,21 @@ function hideFull() {
   window.setTimeout(() => fullScreen.classList.remove("z6"), 500)
   state.full = false
 }
+
+function renderFull() {
+  const fullScreen = document.querySelector(".full-screen")
+  const name = fullScreen.querySelector(".card h1")
+  const selected = state.selected
+  const text = fullScreen.querySelectorAll("h1")
+
+  name.innerText = selected.id.toUpperCase()
+  fullScreen.style = `background-color: ${selected.id}`
+  for (let i = 0; i < text.length; i++) {
+    text[i].style = `color: ${selected.id};`
+  }
+}
+
+
 
 
 
@@ -331,6 +335,13 @@ function getFilters() {
   }
 }
 
+
+// Calculate mug product page
+function getMugPage(mugImagePath) {
+  const start = mugImagePath.indexOf("~~/") + 3
+  const end = mugImagePath.indexOf("-mugs.jpg")
+  return "https://society6.com/product/" + mugImagePath.slice(start, end) + "_mug"
+}
 
 
 
@@ -367,7 +378,7 @@ document.querySelector(".fade").addEventListener("click", () => {
   hideMug()
 })
 
-// Return from Full Screen Mode
+// Key presses in full screen mode
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   console.log('key: ' + keyName);
@@ -375,6 +386,32 @@ document.addEventListener('keydown', (event) => {
     hideFull()
     hideMug()
     hideFilters()
+  }
+  if (state.full) {
+    if (keyName === "ArrowRight") {
+      if (state.selected.nextElementSibling) {
+        state.selected = state.selected.nextElementSibling
+        console.log(state.selected.id)
+
+      } else {
+        console.log("loop!")
+        state.selected = state.selected.parentElement.firstElementChild
+        console.log(state.selected.id)
+      }
+      renderFull()
+    }
+    if (keyName === "ArrowLeft") {
+      if (state.selected.previousElementSibling) {
+        state.selected = state.selected.previousElementSibling
+        console.log(state.selected.id)
+
+      } else {
+        console.log("loop!")
+        state.selected = state.selected.parentElement.lastElementChild
+        console.log(state.selected.id)
+      }
+      renderFull()
+    }
   }
 })
 
@@ -393,12 +430,6 @@ document.addEventListener('click', (event) => {
     window.open(`${getMugPage(mugImage)}`, '_blank')
   }
 })
-
-function getMugPage(mugImagePath) {
-  const start = mugImagePath.indexOf("~~/") + 3
-  const end = mugImagePath.indexOf("-mugs.jpg")
-  return "https://society6.com/product/" + mugImagePath.slice(start, end) + "_mug"
-}
 
 // Handle mobile
 

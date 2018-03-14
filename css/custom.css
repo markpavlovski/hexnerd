@@ -179,7 +179,6 @@ aside {
     opacity: 1; }
 
 .full-screen {
-  background-color: #bada55;
   grid-column: 1 /span 12;
   grid-row: 1 /span 2;
   z-index: -1;
