@@ -159,6 +159,10 @@ aside {
   display: none;
   overflow: auto;
 
+  .invisible {
+    opacity: 0 !important;
+  }
+
   &.show {
     margin-left: 0;
   }
@@ -235,8 +239,13 @@ aside {
       opacity: 1;
       display: none;
 
+
       &.block{
         display:block;
+      }
+
+      h1, h2, .mug {
+        transition: opacity 0.2s ease;
       }
 
       h1#color {
@@ -245,6 +254,7 @@ aside {
         color: rgba(51,51,51,1);
         font-size: 45px;
         text-align: right;
+
       }
 
       h1#heading {

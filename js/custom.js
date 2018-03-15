@@ -518,6 +518,21 @@ function enableCardHiding() {
   })
 }
 
+document.querySelector("aside").addEventListener("scroll", () => {
+  console.log("hiii")
+  const elements = document.querySelector(".description.block").children
+  console.log(elements)
+
+  for (let i = 0; i < elements.length; i++) {
+    console.log(elements[i])
+    if (250 > elements[i].getBoundingClientRect().y) {
+      elements[i].classList.add("invisible")
+    } else {
+      elements[i].classList.remove("invisible")
+    }
+  }
+})
+
 
 
 // Key presses
