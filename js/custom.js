@@ -520,15 +520,27 @@ function enableCardHiding() {
 
 document.querySelector("aside").addEventListener("scroll", () => {
   console.log("hiii")
-  const elements = document.querySelector(".description.block").children
-  console.log(elements)
+  let elements = document.querySelector(".description.block") ? document.querySelector(".description.block").children : null
+  if (elements) {
+    for (let i = 0; i < elements.length; i++) {
+      console.log(elements[i])
+      if (252 > elements[i].getBoundingClientRect().y) {
+        elements[i].classList.add("invisible")
+      } else {
+        elements[i].classList.remove("invisible")
+      }
+    }
+  }
 
-  for (let i = 0; i < elements.length; i++) {
-    console.log(elements[i])
-    if (250 > elements[i].getBoundingClientRect().y) {
-      elements[i].classList.add("invisible")
-    } else {
-      elements[i].classList.remove("invisible")
+  elements = document.querySelector(".filters") ? document.querySelector(".filters").children : null
+  if (elements) {
+    for (let i = 0; i < elements.length; i++) {
+      console.log(elements[i])
+      if (250 > elements[i].getBoundingClientRect().y) {
+        elements[i].classList.add("invisible")
+      } else {
+        elements[i].classList.remove("invisible")
+      }
     }
   }
 })
