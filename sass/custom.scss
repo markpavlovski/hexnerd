@@ -37,7 +37,14 @@ header {
   ul {
     user-select: none;
     line-height: $headerHeight;
+
+    span {
+      color: #abaca5;
+    }
+
   }
+
+
 
   li {
     color: rgba(0,0,0,0.2);
@@ -57,6 +64,8 @@ header {
     i {
       font-size: 30px;
     }
+
+
   }
 }
 

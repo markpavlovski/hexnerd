@@ -28,6 +28,8 @@ header {
   header ul {
     user-select: none;
     line-height: 220px; }
+    header ul span {
+      color: #abaca5; }
   header li {
     color: rgba(0, 0, 0, 0.2);
     margin-right: 35px;

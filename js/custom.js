@@ -452,11 +452,13 @@ document.addEventListener("click", (event) => {
       showMug(state.selected)
     }
 
-    if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
-      const mugImage = mugImages[state.selected.id]
-      window.open(`${getMugPage(mugImage)}`, '_blank')
-    }
 
+  }
+
+  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
+    const mugImage = mugImages[state.selected.id]
+    console.log(mugImage)
+    window.open(`${getMugPage(mugImage)}`, '_blank')
   }
   document.querySelector(".hex-logo").style = `color: ${state.selected.id};`
 })
@@ -522,11 +524,9 @@ function enableCardHiding() {
 }
 
 document.querySelector("aside").addEventListener("scroll", () => {
-  console.log("hiii")
   let elements = document.querySelector(".description.block") ? document.querySelector(".description.block").children : null
   if (elements) {
     for (let i = 0; i < elements.length; i++) {
-      console.log(elements[i])
       if (252 > elements[i].getBoundingClientRect().y) {
         elements[i].classList.add("invisible")
       } else {
@@ -538,7 +538,6 @@ document.querySelector("aside").addEventListener("scroll", () => {
   elements = document.querySelector(".filters") ? document.querySelector(".filters").children : null
   if (elements) {
     for (let i = 0; i < elements.length; i++) {
-      console.log(elements[i])
       if (250 > elements[i].getBoundingClientRect().y) {
         elements[i].classList.add("invisible")
       } else {
