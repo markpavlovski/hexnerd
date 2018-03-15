@@ -25,6 +25,9 @@ const state = {
   lastClick: 0
 }
 
+// Time between clicks
+const clickThreshold = 350
+
 
 // Load data
 const colors = {}
@@ -184,11 +187,11 @@ function hideAside() {
   const fade = document.querySelector(".fade")
 
   fade.classList.remove("show")
-  window.setTimeout(() => fade.classList.remove("z4"), 500)
+  window.setTimeout(() => fade.classList.remove("z4"), 300)
   state.fade = false
 
   aside.classList.remove("show")
-  window.setTimeout(() => aside.classList.remove("z5"), 500)
+  window.setTimeout(() => aside.classList.remove("z5"), 300)
   state.aside = false
 }
 
@@ -324,7 +327,7 @@ function showFull() {
 function hideFull() {
   const fullScreen = document.querySelector(".full-screen")
   fullScreen.classList.remove("show")
-  window.setTimeout(() => fullScreen.classList.remove("z6"), 500)
+  window.setTimeout(() => fullScreen.classList.remove("z6"), 300)
   state.full = false
 }
 
@@ -424,12 +427,15 @@ function goRandom() {
 
 // Display Modes
 document.querySelector("header").addEventListener("click", (event) => {
-  const view = event.target.closest("li")
-  if (view) {
-    if (view.classList.contains("filter")) showFilters()
-    if (view.classList.contains("wide")) displayCards()
-    if (view.classList.contains("products")) displayProducts()
-    if (view.classList.contains("full")) showFull()
+  if (event.timeStamp - state.lastClick > clickThreshold) {
+    state.lastClick = event.timeStamp
+    const view = event.target.closest("li")
+    if (view) {
+      if (view.classList.contains("filter")) showFilters()
+      if (view.classList.contains("wide")) displayCards()
+      if (view.classList.contains("products")) displayProducts()
+      if (view.classList.contains("full")) showFull()
+    }
   }
 })
 
@@ -437,71 +443,79 @@ document.querySelector("header").addEventListener("click", (event) => {
 // Display mug slider
 // Click on a mug
 document.addEventListener("click", (event) => {
+  if (event.timeStamp - state.lastClick > clickThreshold) {
+    state.lastClick = event.timeStamp
+    if (event.target.classList.contains("card") || event.target.closest(".card")) {
+      state.selected = event.target.closest(".card") || event.target
+      showMug(state.selected)
+    }
 
-  console.log(event.timeStamp)
+    if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
+      const mugImage = mugImages[state.selected.id]
+      window.open(`${getMugPage(mugImage)}`, '_blank')
+    }
 
-  if (event.target.classList.contains("card") || event.target.closest(".card") ) {
-    console.log(event.target.closest(".card") || event.target)
-    state.selected = event.target.closest(".card") || event.target
-    showMug(state.selected)
   }
-
-  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
-    const mugImage = mugImages[state.selected.id]
-    window.open(`${getMugPage(mugImage)}`, '_blank')
-  }
-
 })
 
 // Return from slider
 document.querySelector(".fade").addEventListener("click", () => {
-  hideFilters()
-  hideMug()
+  if (event.timeStamp - state.lastClick > clickThreshold) {
+    state.lastClick = event.timeStamp
+    hideFilters()
+    hideMug()
+  }
 })
 
 
 
 // Listen for filter changes
 document.querySelector("aside").addEventListener("click", (event) => {
-  if (event.target.closest(".switch")) {
-    getFilters()
-    displayCards()
+  if (event.timeStamp - state.lastClick > clickThreshold) {
+    state.lastClick = event.timeStamp
+    if (event.target.closest(".switch")) {
+      getFilters()
+      displayCards()
+    }
   }
 })
 
 
 document.querySelector(".full-screen").addEventListener('click', (event) => {
-  const target = event.target.closest(".arrow") || event.target.closest(".esc") || event.target.closest(".space") || event.target
-  console.log(target)
-  if (target.classList.contains("left")) {
-    goLeft()
-  }
-  if (target.classList.contains("right")) {
-    goRight()
-  }
-  if (target.classList.contains("space")) {
-    goRandom()
-  }
-  if (target.classList.contains("esc")) {
-    hideFull()
+  if (event.timeStamp - state.lastClick > clickThreshold) {
+    state.lastClick = event.timeStamp
+    const target = event.target.closest(".arrow") || event.target.closest(".esc") || event.target.closest(".space") || event.target
+    console.log(target)
+    if (target.classList.contains("left")) {
+      goLeft()
+    }
+    if (target.classList.contains("right")) {
+      goRight()
+    }
+    if (target.classList.contains("space")) {
+      goRandom()
+    }
+    if (target.classList.contains("esc")) {
+      hideFull()
+    }
   }
 })
 
-function enableCardHiding(){
-    document.querySelector("main").addEventListener("scroll", () => {
-      const cards = document.querySelectorAll(".card")
-      const titleBox = document.querySelector("header").getBoundingClientRect()
+function enableCardHiding() {
+  document.querySelector("main").addEventListener("scroll", () => {
+    const cards = document.querySelectorAll(".card")
+    const titleBox = document.querySelector("header").getBoundingClientRect()
 
-      // Toggle dissapearing cards
-      for (let i = 0; i < cards.length; i++) {
-        // console.log(cards[i])
-        if (titleBox.y + titleBox.height > cards[i].getBoundingClientRect().y) {
-          cards[i].classList.add("invisible")
-        } else {
-          cards[i].classList.remove("invisible")
-        }
+    // Toggle dissapearing cards
+    for (let i = 0; i < cards.length; i++) {
+      // console.log(cards[i])
+      if (titleBox.y + titleBox.height / 2 > cards[i].getBoundingClientRect().y) {
+        cards[i].classList.add("invisible")
+      } else {
+        cards[i].classList.remove("invisible")
       }
-    })
+    }
+  })
 }
 
 
