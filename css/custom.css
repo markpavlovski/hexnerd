@@ -4,14 +4,16 @@
   padding: 0;
   font-size: 12;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none;
+  /* no underline */ }
   *::selection {
     background: #bada55; }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 220px 1fr;
   grid-gap: 0 0;
   height: 100vh; }
 
@@ -24,7 +26,8 @@ header {
   justify-self: center;
   padding-left: 40px; }
   header ul {
-    user-select: none; }
+    user-select: none;
+    line-height: 220px; }
   header li {
     color: rgba(0, 0, 0, 0.2);
     margin-right: 35px;

@@ -3,6 +3,7 @@ $grey: #DDD;
 $white: rgba(255,255,255,1);
 $transparent: rgba(255,255,255,0); // Styles
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900'); // Styles
+$headerHeight: 220px;
 
 * {
   margin: 0;
@@ -11,6 +12,7 @@ $transparent: rgba(255,255,255,0); // Styles
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   &::selection { background: #bada55; }
+  text-decoration: none; /* no underline */
 }
 
 
@@ -18,7 +20,7 @@ $transparent: rgba(255,255,255,0); // Styles
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: $headerHeight 1fr;
   grid-gap: 0 0;
   height: 100vh;
 }
@@ -34,6 +36,7 @@ header {
 
   ul {
     user-select: none;
+    line-height: $headerHeight;
   }
 
   li {
