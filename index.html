@@ -6,6 +6,10 @@
   <title>HEX NERD DESIGN | HEX Colors That Sound Like Words</title>
   <link rel="stylesheet" href="css/custom.css">
 
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+
+
   <script src="data/words-classic-hex.js"></script>
   <script src="data/words-leet-neat.js"></script>
   <script src="data/words-leet-dirty.js"></script>
@@ -13,6 +17,8 @@
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script defer src="js/custom.js"></script>
+
+
 </head>
 
 <body>
@@ -181,12 +187,27 @@
 
     </div>
 
-<!--
+    <!--
     <main>
     </main> -->
 
 
   </div>
+
+  <!--  Code to grab the background image-->
+<!--
+
+  <script>
+
+    $.get('https://society6.com/product/bada55-hex-rgb_mug', (data, err) =>{
+
+      const images = $(data).find('div[backgroundImage]')
+      for(const i of images){
+        console.log(i.outerHTML.match(/url\(.*\)/g)[0])
+      }
+    })
+
+  </script> -->
 
 </body>
 
