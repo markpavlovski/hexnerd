@@ -625,6 +625,6 @@ function handleTouchMove(evt) {
 setFilters()
 displayCards()
 // showAside()
-showFull()
+// showFull()
 // showMug(document.querySelector(".card"))
 // showFilters()
