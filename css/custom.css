@@ -291,14 +291,25 @@ aside {
       .full-screen .middle .arrow:hover {
         color: rgba(255, 255, 255, 0.75); }
     .full-screen .middle .card {
-      background-color: white;
-      border-radius: 20px;
+      background: linear-gradient(to bottom, #beefed 200px, white 0px);
+      border-radius: 6px;
       color: #bada55;
       font-size: 20px;
       padding: 70px;
-      width: 180px;
+      width: 360px;
+      height: 150px;
       text-align: center;
       box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
+      .full-screen .middle .card h1, .full-screen .middle .card h2 {
+        text-align: right;
+        margin-right: -50px;
+        color: #333333; }
+      .full-screen .middle .card h1 {
+        font-size: 45px;
+        margin-top: 135px; }
+      .full-screen .middle .card h2 {
+        font-size: 25px;
+        margin-top: -5px; }
   .full-screen .bottom {
     justify-self: center;
     align-self: end; }

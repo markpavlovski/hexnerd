@@ -14,7 +14,7 @@ const mugImages = {
   "#f001ed": "https://ctl.s6img.com/society6/img/bimypRH_T-wlCJ035Y18yqEAY2c/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-original-art-uploads/society6/uploads/misc/359337e82c0542c6b51fa6a1178623ee/~~/f001ed-hex-rgb-mugs.jpg",
   "#fe11a5": "https://ctl.s6img.com/society6/img/MrzxsAuleINRP-ZeaQPp3YUGcMg/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-original-art-uploads/society6/uploads/misc/296f61c0ed064a62808c8f1c484312fb/~~/fe11a5-hex-rgb-mugs.jpg",
   "#faece5": "https://ctl.s6img.com/society6/img/Vv06pk9_hYegWL3qhlfIq44FSvA/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-original-art-uploads/society6/uploads/misc/d5c2515069bf4ca298e990fc93a0766f/~~/faece5-hex-rgb-mugs.jpg",
-
+  "#abaca5": "https://ctl.s6img.com/society6/img/wqCaIxSuw-YHvP8b7O4FUqfDN5w/w_700/coffee-mugs/small/right/greybg/~artwork,fw_4600,fh_2000,iw_4600,ih_2000/s6-original-art-uploads/society6/uploads/misc/98d5c69e2b9f41ab9dd172e743530a12/~~/abaca5-hex-rgb-mugs.jpg",
 }
 
 console.log("mug images loaded")

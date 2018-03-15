@@ -334,14 +334,16 @@ function hideFull() {
 function renderFull() {
   const fullScreen = document.querySelector(".full-screen")
   const name = fullScreen.querySelector(".card h1")
+  const desc = fullScreen.querySelector(".card h2")
+  const card = fullScreen.querySelector(".card")
   const selected = state.selected
-  const text = fullScreen.querySelectorAll("h1")
 
+  card.style = `background: linear-gradient(to bottom, ${selected.id} 200px, rgba(255,255,255,1) 0px);`
   name.innerText = selected.id.toUpperCase()
+  desc.innerText = `HEX RGB${ (selected.id.length -1) % 3 ? "A" : ""}${ (selected.id.length -1) < 6 ? " SHORTHAND" : ""}`.toUpperCase()
   fullScreen.style = `background-color: ${selected.id}`
-  for (let i = 0; i < text.length; i++) {
-    text[i].style = `color: ${selected.id};`
-  }
+  // name.style = `color: ${"red"};`
+  // desc.style = `color: ${"green"};`
 }
 
 
@@ -623,6 +625,6 @@ function handleTouchMove(evt) {
 setFilters()
 displayCards()
 // showAside()
-// showFull()
+showFull()
 // showMug(document.querySelector(".card"))
 // showFilters()
