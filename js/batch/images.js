@@ -395,7 +395,7 @@ function delay(array) {
 
   head.forEach((image) => {
     image = image.slice(1)
-    const wget = spawn('wget', [`http://placehold.it/4600x2000/${image}/${image}`, '-O', `${image}.png`]);
+    const wget = spawn('wget', [`http://placehold.it/4600x2000/${image}/${image}`, '-O', `#${image}.png`]);
 
     wget.stdout.on('data', (data) => {
       // console.log(`stdout: ${data}`);
