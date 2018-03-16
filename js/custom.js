@@ -409,6 +409,8 @@ function goLeft() {
   }
   if (state.full) renderFull()
   if (state.aside) showMug(state.selected)
+  storeState()
+
 }
 
 function goRight() {
@@ -420,6 +422,7 @@ function goRight() {
   }
   if (state.full) renderFull()
   if (state.aside) showMug(state.selected)
+  storeState()
 }
 
 function goRandom() {
@@ -428,6 +431,7 @@ function goRandom() {
   state.selected = cards[index]
   if (state.full) renderFull()
   if (state.aside) showMug(state.selected)
+  storeState()
 }
 
 
