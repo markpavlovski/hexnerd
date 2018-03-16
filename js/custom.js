@@ -528,7 +528,7 @@ function enableCardHiding() {
     // Toggle dissapearing cards
     for (let i = 0; i < cards.length; i++) {
       // console.log(cards[i])
-      if (titleBox.y + titleBox.height * 7 / 10 > cards[i].getBoundingClientRect().y) {
+      if (titleBox.y + titleBox.height * 1 / 10 > cards[i].getBoundingClientRect().y) {
         cards[i].classList.add("invisible")
       } else {
         cards[i].classList.remove("invisible")
