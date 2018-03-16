@@ -1,8 +1,9 @@
 'use strict'
 console.log("Loaded custom JS")
 
+
 // Set up state tracking
-const state = {
+let state = {
   fade: false,
   aside: false,
   full: false,
@@ -25,6 +26,7 @@ const state = {
   lastClick: 0
 }
 
+
 // Time between clicks
 const clickThreshold = 350
 
@@ -41,6 +43,13 @@ for (let key in colors) {
   colors[key].dirty = colors[key].type === "dirty"
   colors[key].native = colors[key].type === "native"
 }
+
+
+
+function storeState(){
+  localStorage.setItem("selected",JSON.stringify(state.selected.id))
+}
+
 
 
 // Create cards
@@ -450,6 +459,7 @@ document.addEventListener("click", (event) => {
     if (event.target.classList.contains("card") || event.target.closest(".card")) {
       state.selected = event.target.closest(".card") || event.target
       showMug(state.selected)
+      storeState()
     }
 
 
@@ -625,6 +635,8 @@ function handleTouchMove(evt) {
 // Behaviour on Load
 setFilters()
 displayCards()
+const logoColor = localStorage.getItem("selected") ? JSON.parse(localStorage.getItem("selected")) : "rgba(51,51,51,0.6)"
+document.querySelector(".hex-logo").style = `color: ${logoColor};`
 // showAside()
 // showFull()
 // showMug(document.querySelector(".card"))

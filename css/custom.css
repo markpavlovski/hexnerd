@@ -13,7 +13,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 220px 1fr;
+  grid-template-rows: 110px 1fr;
   grid-gap: 0 0;
   height: 100vh; }
 
@@ -27,8 +27,9 @@ header {
   padding-left: 40px; }
   header ul {
     user-select: none;
-    line-height: 220px; }
+    line-height: 110px; }
     header ul span {
+      transition: all 1s ease;
       color: #abaca5; }
   header li {
     color: rgba(0, 0, 0, 0.2);

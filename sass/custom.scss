@@ -3,7 +3,7 @@ $grey: #DDD;
 $white: rgba(255,255,255,1);
 $transparent: rgba(255,255,255,0); // Styles
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900'); // Styles
-$headerHeight: 220px;
+$headerHeight: 110px;
 
 * {
   margin: 0;
@@ -39,6 +39,7 @@ header {
     line-height: $headerHeight;
 
     span {
+      transition: all 1s ease;
       color: #abaca5;
     }
 
