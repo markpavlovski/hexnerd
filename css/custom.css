@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Cabin:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
 * {
   margin: 0;
   padding: 0;
   font-size: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: 'Bad Script', cursive;
+  font-weight: 300;
   text-decoration: none;
   /* no underline */ }
   *::selection {
@@ -18,21 +20,59 @@ header {
 nav {
   background-color: #333;
   width: 100%;
-  height: 80px;
+  height: 50px;
   position: sticky;
-  top: 0px; }
+  top: 0;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
+  nav p {
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+    color: white; }
 
 main {
   background-color: #f8f8f8;
   width: 100%;
-  height: 100vh; }
+  height: 300vh; }
 
 .card {
-  width: calc(100vw / 4);
-  height: calc(100vw / 4);
+  width: calc(100vw / 5);
+  height: calc(100vw / 5);
   background-color: #999;
-  display: inline-block; }
+  display: inline-block;
+  opacity: 1; }
   .card:nth-of-type(3n) {
     background-color: #888; }
   .card:nth-of-type(3n+1) {
     background-color: #777; }
+  .card:nth-of-type(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/badass.jpg");
+    background-size: cover; }
+  .card:nth-of-type(2) {
+    background: url("/images/coffee.jpg");
+    background-size: cover; }
+  .card:nth-of-type(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/daboss.jpg");
+    background-size: cover; }
+  .card:nth-of-type(4) {
+    background: url("/images/catbff.jpg");
+    background-size: cover; }
+  .card:nth-of-type(5) {
+    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/dadbod.jpg");
+    background-size: cover; }
+  .card:nth-of-type(6) {
+    background: url("/images/catbff.jpg");
+    background-size: cover; }
+  .card:nth-of-type(7) {
+    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/badass.jpg");
+    background-size: cover; }
+  .card:nth-of-type(8) {
+    background: url("/images/daboss.jpg");
+    background-size: cover; }
+  .card:nth-of-type(9) {
+    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/badass.jpg");
+    background-size: cover; }
+  .card:nth-of-type(10) {
+    background: url("/images/dadbod.jpg");
+    background-size: cover; }
