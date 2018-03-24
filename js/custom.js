@@ -281,16 +281,23 @@ let cardOpacity = 0.5;
 let cardTemplate = document.createElement("div")
 cardTemplate.classList.add("card")
 cardTemplate.appendChild(document.createElement("div"))
-cardTemplate.appendChild(document.createElement("div"))
-cardTemplate.firstElementChild.classList.add("front")
-cardTemplate.lastElementChild.classList.add("front")
-
+cardTemplate.firstElementChild.classList.add("flipper")
+cardTemplate.firstElementChild.appendChild(document.createElement("div"))
+cardTemplate.firstElementChild.appendChild(document.createElement("div"))
+cardTemplate.firstElementChild.firstElementChild.classList.add("front")
+cardTemplate.firstElementChild.lastElementChild.classList.add("back")
 
 let main = document.querySelector("main")
 for (let i = 0; i < data.length; i++) {
   let card = cardTemplate.cloneNode(true);
   card.id = data[i].name
-  card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
+  card.firstElementChild.firstElementChild.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
+  card.firstElementChild.lastElementChild.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
+  // card.addEventListener("touchstart", ()=>{
+  //   card.classList.toggle('hover')
+  // })
+  // card.setAttribute("ontouchstart", `this.classList.toggle('hover');`)
+
   console.log(card)
   main.appendChild(card)
 }
