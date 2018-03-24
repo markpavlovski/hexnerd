@@ -5,8 +5,6 @@ $transparent: rgba(255,255,255,0); // Styles
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'); // Styles
 @import url('https://fonts.googleapis.com/css?family=Cabin:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
-
-
 $headerHeight: 100vw;
 $cardWidth: calc(100vw / 5);
 $cardHeight: $cardWidth;
@@ -17,6 +15,7 @@ $card-opacity: 0.015;
   padding: 0;
   font-size: 0;
   font-family: 'Bad Script', cursive;
+  font-family: 'Cabin', sans-serif;
   font-weight: 300;
 
   &::selection {
@@ -36,8 +35,19 @@ footer {
   background-color: #515151;
   width: 100%;
   height: 50px;
-  box-shadow: inset 0px 4px 10px -4px #000000;
+  box-shadow: inset 0 4px 10px -4px #000000;
 
+  p {
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: darken(white, 10%);
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    line-height: 50px;
+  }
 }
 
 nav {
@@ -46,15 +56,17 @@ nav {
   height: 50px;
   position: sticky;
   top: 0;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  // , 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 
-
-  p {
+  p{
     line-height: 50px;
-    letter-spacing: 1px;
-    font-size: 14px;
+    letter-spacing: 2px;
+    font-size: 12px;
     text-align: center;
     color: white;
+    text-transform: uppercase;
+
   }
 }
 
@@ -83,42 +95,49 @@ main {
     background: linear-gradient(rgba(0, 0, 0, $card-opacity), rgba(0, 0, 0, $card-opacity)), url("/images/badass.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(2) {
     background: url("/images/coffee.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(3) {
     background: linear-gradient(rgba(0, 0, 0, $card-opacity), rgba(0, 0, 0, $card-opacity)), url("/images/daboss.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(4) {
     background: url("/images/catbff.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(5) {
     background: linear-gradient(rgba(0, 0, 0, $card-opacity), rgba(0, 0, 0, $card-opacity)), url("/images/dadbod.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(6) {
     background: url("/images/catbff.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(7) {
     background: linear-gradient(rgba(0, 0, 0, $card-opacity), rgba(0, 0, 0, $card-opacity)), url("/images/badass.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(8) {
     background: url("/images/daboss.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(9) {
     background: linear-gradient(rgba(0, 0, 0, $card-opacity), rgba(0, 0, 0, $card-opacity)), url("/images/badass.jpg");
     background-size: cover;
   }
+
   &:nth-of-type(10) {
     background: url("/images/dadbod.jpg");
     background-size: cover;
   }
-
-
 }

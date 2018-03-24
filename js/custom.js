@@ -1,647 +1,300 @@
 'use strict'
 console.log("Loaded custom JS")
-
-
-// Set up state tracking
-let state = {
-  fade: false,
-  aside: false,
-  full: false,
-  display: "wide",
-  filter: {
-    curated: true,
-
-    featured: true,
-    favorite: false,
-
-    classic: false,
-    neat: false,
-    dirty: false,
-    native: false,
-
-    alpha: false,
-    triple: false,
+let data = [{
+    name: 'acidic',
+    hex: '#acidic',
+    description: 'Acidic - #AC1D1C HEX RGB Coffee Mug',
+    src: '/images/acidic.jpg'
   },
-  selected: null,
-  lastClick: 0
+  {
+    name: 'addict',
+    hex: '#addict',
+    description: 'Addict - #ADD1C7 HEX RGB Coffee Mug',
+    src: '/images/addict.jpg'
+  },
+  {
+    name: 'asself',
+    hex: '#asself',
+    description: 'Ass Elf - #A55E1F HEX RGB Coffee Mug',
+    src: '/images/asself.jpg'
+  },
+  {
+    name: 'babies',
+    hex: '#babies',
+    description: 'Babies - #BAB1E5 HEX RGB Coffee Mug',
+    src: '/images/babies.jpg'
+  },
+  {
+    name: 'badass',
+    hex: '#badass',
+    description: 'Bad Ass - #BADA55 HEX RGB Coffee Mug',
+    src: '/images/badass.jpg'
+  },
+  {
+    name: 'badboi',
+    hex: '#badboi',
+    description: 'Bad Boi - #BADB01 HEX RGB Coffee Mug',
+    src: '/images/badboi.jpg'
+  },
+  {
+    name: 'badcat',
+    hex: '#badcat',
+    description: 'Bad Cat - #BADCA7 HEX RGB Coffee Mug',
+    src: '/images/badcat.jpg'
+  },
+  {
+    name: 'basics',
+    hex: '#basics',
+    description: 'Basics - #BA51C5 HEX RGB Coffee Mug',
+    src: '/images/basics.jpg'
+  },
+  {
+    name: 'biased',
+    hex: '#biased',
+    description: 'Biased - #B1A5ED HEX RGB Coffee Mug',
+    src: '/images/biased.jpg'
+  },
+  {
+    name: 'blessd',
+    hex: '#blessd',
+    description: 'Blessed - #B1E55D HEX RGB Coffee Mug',
+    src: '/images/blessd.jpg'
+  },
+  {
+    name: 'booboo',
+    hex: '#booboo',
+    description: 'Booboo - #B00B00 HEX RGB Coffee Mug',
+    src: '/images/booboo.jpg'
+  },
+  {
+    name: 'booobs',
+    hex: '#booobs',
+    description: 'Booobs - #B000B5 HEX RGB Coffee Mug',
+    src: '/images/booobs.jpg'
+  },
+  {
+    name: 'bosses',
+    hex: '#bosses',
+    description: 'Bosses - #B055E5 HEX RGB Coffee Mug',
+    src: '/images/bosses.jpg'
+  },
+  {
+    name: 'catbff',
+    hex: '#catbff',
+    description: 'Cat BFF - #CA7BFF HEX RGB Coffee Mug',
+    src: '/images/catbff.jpg'
+  },
+  {
+    name: 'closed',
+    hex: '#closed',
+    description: 'Closed - #C105ED HEX RGB Coffee Mug',
+    src: '/images/closed.jpg'
+  },
+  {
+    name: 'coffee',
+    hex: '#coffee',
+    description: 'Coffee - #C0FFEE HEX RGB Coffee Mug',
+    src: '/images/coffee.jpg'
+  },
+  {
+    name: 'dababe',
+    hex: '#dababe',
+    description: 'Da Babe - #DABABE HEX RGB Coffee Mug',
+    src: '/images/dababe.jpg'
+  },
+  {
+    name: 'dabble',
+    hex: '#dabble',
+    description: 'Dabble - #DABB1E HEX RGB Coffee Mug',
+    src: '/images/dabble.jpg'
+  },
+  {
+    name: 'dabest',
+    hex: '#dabest',
+    description: 'Da Best - #DABE57 HEX RGB Coffee Mug',
+    src: '/images/dabest.jpg'
+  },
+  {
+    name: 'daboss',
+    hex: '#daboss',
+    description: 'Da Boss - #DAB055 HEX RGB Coffee Mug',
+    src: '/images/daboss.jpg'
+  },
+  {
+    name: 'dadbod',
+    hex: '#dadbod',
+    description: 'Dad Bod - #DADB0D HEX RGB Coffee Mug',
+    src: '/images/dadbod.jpg'
+  },
+  {
+    name: 'debate',
+    hex: '#debate',
+    description: 'Debate - #DEBA7E HEX RGB Coffee Mug',
+    src: '/images/debate.jpg'
+  },
+  {
+    name: 'decode',
+    hex: '#decode',
+    description: 'Decode - #DEC0DE HEX RGB Coffee Mug',
+    src: '/images/decode.jpg'
+  },
+  {
+    name: 'defeat',
+    hex: '#defeat',
+    description: 'Defeat - #DEFEA7 HEX RGB Coffee Mug',
+    src: '/images/defeat.jpg'
+  },
+  {
+    name: 'defect',
+    hex: '#defect',
+    description: 'Defect - #DEFEC7 HEX RGB Coffee Mug',
+    src: '/images/defect.jpg'
+  },
+  {
+    name: 'doable',
+    hex: '#doable',
+    description: 'Doable - #D0AB1E HEX RGB Coffee Mug',
+    src: '/images/doable.jpg'
+  },
+  {
+    name: 'doodle',
+    hex: '#doodle',
+    description: 'Doodle - #D00D1E HEX RGB Coffee Mug',
+    src: '/images/doodle.jpg'
+  },
+  {
+    name: 'effect',
+    hex: '#effect',
+    description: 'Effect - #EFFEC7 HEX RGB Coffee Mug',
+    src: '/images/effect.jpg'
+  },
+  {
+    name: 'etcetc',
+    hex: '#etcetc',
+    description: 'Etc Etc... - #E7CE7C HEX RGB Coffee Mug',
+    src: '/images/etcetc.jpg'
+  },
+  {
+    name: 'faeces',
+    hex: '#faeces',
+    description: 'Faeces - #FAECE5 HEX RGB Coffee Mug',
+    src: '/images/faeces.jpg'
+  },
+  {
+    name: 'fatass',
+    hex: '#fatass',
+    description: 'Fat Ass - #FA7A55 HEX RGB Coffee Mug',
+    src: '/images/fatass.jpg'
+  },
+  {
+    name: 'fellas',
+    hex: '#fellas',
+    description: 'Fellas - #FE11A5 HEX RGB Coffee Mug',
+    src: '/images/fellas.jpg'
+  },
+  {
+    name: 'fooled',
+    hex: '#fooled',
+    description: 'Fooled - #F001ED HEX RGB Coffee Mug',
+    src: '/images/fooled.jpg'
+  },
+  {
+    name: 'icetea',
+    hex: '#icetea',
+    description: 'Ice Tea - #1CE7EA HEX RGB Coffee Mug',
+    src: '/images/icetea.jpg'
+  },
+  {
+    name: 'idcdie',
+    hex: '#idcdie',
+    description: 'I Dont Care, Die - #1DCD1E HEX RGB Coffee Mug',
+    src: '/images/idcdie.jpg'
+  },
+  {
+    name: 'ladies',
+    hex: '#ladies',
+    description: 'Ladies - #1AD1E5 HEX RGB Coffee Mug',
+    src: '/images/ladies.jpg'
+  },
+  {
+    name: 'lolcat',
+    hex: '#lolcat',
+    description: 'Lol Cat - #101CA7 HEX RGB Coffee Mug',
+    src: '/images/lolcat.jpg'
+  },
+  {
+    name: 'obsess',
+    hex: '#obsess',
+    description: 'Obsess - #0B5E55 HEX RGB Coffee Mug',
+    src: '/images/obsess.jpg'
+  },
+  {
+    name: 'oddest',
+    hex: '#oddest',
+    description: 'Oddest - #0DDE57 HEX RGB Coffee Mug',
+    src: '/images/oddest.jpg'
+  },
+  {
+    name: 'offset',
+    hex: '#offset',
+    description: 'Offset - #0FF5E7 HEX RGB Coffee Mug',
+    src: '/images/offset.jpg'
+  },
+  {
+    name: 'oldest',
+    hex: '#oldest',
+    description: 'Oldest - #01DE57 HEX RGB Coffee Mug',
+    src: '/images/oldest.jpg'
+  },
+  {
+    name: 'sadist',
+    hex: '#sadist',
+    description: 'Sadist - #5AD157 HEX RGB Coffee Mug',
+    src: '/images/sadist.jpg'
+  },
+  {
+    name: 'safest',
+    hex: '#safest',
+    description: 'Safest - #5AFE57 HEX RGB Coffee Mug',
+    src: '/images/safest.jpg'
+  },
+  {
+    name: 'select',
+    hex: '#select',
+    description: 'Select - #5E1EC7 HEX RGB Coffee Mug',
+    src: '/images/select.jpg'
+  },
+  {
+    name: 'socool',
+    hex: '#socool',
+    description: 'So Cool - #50C001 HEX RGB Coffee Mug',
+    src: '/images/socool.jpg'
+  },
+  {
+    name: 'solace',
+    hex: '#solace',
+    description: 'Solace - #501ACE HEX RGB Coffee Mug',
+    src: '/images/solace.jpg'
+  },
+  {
+    name: 'toobad',
+    hex: '#toobad',
+    description: 'Too Bad - #700BAD HEX RGB Coffee Mug',
+    src: '/images/toobad.jpg'
+  },
+  {
+    name: 'dele7e',
+    hex: '#dele7e',
+    description: 'Too Bad - #700BAD HEX RGB Coffee Mug',
+    src: '/images/dele7e.jpg'
+  }
+]
+
+let cardTemplate = document.createElement("div")
+cardTemplate.classList.add("card")
+
+for (let i = 0; i < data.length; i++) {
+  let card = cardTemplate.cloneNode(true);
+  card.id = data[i].name
+  console.log(card.id)
 }
-
-
-// Time between clicks
-const clickThreshold = 350
-
-
-// Load data
-const colors = {}
-Object.assign(colors, classic)
-Object.assign(colors, neat)
-Object.assign(colors, dirty)
-console.log("Colors loaded:", Object.keys(colors).length)
-for (let key in colors) {
-  colors[key].classic = colors[key].type === "classic"
-  colors[key].neat = colors[key].type === "neat"
-  colors[key].dirty = colors[key].type === "dirty"
-  colors[key].native = colors[key].type === "native"
-}
-
-
-
-function storeState(){
-  localStorage.setItem("selected",JSON.stringify(state.selected.id))
-}
-
-
-
-// Create cards
-
-function clearCards() {
-  const container = document.querySelector(".grid-container")
-  const main = document.querySelector("main")
-  while (main.firstElementChild) {
-    main.removeChild(main.childNodes[0])
-  }
-  container.removeChild(main)
-}
-
-function displayCards() {
-
-  document.querySelector("main") && clearCards()
-  const container = document.querySelector(".grid-container")
-  const main = document.createElement("main")
-  const card = document.createElement("div")
-  card.classList.add("card")
-  card.classList.add("wide")
-  card.innerText = ""
-
-  for (let key in colors) {
-
-    let displayFlag = false
-
-    if (colors[key]['featured'] && state.filter['featured']) {
-      displayFlag = true
-    } else if (colors[key]['favorite'] && state.filter['favorite']) {
-      displayFlag = true
-    }
-
-    if (state.filter.curated && colors[key].curated) {
-      for (let property in state.filter) {
-        if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
-          if (state.filter[property] && colors[key][property]) {
-            if (state.filter.alpha && state.filter.triple) {
-              displayFlag = true
-            } else if (state.filter.alpha && !state.filter.triple) {
-              if (!colors[key].triple) displayFlag = true
-            } else if (!state.filter.alpha && state.filter.triple) {
-              if (!colors[key].alpha) displayFlag = true
-            } else {
-              if (!colors[key].alpha && !colors[key].triple) displayFlag = true
-            }
-          }
-        }
-      }
-
-    }
-    if (!state.filter.curated) {
-      for (let property in state.filter) {
-        if (!['favorite', 'featured', 'alpha', 'triple', 'curated'].includes(property)) {
-          if (state.filter[property] && colors[key][property]) {
-            if (state.filter.alpha && state.filter.triple) {
-              displayFlag = true
-            } else if (state.filter.alpha && !state.filter.triple) {
-              if (!colors[key].triple) displayFlag = true
-            } else if (!state.filter.alpha && state.filter.triple) {
-              if (!colors[key].alpha) displayFlag = true
-            } else {
-              if (!colors[key].alpha && !colors[key].triple) displayFlag = true
-            }
-          }
-        }
-      }
-
-    }
-
-
-
-
-
-    // const displayFlag = colors[key].curated
-    if (displayFlag) {
-      const newCard = card.cloneNode(true)
-      newCard.style = `background: linear-gradient(to bottom, ${key} 130px, white 0px);`
-      newCard.id = key
-      console.log(key, (key.length - 1) % 3)
-      newCard.innerHTML = `
-        <h1>${key.toUpperCase()}</h1>
-        <h2>HEX RGB${ (key.length -1) % 3 ? "A" : ""}${ (key.length -1) < 6 ? " SHORTHAND" : ""}</h2>
-      `
-      main.appendChild(newCard)
-    }
-  }
-
-  container.appendChild(main)
-  enableCardHiding()
-  state.selected = main.firstElementChild
-
-}
-
-
-function displayProducts() {
-
-  document.querySelector("main") && clearCards()
-  const container = document.querySelector(".grid-container")
-  const main = document.createElement("main")
-  const card = document.createElement("div")
-  card.classList.add("card")
-  card.classList.add("product")
-  card.innerText = ""
-
-  for (let key in colors) {
-    console.log(key)
-    if (mugImages[key]) {
-      const newCard = card.cloneNode(true)
-      newCard.style = `background-image:  url("${mugImages[key]}");`
-      newCard.id = key
-      console.log(key, (key.length - 1) % 3)
-      newCard.innerHTML = `
-        <h1>${key.toUpperCase()}</h1>
-        <h2>HEX RGB${ (key.length -1) % 3 ? "A" : ""}${ (key.length -1) < 6 ? " SHORTHAND" : ""}</h2>
-      `
-      main.appendChild(newCard)
-    }
-  }
-
-  container.appendChild(main)
-  enableCardHiding()
-  state.selected = main.firstElementChild
-
-}
-
-
-// Side bar transitions
-function showAside() {
-  const aside = document.querySelector("aside")
-  const fade = document.querySelector(".fade")
-
-  fade.classList.add("z4")
-  window.setTimeout(() => fade.classList.add("show"), 5)
-  state.fade = true
-
-  aside.classList.add("z5")
-  window.setTimeout(() => aside.classList.add("show"), 5)
-  state.aside = true
-}
-
-function hideAside() {
-  const aside = document.querySelector("aside")
-  const fade = document.querySelector(".fade")
-
-  fade.classList.remove("show")
-  window.setTimeout(() => fade.classList.remove("z4"), 300)
-  state.fade = false
-
-  aside.classList.remove("show")
-  window.setTimeout(() => aside.classList.remove("z5"), 300)
-  state.aside = false
-}
-
-function showFilters() {
-  showAside()
-  const filters = document.querySelector(".top.filter")
-  filters.classList.add("block")
-}
-
-function hideFilters() {
-  hideAside()
-  const filters = document.querySelector(".top.filter")
-  window.setTimeout(() => filters.classList.remove("block"), 300)
-}
-
-function showMug(target) {
-  showAside()
-
-  const color = target.id;
-  const header = document.querySelector(".top.color")
-  const middle = document.querySelector(".middle .description")
-  const footer = document.querySelector(".bottom .favorite")
-  const mug = document.querySelector(".mug")
-  const swag = document.querySelector("#swag")
-  const aside = header.closest("aside")
-
-  header.classList.add("block")
-  middle.classList.add("block")
-  footer.classList.add("block")
-
-
-  aside.style = `background: linear-gradient(to bottom, ${color} 260px, rgba(255,255,255,1) 0px);`
-
-  console.log("color:", color, mugImages[color])
-  if (mugImages[color]) {
-    mug.style = `display:block; background-image:  url("${mugImages[color]}")`
-    swag.style = "display:block"
-    mug.classList.add("pointer")
-  } else {
-    mug.style = `display:none; background-color: ${color}`
-    mug.classList.remove("pointer")
-    swag.style = "display:none"
-
-  }
-  middle.querySelector("#color").innerText = color.toUpperCase()
-  middle.querySelector("#name").innerText = `HEX RGB${ (color.length -1) % 3 ? "A" : ""}${ (color.length -1) < 6 ? " SHORTHAND" : ""}`.toUpperCase()
-
-
-  if (color[0] === "#") {
-    let decimal = {
-      r: 255,
-      g: 255,
-      b: 255,
-      a: 1
-
-    }
-    let percent = {
-      r: 100,
-      g: 100,
-      b: 100,
-      a: 1
-    }
-    switch (color.length - 1) {
-      case 6:
-        decimal.r = parseInt(color.slice(1, 3), 16)
-        decimal.g = parseInt(color.slice(3, 5), 16)
-        decimal.b = parseInt(color.slice(5), 16)
-        break
-      case 8:
-        decimal.r = parseInt(color.slice(1, 3), 16)
-        decimal.g = parseInt(color.slice(3, 5), 16)
-        decimal.b = parseInt(color.slice(5, 7), 16)
-        decimal.a = Math.round((parseInt(color.slice(7), 16) + 1) / 256 * 100) / 100
-        break
-      case 3:
-        decimal.r = parseInt(color[1] + color[1], 16)
-        decimal.g = parseInt(color[2] + color[2], 16)
-        decimal.b = parseInt(color[3] + color[3], 16)
-        break
-      case 4:
-        decimal.r = parseInt(color[1] + color[1], 16)
-        decimal.g = parseInt(color[2] + color[2], 16)
-        decimal.b = parseInt(color[3] + color[3], 16)
-        decimal.a = Math.round((parseInt(color[4] + color[4], 16) + 1) / 256 * 100) / 100
-
-        break
-      default:
-        middle.querySelector("#decimal").innerText
-    }
-
-    percent.r = Math.round((decimal.r + 1) / 256 * 100)
-    percent.g = Math.round((decimal.g + 1) / 256 * 100)
-    percent.b = Math.round((decimal.b + 1) / 256 * 100)
-
-    if ((color.length - 1) % 3 === 0) {
-      middle.querySelector("#decimal").innerText = `RGB ${decimal.r} ${decimal.g} ${decimal.b}`
-      middle.querySelector("#percent").innerText = `RGB ${percent.r}% ${percent.g}% ${percent.b}%`
-    } else {
-      middle.querySelector("#decimal").innerText = `RGBA ${decimal.r} ${decimal.g} ${decimal.b} ${decimal.a}`
-      middle.querySelector("#percent").innerText = `RGBA ${percent.r}% ${percent.g}% ${percent.b}% ${decimal.a}`
-    }
-
-  }
-
-}
-
-function hideMug() {
-  hideAside()
-  const header = document.querySelector(".top.color")
-  const middle = document.querySelector(".middle .description")
-  const footer = document.querySelector(".bottom .favorite")
-
-  window.setTimeout(() => {
-    header.classList.remove("block")
-    middle.classList.remove("block")
-    footer.classList.remove("block")
-  }, 300)
-}
-
-
-
-// Full screen mode
-function showFull() {
-
-  renderFull()
-
-  const fullScreen = document.querySelector(".full-screen")
-  fullScreen.classList.add("z6")
-  window.setTimeout(() => fullScreen.classList.add("show"), 5)
-  state.full = true
-}
-
-function hideFull() {
-  const fullScreen = document.querySelector(".full-screen")
-  fullScreen.classList.remove("show")
-  window.setTimeout(() => fullScreen.classList.remove("z6"), 300)
-  state.full = false
-}
-
-function renderFull() {
-  const fullScreen = document.querySelector(".full-screen")
-  const name = fullScreen.querySelector(".card h1")
-  const desc = fullScreen.querySelector(".card h2")
-  const card = fullScreen.querySelector(".card")
-  const selected = state.selected
-
-  card.style = `background: linear-gradient(to bottom, ${selected.id} 200px, rgba(255,255,255,1) 0px);`
-  name.innerText = selected.id.toUpperCase()
-  desc.innerText = `HEX RGB${ (selected.id.length -1) % 3 ? "A" : ""}${ (selected.id.length -1) < 6 ? " SHORTHAND" : ""}`.toUpperCase()
-  fullScreen.style = `background-color: ${selected.id}`
-  // name.style = `color: ${"red"};`
-  // desc.style = `color: ${"green"};`
-}
-
-
-
-
-
-// Switch between grid systems
-
-function display(mode) {
-  const cards = document.querySelectorAll(".card")
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].classList.remove(state.display)
-    cards[i].classList.add(mode)
-  }
-  state.display = mode
-}
-
-// Show products
-
-
-
-
-
-
-// Filters
-
-function setFilters() {
-  for (let key in state.filter) {
-    if (state.filter[key]) document.querySelector(`.switch.${key} input`).checked = true
-  }
-}
-
-function getFilters() {
-  for (let key in state.filter) {
-    state.filter[key] = document.querySelector(`.switch.${key} input`).checked
-  }
-}
-
-
-// Calculate mug product page
-function getMugPage(mugImagePath) {
-  const start = mugImagePath.indexOf("~~/") + 3
-  const end = mugImagePath.indexOf("-mugs.jpg")
-  return "https://society6.com/product/" + mugImagePath.slice(start, end) + "_mug"
-}
-
-
-// Navigate Cards
-function goLeft() {
-  if (state.selected.previousElementSibling) {
-    state.selected = state.selected.previousElementSibling
-  } else {
-    state.selected = state.selected.parentElement.lastElementChild
-  }
-  if (state.full) renderFull()
-  if (state.aside) showMug(state.selected)
-  storeState()
-
-}
-
-function goRight() {
-  if (state.selected.nextElementSibling) {
-    state.selected = state.selected.nextElementSibling
-
-  } else {
-    state.selected = state.selected.parentElement.firstElementChild
-  }
-  if (state.full) renderFull()
-  if (state.aside) showMug(state.selected)
-  storeState()
-}
-
-function goRandom() {
-  const cards = document.querySelectorAll("main .card")
-  const index = Math.floor(Math.random() * Math.floor(cards.length))
-  state.selected = cards[index]
-  if (state.full) renderFull()
-  if (state.aside) showMug(state.selected)
-  storeState()
-}
-
-
-
-
-// Event Handlers
-
-
-// Display Modes
-document.querySelector("header").addEventListener("click", (event) => {
-  if (event.timeStamp - state.lastClick > clickThreshold) {
-    state.lastClick = event.timeStamp
-    const view = event.target.closest("li")
-    if (view) {
-      if (view.classList.contains("filter")) showFilters()
-      if (view.classList.contains("wide")) displayCards()
-      if (view.classList.contains("products")) displayProducts()
-      if (view.classList.contains("full")) showFull()
-    }
-  }
-})
-
-
-// Display mug slider
-// Click on a mug
-document.addEventListener("click", (event) => {
-  if (event.timeStamp - state.lastClick > clickThreshold) {
-    state.lastClick = event.timeStamp
-    if (event.target.classList.contains("card") || event.target.closest(".card")) {
-      state.selected = event.target.closest(".card") || event.target
-      showMug(state.selected)
-      storeState()
-    }
-
-
-  }
-
-  if (event.target.classList.contains("mug") && mugImages[state.selected.id]) {
-    const mugImage = mugImages[state.selected.id]
-    console.log(mugImage)
-    window.open(`${getMugPage(mugImage)}`, '_blank')
-  }
-  document.querySelector(".hex-logo").style = `color: ${state.selected.id};`
-})
-
-// Return from slider
-document.querySelector(".fade").addEventListener("click", () => {
-  if (event.timeStamp - state.lastClick > clickThreshold) {
-    state.lastClick = event.timeStamp
-    hideFilters()
-    hideMug()
-  }
-})
-
-
-
-// Listen for filter changes
-document.querySelector("aside").addEventListener("click", (event) => {
-  if (event.timeStamp - state.lastClick > clickThreshold) {
-    state.lastClick = event.timeStamp
-    if (event.target.closest(".switch")) {
-      getFilters()
-      displayCards()
-    }
-  }
-})
-
-
-document.querySelector(".full-screen").addEventListener('click', (event) => {
-  if (event.timeStamp - state.lastClick > clickThreshold) {
-    state.lastClick = event.timeStamp
-    const target = event.target.closest(".arrow") || event.target.closest(".esc") || event.target.closest(".space") || event.target
-    console.log(target)
-    if (target.classList.contains("left")) {
-      goLeft()
-    }
-    if (target.classList.contains("right")) {
-      goRight()
-    }
-    if (target.classList.contains("space")) {
-      goRandom()
-    }
-    if (target.classList.contains("esc")) {
-      hideFull()
-    }
-  }
-})
-
-function enableCardHiding() {
-  document.querySelector("main").addEventListener("scroll", () => {
-    const cards = document.querySelectorAll(".card")
-    const titleBox = document.querySelector("header").getBoundingClientRect()
-
-    // Toggle dissapearing cards
-    for (let i = 0; i < cards.length; i++) {
-      // console.log(cards[i])
-      if (titleBox.y + titleBox.height * 1 / 10 > cards[i].getBoundingClientRect().y) {
-        cards[i].classList.add("invisible")
-      } else {
-        cards[i].classList.remove("invisible")
-      }
-    }
-  })
-}
-
-document.querySelector("aside").addEventListener("scroll", () => {
-  let elements = document.querySelector(".description.block") ? document.querySelector(".description.block").children : null
-  if (elements) {
-    for (let i = 0; i < elements.length; i++) {
-      if (252 > elements[i].getBoundingClientRect().y) {
-        elements[i].classList.add("invisible")
-      } else {
-        elements[i].classList.remove("invisible")
-      }
-    }
-  }
-
-  elements = document.querySelector(".filters") ? document.querySelector(".filters").children : null
-  if (elements) {
-    for (let i = 0; i < elements.length; i++) {
-      if (250 > elements[i].getBoundingClientRect().y) {
-        elements[i].classList.add("invisible")
-      } else {
-        elements[i].classList.remove("invisible")
-      }
-    }
-  }
-})
-
-
-
-// Key presses
-document.addEventListener('keydown', (event) => {
-  const keyName = event.key;
-  console.log('key: ' + keyName);
-  if (keyName === 'Escape' || keyName.toLowerCase() === 'q') {
-    event.preventDefault();
-    hideFull()
-    hideMug()
-    hideFilters()
-  }
-  if (keyName === "ArrowRight" || keyName === "ArrowUp") {
-    event.preventDefault();
-    goRight()
-  }
-  if (keyName === "ArrowLeft" || keyName === "ArrowDown") {
-    event.preventDefault();
-    goLeft()
-  }
-  if (keyName === " ") {
-    event.preventDefault();
-    goRandom()
-  }
-  document.querySelector(".hex-logo").style = `color: ${state.selected.id};`
-})
-
-
-
-
-
-// Handle mobile
-
-
-document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchmove', handleTouchMove, false);
-
-var xDown = null;
-var yDown = null;
-
-function handleTouchStart(evt) {
-  xDown = evt.touches[0].clientX;
-  yDown = evt.touches[0].clientY;
-};
-
-function handleTouchMove(evt) {
-  if (!xDown || !yDown) {
-    return;
-  }
-
-  var xUp = evt.touches[0].clientX;
-  var yUp = evt.touches[0].clientY;
-
-  var xDiff = xDown - xUp;
-  var yDiff = yDown - yUp;
-
-  if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
-    if (xDiff > 0) {
-      /* left swipe */
-    } else {
-      /* right swipe */
-    }
-  } else {
-    if (yDiff > 0) {
-      hideFull()
-    } else {
-      /* down swipe */
-    }
-  }
-  /* reset values */
-  xDown = null;
-  yDown = null;
-};
-
-
-// Behaviour on Load
-setFilters()
-displayCards()
-const logoColor = localStorage.getItem("selected") ? JSON.parse(localStorage.getItem("selected")) : "rgba(51,51,51,0.6)"
-document.querySelector(".hex-logo").style = `color: ${logoColor};`
-// showAside()
-// showFull()
-// showMug(document.querySelector(".card"))
-// showFilters()
