@@ -280,11 +280,6 @@ let data = [{
 let cardOpacity = 0.5;
 let cardTemplate = document.createElement("div")
 cardTemplate.classList.add("card")
-cardTemplate.appendChild(document.createElement("div"))
-cardTemplate.appendChild(document.createElement("div"))
-cardTemplate.firstElementChild.classList.add("front")
-cardTemplate.lastElementChild.classList.add("front")
-
 
 let main = document.querySelector("main")
 for (let i = 0; i < data.length; i++) {
