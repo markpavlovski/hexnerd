@@ -1,0 +1,1 @@
+grep '\<[a-f,o,s,t,l][a-f,o,s,t,l][a-f,o,s,t,l][a-f,o,s,t,l][a-f,o,s,t,l][a-f,o,s,t,l]\>' words_alpha.txt >> colors_w_t.txt

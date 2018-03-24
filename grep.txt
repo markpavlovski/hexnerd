@@ -1,2 +1,0 @@
- grep -o '^[a-f][a-f][a-f][a-f][a-f][a-f]' words_alpha.txt
-
