@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 0;
+  font-size: 20;
   font-family: 'Bad Script', cursive;
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
@@ -58,38 +58,47 @@ main {
   height: calc(100vw / 5);
   background-color: #999;
   display: inline-block;
-  opacity: 1; }
+  opacity: 1;
+  transition: transform 1s ease; }
+  .card.card-hover {
+    transform: perspective(600px) rotateY(180deg); }
   .card:nth-of-type(3n) {
     background-color: #888; }
   .card:nth-of-type(3n+1) {
     background-color: #777; }
-  .card:nth-of-type(1) {
-    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/badass.jpg");
-    background-size: cover; }
-  .card:nth-of-type(2) {
-    background: url("/images/coffee.jpg");
-    background-size: cover; }
-  .card:nth-of-type(3) {
-    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/daboss.jpg");
-    background-size: cover; }
-  .card:nth-of-type(4) {
-    background: url("/images/catbff.jpg");
-    background-size: cover; }
-  .card:nth-of-type(5) {
-    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/dadbod.jpg");
-    background-size: cover; }
-  .card:nth-of-type(6) {
-    background: url("/images/catbff.jpg");
-    background-size: cover; }
-  .card:nth-of-type(7) {
-    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/badass.jpg");
-    background-size: cover; }
-  .card:nth-of-type(8) {
-    background: url("/images/daboss.jpg");
-    background-size: cover; }
-  .card:nth-of-type(9) {
-    background: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.015)), url("/images/badass.jpg");
-    background-size: cover; }
-  .card:nth-of-type(10) {
-    background: url("/images/dadbod.jpg");
-    background-size: cover; }
+
+.flip-container {
+  perspective: 1000px; }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg); }
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px; }
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  background-color: red; }
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background-color: blue; }

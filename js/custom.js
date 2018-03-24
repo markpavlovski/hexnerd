@@ -2,97 +2,97 @@
 console.log("Loaded custom JS")
 let data = [{
     name: 'acidic',
-    hex: '#acidic',
+    hex: '#ac1d1c',
     description: 'Acidic - #AC1D1C HEX RGB Coffee Mug',
     src: '/images/acidic.jpg'
   },
   {
     name: 'addict',
-    hex: '#addict',
+    hex: '#add1c7',
     description: 'Addict - #ADD1C7 HEX RGB Coffee Mug',
     src: '/images/addict.jpg'
   },
   {
     name: 'asself',
-    hex: '#asself',
+    hex: '#a55e1f',
     description: 'Ass Elf - #A55E1F HEX RGB Coffee Mug',
     src: '/images/asself.jpg'
   },
   {
     name: 'babies',
-    hex: '#babies',
+    hex: '#bab1e5',
     description: 'Babies - #BAB1E5 HEX RGB Coffee Mug',
     src: '/images/babies.jpg'
   },
   {
     name: 'badass',
-    hex: '#badass',
+    hex: '#bada55',
     description: 'Bad Ass - #BADA55 HEX RGB Coffee Mug',
     src: '/images/badass.jpg'
   },
   {
     name: 'badboi',
-    hex: '#badboi',
+    hex: '#badb01',
     description: 'Bad Boi - #BADB01 HEX RGB Coffee Mug',
     src: '/images/badboi.jpg'
   },
   {
     name: 'badcat',
-    hex: '#badcat',
+    hex: '#badca7',
     description: 'Bad Cat - #BADCA7 HEX RGB Coffee Mug',
     src: '/images/badcat.jpg'
   },
   {
     name: 'basics',
-    hex: '#basics',
+    hex: '#ba51c5',
     description: 'Basics - #BA51C5 HEX RGB Coffee Mug',
     src: '/images/basics.jpg'
   },
   {
     name: 'biased',
-    hex: '#biased',
+    hex: '#b1a5ed',
     description: 'Biased - #B1A5ED HEX RGB Coffee Mug',
     src: '/images/biased.jpg'
   },
   {
     name: 'blessd',
-    hex: '#blessd',
+    hex: '#b1e55d',
     description: 'Blessed - #B1E55D HEX RGB Coffee Mug',
     src: '/images/blessd.jpg'
   },
   {
     name: 'booboo',
-    hex: '#booboo',
+    hex: '#b00b00',
     description: 'Booboo - #B00B00 HEX RGB Coffee Mug',
     src: '/images/booboo.jpg'
   },
   {
     name: 'booobs',
-    hex: '#booobs',
+    hex: '#b000b5',
     description: 'Booobs - #B000B5 HEX RGB Coffee Mug',
     src: '/images/booobs.jpg'
   },
   {
     name: 'bosses',
-    hex: '#bosses',
+    hex: '#b055e5',
     description: 'Bosses - #B055E5 HEX RGB Coffee Mug',
     src: '/images/bosses.jpg'
   },
   {
     name: 'catbff',
-    hex: '#catbff',
+    hex: '#ca7bff',
     description: 'Cat BFF - #CA7BFF HEX RGB Coffee Mug',
     src: '/images/catbff.jpg'
   },
   {
     name: 'closed',
-    hex: '#closed',
+    hex: '#c105ed',
     description: 'Closed - #C105ED HEX RGB Coffee Mug',
     src: '/images/closed.jpg'
   },
   {
     name: 'coffee',
-    hex: '#coffee',
+    hex: '#c0ffee',
     description: 'Coffee - #C0FFEE HEX RGB Coffee Mug',
     src: '/images/coffee.jpg'
   },
@@ -104,75 +104,69 @@ let data = [{
   },
   {
     name: 'dabble',
-    hex: '#dabble',
+    hex: '#dabb1e',
     description: 'Dabble - #DABB1E HEX RGB Coffee Mug',
     src: '/images/dabble.jpg'
   },
   {
     name: 'dabest',
-    hex: '#dabest',
+    hex: '#dabe57',
     description: 'Da Best - #DABE57 HEX RGB Coffee Mug',
     src: '/images/dabest.jpg'
   },
   {
     name: 'daboss',
-    hex: '#daboss',
+    hex: '#dab055',
     description: 'Da Boss - #DAB055 HEX RGB Coffee Mug',
     src: '/images/daboss.jpg'
   },
   {
     name: 'dadbod',
-    hex: '#dadbod',
+    hex: '#dadb0d',
     description: 'Dad Bod - #DADB0D HEX RGB Coffee Mug',
     src: '/images/dadbod.jpg'
   },
   {
     name: 'debate',
-    hex: '#debate',
+    hex: '#deba7e',
     description: 'Debate - #DEBA7E HEX RGB Coffee Mug',
     src: '/images/debate.jpg'
   },
   {
     name: 'decode',
-    hex: '#decode',
+    hex: '#dec0de',
     description: 'Decode - #DEC0DE HEX RGB Coffee Mug',
     src: '/images/decode.jpg'
   },
   {
     name: 'defeat',
-    hex: '#defeat',
+    hex: '#defea7',
     description: 'Defeat - #DEFEA7 HEX RGB Coffee Mug',
     src: '/images/defeat.jpg'
   },
   {
     name: 'defect',
-    hex: '#defect',
+    hex: '#defec7',
     description: 'Defect - #DEFEC7 HEX RGB Coffee Mug',
     src: '/images/defect.jpg'
   },
   {
     name: 'doable',
-    hex: '#doable',
+    hex: '#d0ab1e',
     description: 'Doable - #D0AB1E HEX RGB Coffee Mug',
     src: '/images/doable.jpg'
   },
   {
     name: 'doodle',
-    hex: '#doodle',
+    hex: '#d00d1e',
     description: 'Doodle - #D00D1E HEX RGB Coffee Mug',
     src: '/images/doodle.jpg'
   },
   {
     name: 'effect',
-    hex: '#effect',
+    hex: '#effec7',
     description: 'Effect - #EFFEC7 HEX RGB Coffee Mug',
     src: '/images/effect.jpg'
-  },
-  {
-    name: 'etcetc',
-    hex: '#etcetc',
-    description: 'Etc Etc... - #E7CE7C HEX RGB Coffee Mug',
-    src: '/images/etcetc.jpg'
   },
   {
     name: 'faeces',
@@ -229,12 +223,6 @@ let data = [{
     src: '/images/obsess.jpg'
   },
   {
-    name: 'oddest',
-    hex: '#oddest',
-    description: 'Oddest - #0DDE57 HEX RGB Coffee Mug',
-    src: '/images/oddest.jpg'
-  },
-  {
     name: 'offset',
     hex: '#offset',
     description: 'Offset - #0FF5E7 HEX RGB Coffee Mug',
@@ -283,18 +271,29 @@ let data = [{
     src: '/images/toobad.jpg'
   },
   {
-    name: 'dele7e',
-    hex: '#dele7e',
-    description: 'Too Bad - #700BAD HEX RGB Coffee Mug',
-    src: '/images/dele7e.jpg'
-  }
+    name: 'delete',
+    hex: '#delete',
+    description: 'Delete - #DE1E7E HEX RGB Coffee Mug',
+    src: '/images/delete.jpg'
+  },
 ]
-
+let cardOpacity = 0.5;
 let cardTemplate = document.createElement("div")
 cardTemplate.classList.add("card")
+cardTemplate.appendChild(document.createElement("div"))
+cardTemplate.appendChild(document.createElement("div"))
+cardTemplate.firstElementChild.classList.add("front")
+cardTemplate.lastElementChild.classList.add("front")
 
+
+let main = document.querySelector("main")
 for (let i = 0; i < data.length; i++) {
   let card = cardTemplate.cloneNode(true);
   card.id = data[i].name
-  console.log(card.id)
+  card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
+  console.log(card)
+  main.appendChild(card)
+}
+for (let i = 0; i < 5 - data.length % 5; i++) {
+  main.appendChild(cardTemplate.cloneNode(true))
 }
