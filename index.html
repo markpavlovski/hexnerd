@@ -5,209 +5,47 @@
   <meta charset="utf-8">
   <title>HEX NERD DESIGN | HEX Colors That Sound Like Words</title>
   <link rel="stylesheet" href="css/custom.css">
-
-
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
-
-
-  <script src="data/words-classic-hex.js"></script>
-  <script src="data/words-leet-neat.js"></script>
-  <script src="data/words-leet-dirty.js"></script>
-  <script src="data/mug-images.js"></script>
-
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script defer src="js/custom.js"></script>
-
-
 </head>
 
 <body>
 
-  <div class="grid-container">
+  <header>
+  </header>
+
+  <nav>
+  </nav>
+
+  <main>
+
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
 
 
-
-    <header>
-      <ul>
-        <a href="https://society6.com/hexnerd" target="_blank">
-          <li class="logo"><span class="hex-logo">HEX</span><span>NERD</span></li>
-        </a>
-        <li class="filter"><i class="fas fa-sliders-h"></i></li>
-        <li class="wide"><i class="fas fa-th-large"></i></li>
-        <li class="products"><i class="fas fa-coffee"></i></li>
-        <!-- <li class="strip"><i class="fas fa-align-justify"></i></li> -->
-        <li class="full"><i class="fas fa-expand"></i></li>
-
-      </ul>
-    </header>
-
-
-
-    <aside>
-
-      <div class="top color">
-
-      </div>
-      <div class="middle color">
-        <div class="description">
-          <h1 id="color"></h1>
-          <h2 id="name"></h2>
-          <h1 id="heading"></h1>
-          <h2 id="decimal"></h2>
-          <h2 id="percent"></h2>
-          <h1 id="swag"></h1>
-          <div class="mug"></div>
-        </div>
-      </div>
-      <div class="bottom color">
-        <div class="favorite">
-          Add to Favorites
-        </div>
-      </div>
-
-      <div class="top filter">
-        <div class="filters">
-          <h1>Filters</h1>
-
-          <div class="switch curated">
-            <label>
-            All Words
-            <input type="checkbox">
-            <span class="lever"></span>
-            Best Words
-          </label>
-          </div>
-
-
-
-          <div class="switch featured">
-            <label>
-              <input disabled type="checkbox">
-              <span class="lever"></span>
-              Always Show Featured
-            </label>
-          </div>
-          <div class="switch favorite">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              Always Show Favorite
-            </label>
-          </div>
-          <div class="switch word-bank">
-            <!-- <label> -->
-            WORD BANK OPTIONS
-            <!-- </label> -->
-          </div>
-          <div class="switch classic">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              Classic HEX
-            </label>
-          </div>
-
-          <div class="switch neat">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              Leet HEX, Neat
-            </label>
-          </div>
-
-          <div class="switch dirty">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              Leet HEX, Dirty
-            </label>
-          </div>
-
-
-          <div class="switch native">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              CSS Native
-            </label>
-          </div>
-
-          <div class="switch alpha">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              Inlude Alpha
-            </label>
-          </div>
-
-          <div class="switch triple">
-            <label>
-              <input type="checkbox">
-              <span class="lever"></span>
-              Include Shorthand
-            </label>
-          </div>
-
-        </div>
-      </div>
-      <div class="middle filter">
-        <div class="desription">
-        </div>
-      </div>
-    </aside>
-    <div class="fade"></div>
-
-
-
-
-    <!--  Full Screen -->
-    <div class="full-screen">
-      <div class="top left">
-        <div class="esc">
-          <h1>esc</h1>
-        </div>
-      </div>
-      <div class="middle left ">
-        <i class="fas fa-angle-left arrow left"></i>
-      </div>
-      <div class="middle center">
-        <div class="card">
-          <h1></h1>
-          <h2></h2>
-        </div>
-      </div>
-      <div class="middle right">
-        <i class="fas fa-angle-right arrow right"></i>
-      </div>
-      <div class="bottom center">
-        <div class="space">
-          <h1>random</h1>
-        </div>
-      </div>
-
-    </div>
-
-    <!--
-    <main>
-    </main> -->
-
-
-  </div>
-
-  <!--  Code to grab the background image-->
-<!--
-
-  <script>
-
-    $.get('https://society6.com/product/bada55-hex-rgb_mug', (data, err) =>{
-
-      const images = $(data).find('div[backgroundImage]')
-      for(const i of images){
-        console.log(i.outerHTML.match(/url\(.*\)/g)[0])
-      }
-    })
-
-  </script> -->
+  </main>
 
 </body>
 
