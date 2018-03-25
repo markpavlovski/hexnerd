@@ -315,5 +315,7 @@ for (let i = 0; i < data.length; i++) {
   main.appendChild(link)
 }
 for (let i = 0; i < 5 - data.length % 5; i++) {
-  main.appendChild(cardTemplate.cloneNode(true))
+  let filler = cardTemplate.cloneNode(true)
+  filler.classList.add("filler")
+  main.appendChild(filler)
 }

@@ -60,7 +60,7 @@ main {
   background-color: #999;
   display: inline-block;
   opacity: 1;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   overflow: hidden;
   cursor: pointer; }
   .card.card-hover {
@@ -72,7 +72,13 @@ main {
   .card:hover .subcard {
     top: 70%; }
   .card:hover .greyout {
-    opacity: .05; }
+    opacity: 0.05; }
+  .card.filler {
+    cursor: default; }
+    .card.filler:hover .subcard {
+      top: calc(100vw / 5); }
+    .card.filler:hover .greyout {
+      opacity: 0; }
   .card .greyout {
     width: calc(100vw / 5);
     height: calc(100vw / 5);
@@ -87,7 +93,7 @@ main {
     top: calc(100vw / 5);
     width: calc(100vw / 5);
     background-color: white;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     z-index: 2; }
     .card .subcard h1 {
       display: block;
@@ -98,7 +104,7 @@ main {
       padding: 4%;
       color: #333333; }
     .card .subcard h2 {
-      font-size: .9vw;
+      font-size: 0.9vw;
       text-align: center;
       padding: 2%;
       background-color: #333333;
