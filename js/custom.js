@@ -282,6 +282,12 @@ let cardTemplate = document.createElement("div")
 cardTemplate.appendChild(document.createElement("div"))
 cardTemplate.classList.add("card")
 cardTemplate.firstElementChild.classList.add("subcard")
+cardTemplate.firstElementChild.innerHTML = `
+<h1>$8.99</h1>
+<h2><i class="fas fa-shopping-cart"></i> SHOP ON ETSY</h2>
+`
+cardTemplate.appendChild(document.createElement("div"))
+cardTemplate.lastElementChild.classList.add("greyout")
 
 
 let main = document.querySelector("main")
@@ -289,7 +295,6 @@ for (let i = 0; i < data.length; i++) {
   let card = cardTemplate.cloneNode(true);
   card.id = data[i].name
   card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
-  card.firstElementChild.setAttribute("style",`background-color:${data[i].hex}`)
   console.log(card)
   main.appendChild(card)
 }
