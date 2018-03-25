@@ -363,6 +363,6 @@ window.addEventListener("resize", () => {
   if (currentWindowWidth !== windowWidth()) {
     currentWindowWidth = windowWidth()
     setNavText()
-    setFillers()
+    setFillers(createCardTemplate())
   }
 })
