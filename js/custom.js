@@ -272,20 +272,24 @@ let data = [{
   },
   {
     name: 'delete',
-    hex: '#delete',
+    hex: '#de1e7e',
     description: 'Delete - #DE1E7E HEX RGB Coffee Mug',
     src: '/images/delete.jpg'
   },
 ]
 let cardOpacity = 0.5;
 let cardTemplate = document.createElement("div")
+cardTemplate.appendChild(document.createElement("div"))
 cardTemplate.classList.add("card")
+cardTemplate.firstElementChild.classList.add("subcard")
+
 
 let main = document.querySelector("main")
 for (let i = 0; i < data.length; i++) {
   let card = cardTemplate.cloneNode(true);
   card.id = data[i].name
   card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
+  card.firstElementChild.setAttribute("style",`background-color:${data[i].hex}`)
   console.log(card)
   main.appendChild(card)
 }
