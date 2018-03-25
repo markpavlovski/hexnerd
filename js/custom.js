@@ -290,11 +290,9 @@ let linkedData = data.map((item) => {
 
 let cardOpacity = 0.5;
 let cardTemplateLink = document.createElement("a")
-
-cardTemplateLink.appendChild(document.createElement("div"))
-let cardTemplate = cardTemplateLink.firstElementChild
-cardTemplate.appendChild(document.createElement("div"))
+let cardTemplate = document.createElement("div")
 cardTemplate.classList.add("card")
+cardTemplate.appendChild(document.createElement("div"))
 cardTemplate.firstElementChild.classList.add("subcard")
 cardTemplate.firstElementChild.innerHTML = `
 <h1>$8.99</h1>
@@ -308,7 +306,8 @@ cardTemplate.lastElementChild.classList.add("greyout")
 let main = document.querySelector("main")
 for (let i = 0; i < data.length; i++) {
   let link = cardTemplateLink.cloneNode(true);
-  let card = cardTemplateLink.querySelector(".card")
+  let card = cardTemplate.cloneNode(true);
+  link.appendChild(card)
   card.id = data[i].name
   card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
   link.setAttribute("href",linkedData[i][2])
