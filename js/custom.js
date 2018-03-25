@@ -310,12 +310,40 @@ for (let i = 0; i < data.length; i++) {
   link.appendChild(card)
   card.id = data[i].name
   card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
-  link.setAttribute("href",linkedData[i][2])
-  link.setAttribute("target","_blank")
+  link.setAttribute("href", linkedData[i][2])
+  link.setAttribute("target", "_blank")
   main.appendChild(link)
 }
-for (let i = 0; i < 5 - data.length % 5; i++) {
-  let filler = cardTemplate.cloneNode(true)
-  filler.classList.add("filler")
-  main.appendChild(filler)
+
+function setFillers() {
+  let main = document.querySelector("main")
+  while (main.lastElementChild.classList.contains("filler")){
+    main.removeChild(main.lastElementChild)
+  }
+  let n = 0
+  if (window.innerWidth > 600) n = 3
+  if (window.innerWidth > 900) n = 5
+  if (window.innerWidth > 1300) n = 7
+  for (let i = 0; i < n - data.length % n; i++) {
+    let filler = cardTemplate.cloneNode(true)
+    filler.classList.add("filler")
+    main.appendChild(filler)
+  }
 }
+setFillers()
+
+
+function setNavText() {
+  let navText = document.querySelector("nav p")
+  if (window.innerWidth > 0) navText.innerText = "Sweet Mugs"
+  if (window.innerWidth > 500) navText.innerText = "Please buy our sweet mugs"
+  if (window.innerWidth > 900) navText.innerText = "We scraped the dictionary for the best HEX colors that spell out real words - Then we put them on mugs!"
+}
+setNavText()
+
+
+
+window.addEventListener("resize", () => {
+  setNavText()
+  setFillers()
+})
