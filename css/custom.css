@@ -95,7 +95,8 @@ main {
       font-weight: bold;
       font-size: 2vw;
       text-align: center;
-      padding: 4%; }
+      padding: 4%;
+      color: #333333; }
     .card .subcard h2 {
       font-size: .9vw;
       text-align: center;

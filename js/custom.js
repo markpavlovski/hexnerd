@@ -170,103 +170,103 @@ let data = [{
   },
   {
     name: 'faeces',
-    hex: '#faeces',
+    hex: '#faece5',
     description: 'Faeces - #FAECE5 HEX RGB Coffee Mug',
     src: '/images/faeces.jpg'
   },
   {
     name: 'fatass',
-    hex: '#fatass',
+    hex: '#fa7a55',
     description: 'Fat Ass - #FA7A55 HEX RGB Coffee Mug',
     src: '/images/fatass.jpg'
   },
   {
     name: 'fellas',
-    hex: '#fellas',
+    hex: '#fe11a5',
     description: 'Fellas - #FE11A5 HEX RGB Coffee Mug',
     src: '/images/fellas.jpg'
   },
   {
     name: 'fooled',
-    hex: '#fooled',
+    hex: '#f001ed',
     description: 'Fooled - #F001ED HEX RGB Coffee Mug',
     src: '/images/fooled.jpg'
   },
   {
     name: 'icetea',
-    hex: '#icetea',
+    hex: '#1ce7ea',
     description: 'Ice Tea - #1CE7EA HEX RGB Coffee Mug',
     src: '/images/icetea.jpg'
   },
   {
     name: 'idcdie',
-    hex: '#idcdie',
+    hex: '#1dcd1e',
     description: 'I Dont Care, Die - #1DCD1E HEX RGB Coffee Mug',
     src: '/images/idcdie.jpg'
   },
   {
     name: 'ladies',
-    hex: '#ladies',
+    hex: '#1ad1e5',
     description: 'Ladies - #1AD1E5 HEX RGB Coffee Mug',
     src: '/images/ladies.jpg'
   },
   {
     name: 'lolcat',
-    hex: '#lolcat',
+    hex: '#101ca7',
     description: 'Lol Cat - #101CA7 HEX RGB Coffee Mug',
     src: '/images/lolcat.jpg'
   },
   {
     name: 'obsess',
-    hex: '#obsess',
+    hex: '#0b5e55',
     description: 'Obsess - #0B5E55 HEX RGB Coffee Mug',
     src: '/images/obsess.jpg'
   },
   {
     name: 'offset',
-    hex: '#offset',
+    hex: '#0ff5e7',
     description: 'Offset - #0FF5E7 HEX RGB Coffee Mug',
     src: '/images/offset.jpg'
   },
   {
     name: 'oldest',
-    hex: '#oldest',
+    hex: '#01de57',
     description: 'Oldest - #01DE57 HEX RGB Coffee Mug',
     src: '/images/oldest.jpg'
   },
   {
     name: 'sadist',
-    hex: '#sadist',
+    hex: '#5ad157',
     description: 'Sadist - #5AD157 HEX RGB Coffee Mug',
     src: '/images/sadist.jpg'
   },
   {
     name: 'safest',
-    hex: '#safest',
+    hex: '#5afe57',
     description: 'Safest - #5AFE57 HEX RGB Coffee Mug',
     src: '/images/safest.jpg'
   },
   {
     name: 'select',
-    hex: '#select',
+    hex: '#5e1ec7',
     description: 'Select - #5E1EC7 HEX RGB Coffee Mug',
     src: '/images/select.jpg'
   },
   {
     name: 'socool',
-    hex: '#socool',
+    hex: '#50c001',
     description: 'So Cool - #50C001 HEX RGB Coffee Mug',
     src: '/images/socool.jpg'
   },
   {
     name: 'solace',
-    hex: '#solace',
+    hex: '#501ace',
     description: 'Solace - #501ACE HEX RGB Coffee Mug',
     src: '/images/solace.jpg'
   },
   {
     name: 'toobad',
-    hex: '#toobad',
+    hex: '#700bad',
     description: 'Too Bad - #700BAD HEX RGB Coffee Mug',
     src: '/images/toobad.jpg'
   },
@@ -275,8 +275,19 @@ let data = [{
     hex: '#de1e7e',
     description: 'Delete - #DE1E7E HEX RGB Coffee Mug',
     src: '/images/delete.jpg'
-  },
+  }
 ]
+let linkedData = data.map((item) => {
+  let result = [item.name, item.hex, null]
+  for (let key in etsyData.results) {
+    if (etsyData.results[key].title.toUpperCase().indexOf(item.hex.toUpperCase()) > -1) {
+      result[2] = etsyData.results[key].url
+    }
+  }
+  return result
+})
+
+
 let cardOpacity = 0.5;
 let cardTemplate = document.createElement("div")
 cardTemplate.appendChild(document.createElement("div"))
@@ -295,7 +306,6 @@ for (let i = 0; i < data.length; i++) {
   let card = cardTemplate.cloneNode(true);
   card.id = data[i].name
   card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
-  console.log(card)
   main.appendChild(card)
 }
 for (let i = 0; i < 5 - data.length % 5; i++) {
