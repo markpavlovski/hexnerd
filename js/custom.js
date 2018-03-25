@@ -289,7 +289,10 @@ let linkedData = data.map((item) => {
 
 
 let cardOpacity = 0.5;
-let cardTemplate = document.createElement("div")
+let cardTemplateLink = document.createElement("a")
+
+cardTemplateLink.appendChild(document.createElement("div"))
+let cardTemplate = cardTemplateLink.firstElementChild
 cardTemplate.appendChild(document.createElement("div"))
 cardTemplate.classList.add("card")
 cardTemplate.firstElementChild.classList.add("subcard")
@@ -301,12 +304,16 @@ cardTemplate.appendChild(document.createElement("div"))
 cardTemplate.lastElementChild.classList.add("greyout")
 
 
+
 let main = document.querySelector("main")
 for (let i = 0; i < data.length; i++) {
-  let card = cardTemplate.cloneNode(true);
+  let link = cardTemplateLink.cloneNode(true);
+  let card = cardTemplateLink.querySelector(".card")
   card.id = data[i].name
   card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
-  main.appendChild(card)
+  link.setAttribute("href",linkedData[i][2])
+  link.setAttribute("target","_blank")
+  main.appendChild(link)
 }
 for (let i = 0; i < 5 - data.length % 5; i++) {
   main.appendChild(cardTemplate.cloneNode(true))
