@@ -22,6 +22,7 @@ $cardHeight1: $cardWidth1;
   font-size: 0;
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
+  color: rgba(51,51,51,1);
 
   &::selection {
     background: #bada55;
@@ -148,16 +149,16 @@ main {
       display: block;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
-      font-size: 2vw;
+      font-size: 7vw;
       text-align: center;
-      padding: 4%;
+      padding: 5.5%;
       color: rgba(51,51,51,1);
     }
 
     h2 {
-      font-size: 0.9vw;
+      font-size: 3.5vw;
       text-align: center;
-      padding: 2%;
+      padding: 3%;
       background-color: rgba(51,51,51,1);
       color: white;
       padding-bottom: 10%;
@@ -189,13 +190,13 @@ main {
       transition: all 0.5s ease;
 
       h1 {
-        font-size: 2vw;
-        padding: 4%;
+        font-size: 2.5vw;
+        padding: 5%;
       }
 
       h2 {
-        font-size: 0.9vw;
-        padding: 2% 2% 10%;
+        font-size: 1.2vw;
+        padding: 3.5% 2% 10%;
       }
     }
   }
@@ -232,7 +233,7 @@ main {
     }
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
   .card {
     width: $cardWidth7;
     height: $cardHeight7;
@@ -252,12 +253,12 @@ main {
       transition: all 0.5s ease;
 
       h1 {
-        font-size: 2vw;
+        font-size: 1.4vw;
         padding: 4%;
       }
 
       h2 {
-        font-size: 0.9vw;
+        font-size: 0.6vw;
         padding: 2% 2% 10%;
       }
     }

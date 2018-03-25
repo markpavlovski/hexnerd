@@ -292,7 +292,7 @@ let windowWidth = () => {
   let size = "s"
   if (window.innerWidth > 600) size = "m"
   if (window.innerWidth > 1100) size = "l"
-  if (window.innerWidth > 1400) size = "xl"
+  if (window.innerWidth > 1500) size = "xl"
   return size
 }
 

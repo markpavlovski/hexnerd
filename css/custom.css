@@ -7,6 +7,7 @@
   font-size: 0;
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
+  color: #333333;
   text-decoration: none;
   /* no underline */ }
   *::selection {
@@ -97,14 +98,14 @@ main {
       display: block;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
-      font-size: 2vw;
+      font-size: 7vw;
       text-align: center;
-      padding: 4%;
+      padding: 5.5%;
       color: #333333; }
     .card .subcard h2 {
-      font-size: 0.9vw;
+      font-size: 3.5vw;
       text-align: center;
-      padding: 2%;
+      padding: 3%;
       background-color: #333333;
       color: white;
       padding-bottom: 10%; }
@@ -126,11 +127,11 @@ main {
       width: calc(100vw / 3);
       transition: all 0.5s ease; }
       .card .subcard h1 {
-        font-size: 2vw;
-        padding: 4%; }
+        font-size: 2.5vw;
+        padding: 5%; }
       .card .subcard h2 {
-        font-size: 0.9vw;
-        padding: 2% 2% 10%; } }
+        font-size: 1.2vw;
+        padding: 3.5% 2% 10%; } }
 
 @media only screen and (min-width: 1100px) {
   .card {
@@ -152,7 +153,7 @@ main {
         font-size: 0.9vw;
         padding: 2% 2% 10%; } }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
   .card {
     width: calc(100vw / 7);
     height: calc(100vw / 7); }
@@ -166,8 +167,8 @@ main {
       width: calc(100vw / 7);
       transition: all 0.5s ease; }
       .card .subcard h1 {
-        font-size: 2vw;
+        font-size: 1.4vw;
         padding: 4%; }
       .card .subcard h2 {
-        font-size: 0.9vw;
+        font-size: 0.6vw;
         padding: 2% 2% 10%; } }
