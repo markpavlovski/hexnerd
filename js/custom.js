@@ -288,62 +288,81 @@ let linkedData = data.map((item) => {
 })
 
 
-let cardOpacity = 0.5;
-let cardTemplateLink = document.createElement("a")
-let cardTemplate = document.createElement("div")
-cardTemplate.classList.add("card")
-cardTemplate.appendChild(document.createElement("div"))
-cardTemplate.firstElementChild.classList.add("subcard")
-cardTemplate.firstElementChild.innerHTML = `
-<h1>$8.99</h1>
-<h2><i class="fas fa-shopping-cart"></i> SHOP ON ETSY</h2>
-`
-cardTemplate.appendChild(document.createElement("div"))
-cardTemplate.lastElementChild.classList.add("greyout")
-
-
-
-let main = document.querySelector("main")
-for (let i = 0; i < data.length; i++) {
-  let link = cardTemplateLink.cloneNode(true);
-  let card = cardTemplate.cloneNode(true);
-  link.appendChild(card)
-  card.id = data[i].name
-  card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
-  link.setAttribute("href", linkedData[i][2])
-  link.setAttribute("target", "_blank")
-  main.appendChild(link)
+let windowWidth = () => {
+  let size = "s"
+  if (window.innerWidth > 600) size = "m"
+  if (window.innerWidth > 1100) size = "l"
+  if (window.innerWidth > 1400) size = "xl"
+  return size
 }
 
-function setFillers() {
+function createCardTemplate() {
+  let cardOpacity = 0.5;
+  let cardTemplateLink = document.createElement("a")
+  let cardTemplate = document.createElement("div")
+  cardTemplate.classList.add("card")
+  cardTemplate.appendChild(document.createElement("div"))
+  cardTemplate.firstElementChild.classList.add("subcard")
+  cardTemplate.firstElementChild.innerHTML = `
+    <h1>$8.99</h1>
+    <h2><i class="fas fa-shopping-cart"></i> SHOP ON ETSY</h2>
+  `
+  cardTemplate.appendChild(document.createElement("div"))
+  cardTemplate.lastElementChild.classList.add("greyout")
+  return {
+    card: cardTemplate,
+    link: cardTemplateLink
+  }
+}
+
+
+function populateCards(template) {
   let main = document.querySelector("main")
-  while (main.lastElementChild.classList.contains("filler")){
+  for (let i = 0; i < data.length; i++) {
+    let link = template.link.cloneNode(true);
+    let card = template.card.cloneNode(true);
+    link.appendChild(card)
+    card.id = data[i].name
+    card.setAttribute("style", `background-image: url("${data[i].src}"); background-size: cover;`)
+    link.setAttribute("href", linkedData[i][2])
+    link.setAttribute("target", "_blank")
+    main.appendChild(link)
+  }
+}
+populateCards(createCardTemplate())
+
+function setFillers(template) {
+  let main = document.querySelector("main")
+  while (main.lastElementChild.classList.contains("filler")) {
     main.removeChild(main.lastElementChild)
   }
   let n = 0
-  if (window.innerWidth > 600) n = 3
-  if (window.innerWidth > 900) n = 5
-  if (window.innerWidth > 1300) n = 7
+  if (windowWidth() === "m") n = 3
+  if (windowWidth() === "l") n = 5
+  if (windowWidth() === "xl") n = 7
   for (let i = 0; i < n - data.length % n; i++) {
-    let filler = cardTemplate.cloneNode(true)
+    let filler = template.card.cloneNode(true)
     filler.classList.add("filler")
     main.appendChild(filler)
   }
 }
-setFillers()
+setFillers(createCardTemplate())
 
 
 function setNavText() {
   let navText = document.querySelector("nav p")
-  if (window.innerWidth > 0) navText.innerText = "Sweet Mugs"
-  if (window.innerWidth > 500) navText.innerText = "Please buy our sweet mugs"
-  if (window.innerWidth > 900) navText.innerText = "We scraped the dictionary for the best HEX colors that spell out real words - Then we put them on mugs!"
+  if (windowWidth() === "s") navText.innerText = "Sweet Mugs"
+  if (windowWidth() === "m") navText.innerText = "Please buy our sweet mugs"
+  if (windowWidth() === "l" || windowWidth() === "xl") navText.innerText = "We scraped the dictionary for the best HEX colors that spell out real words - Then we put them on mugs!"
 }
 setNavText()
 
 
-
+let currentWindowWidth = windowWidth()
 window.addEventListener("resize", () => {
-  setNavText()
-  setFillers()
+  if (currentWindowWidth !== windowWidth()) {
+    currentWindowWidth = windowWidth()
+    setNavText()
+    setFillers()
+  }
 })
