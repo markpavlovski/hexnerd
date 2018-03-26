@@ -6,29 +6,62 @@ $transparent: rgba(255,255,255,0); // Styles
 @import url('https://fonts.googleapis.com/css?family=Cabin:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 $headerHeight: 100vw;
-$cardWidth: calc(100vw / 5);
-$cardHeight: $cardWidth;
-$card-opacity: 0.015;
+
+$cardWidth7: calc(100vw / 7);
+$cardHeight7: $cardWidth7;
+$cardWidth5: calc(100vw / 5);
+$cardHeight5: $cardWidth5;
+$cardWidth3: calc(100vw / 3);
+$cardHeight3: $cardWidth3;
+$cardWidth1: calc(100vw / 1);
+$cardHeight1: $cardWidth1;
 
 * {
   margin: 0;
   padding: 0;
   font-size: 0;
-  font-family: 'Bad Script', cursive;
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
+  color: rgba(51,51,51,1);
 
   &::selection {
-    background: #bada55;
+    background: #FA7A55;
   }
   text-decoration: none;
-  /* no underline */
 }
 
 header {
   background-color: #f8f8f8;
   width: 100%;
-  height: 60vh;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .mugshot {
+    display: inline-block;
+    height: 40vh;
+    width: 70vh;
+    background-image: url("/etsy/mugshot.jpg");
+    background-size: 72vh 42vh !important;
+    background-position: center;
+    z-index: 999;
+    margin-right: 6vw;
+  }
+
+  .hex-nerd-design {
+    display: inline-block;
+    min-width: 300px;
+    overflow: none;
+    h1 {
+      padding: 20px;
+      font-size: 4vmin;
+      font-weight: bold;
+    }
+  }
+
+
 }
 
 footer {
@@ -41,12 +74,17 @@ footer {
     font-family: 'Cabin', sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
-    color: darken(white, 10%);
+    color: darken(white, 40%);
     display: block;
     text-align: center;
     font-size: 10px;
     cursor: pointer;
     line-height: 50px;
+    transition: all .5s ease;
+
+    &:hover {
+      color: darken(white, 15%);
+    }
   }
 }
 
@@ -54,9 +92,9 @@ nav {
   background-color: #333;
   width: 100%;
   height: 50px;
-  position: sticky;
-  top: 0;
+
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  z-index: 998 !important;
 
   p {
     line-height: 50px;
@@ -65,70 +103,196 @@ nav {
     text-align: center;
     color: white;
     text-transform: uppercase;
+    z-index: 999 !important;
   }
 }
 
 main {
   background-color: #f8f8f8;
   width: 100%;
-  height: 300vh;
-
-  .card {
-    width: $cardWidth;
-    height: $cardHeight;
-    background-color: #fff;
-    display: inline-block;
-    opacity: 1;
-    // transition: transform 1s ease;
-    // &.card-hover {
-    //   transform: perspective(600px) rotateY(180deg);
-    // }
-    // &:nth-of-type(3n) {
-    //   background-color: #888;
-    // }
-    //
-    // &:nth-of-type(3n+1) {
-    //   background-color: #777;
-    // }
-  }
+  // height: 300vh;
 }
 
 .card {
-  perspective: 1000px;
+  width: $cardWidth1;
+  height: $cardHeight1;
+  background-color: #999;
+  display: inline-block;
+  opacity: 1;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:nth-of-type(4n+1) {
+    background-color: #888;
+  }
+
+  &:nth-of-type(4n+2) {
+    background-color: #777;
+  }
+  &:nth-of-type(4n+3) {
+    background-color: #666;
+  }
+
+  &:hover {
+    .subcard {
+      top: 70%;
+    }
+
+    .greyout {
+      opacity: 0.05;
+    }
+  }
+
+  &.filler {
+    cursor: default;
+
+    &:hover {
+      .subcard {
+        top: $cardHeight1;
+      }
+
+      .greyout {
+        opacity: 0;
+      }
+    }
+  }
+
+  .greyout {
+    width: $cardWidth1;
+    height: $cardHeight1;
+    background-color: black;
+    opacity: 0;
+    position: relative;
+    top: -38%;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .subcard {
+    position: relative;
+    top: $cardHeight1;
+    width: $cardWidth1;
+    background-color: rgba(255,255,255,1);
+    transition: all 0.5s ease;
+    z-index: 2;
+
+    h1 {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 7vw;
+      text-align: center;
+      padding: 5.5%;
+      color: rgba(51,51,51,1);
+    }
+
+    h2 {
+      font-size: 3.5vw;
+      text-align: center;
+      padding: 3%;
+      background-color: rgba(51,51,51,1);
+      color: white;
+      padding-bottom: 10%;
+    }
+  }
 }
-/* flip the pane when hovered */
-.card.hover .flipper,
-.card:hover .flipper {
-  transform: rotateY(180deg);
+@media only screen and (min-width: 600px) {
+
+  nav {
+    position: sticky;
+    top: 0px;
+  }
+  .card {
+    width: $cardWidth3;
+    height: $cardHeight3;
+
+    &.filler:hover .subcard {
+      top: $cardHeight3;
+    }
+
+    .greyout {
+      width: $cardWidth3;
+      height: $cardHeight3;
+    }
+
+    .subcard {
+      top: $cardHeight3;
+      width: $cardWidth3;
+      transition: all 0.5s ease;
+
+      h1 {
+        font-size: 2.5vw;
+        padding: 5%;
+      }
+
+      h2 {
+        font-size: 1.2vw;
+        padding: 3.5% 2% 10%;
+      }
+    }
+  }
 }
 
-.back,
-.card,
-.front {
-  width: $cardWidth;
-  height: $cardHeight;
+@media only screen and (min-width: 1100px) {
+  .card {
+    width: $cardWidth5;
+    height: $cardHeight5;
+
+    &.filler:hover .subcard {
+      top: $cardHeight5;
+    }
+
+    .greyout {
+      width: $cardWidth5;
+      height: $cardHeight5;
+    }
+
+    .subcard {
+      top: $cardHeight5;
+      width: $cardWidth5;
+      transition: all 0.5s ease;
+
+      h1 {
+        font-size: 2vw;
+        padding: 4%;
+      }
+
+      h2 {
+        font-size: 0.9vw;
+        padding: 2% 2% 10%;
+      }
+    }
+  }
 }
-/* flip speed goes here */
-.flipper {
-  transition: 1.3s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-/* hide back of pane during swap */
-.back,
-.front {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-}
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
+@media only screen and (min-width: 1500px) {
+  .card {
+    width: $cardWidth7;
+    height: $cardHeight7;
+
+    &.filler:hover .subcard {
+      top: $cardHeight7;
+    }
+
+    .greyout {
+      width: $cardWidth7;
+      height: $cardHeight7;
+    }
+
+    .subcard {
+      top: $cardHeight7;
+      width: $cardWidth7;
+      transition: all 0.5s ease;
+
+      h1 {
+        font-size: 1.4vw;
+        padding: 4%;
+      }
+
+      h2 {
+        font-size: 0.6vw;
+        padding: 2% 2% 10%;
+      }
+    }
+  }
 }

@@ -5,18 +5,38 @@
   margin: 0;
   padding: 0;
   font-size: 0;
-  font-family: 'Bad Script', cursive;
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
-  text-decoration: none;
-  /* no underline */ }
+  color: #333333;
+  text-decoration: none; }
   *::selection {
-    background: #bada55; }
+    background: #FA7A55; }
 
 header {
   background-color: #f8f8f8;
   width: 100%;
-  height: 60vh; }
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap; }
+  header .mugshot {
+    display: inline-block;
+    height: 40vh;
+    width: 70vh;
+    background-image: url("/etsy/mugshot.jpg");
+    background-size: 72vh 42vh !important;
+    background-position: center;
+    z-index: 999;
+    margin-right: 6vw; }
+  header .hex-nerd-design {
+    display: inline-block;
+    min-width: 300px;
+    overflow: none; }
+    header .hex-nerd-design h1 {
+      padding: 20px;
+      font-size: 4vmin;
+      font-weight: bold; }
 
 footer {
   background-color: #515151;
@@ -27,73 +47,151 @@ footer {
     font-family: 'Cabin', sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
-    color: #e6e6e6;
+    color: #999999;
     display: block;
     text-align: center;
     font-size: 10px;
     cursor: pointer;
-    line-height: 50px; }
+    line-height: 50px;
+    transition: all .5s ease; }
+    footer p:hover {
+      color: #d9d9d9; }
 
 nav {
   background-color: #333;
   width: 100%;
   height: 50px;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  z-index: 998 !important; }
   nav p {
     line-height: 50px;
     letter-spacing: 2px;
     font-size: 12px;
     text-align: center;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    z-index: 999 !important; }
 
 main {
   background-color: #f8f8f8;
-  width: 100%;
-  height: 300vh; }
-  main .card {
-    width: calc(100vw / 5);
-    height: calc(100vw / 5);
-    background-color: #fff;
-    display: inline-block;
-    opacity: 1; }
+  width: 100%; }
 
 .card {
-  perspective: 1000px; }
+  width: calc(100vw / 1);
+  height: calc(100vw / 1);
+  background-color: #999;
+  display: inline-block;
+  opacity: 1;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  cursor: pointer; }
+  .card:nth-of-type(4n+1) {
+    background-color: #888; }
+  .card:nth-of-type(4n+2) {
+    background-color: #777; }
+  .card:nth-of-type(4n+3) {
+    background-color: #666; }
+  .card:hover .subcard {
+    top: 70%; }
+  .card:hover .greyout {
+    opacity: 0.05; }
+  .card.filler {
+    cursor: default; }
+    .card.filler:hover .subcard {
+      top: calc(100vw / 1); }
+    .card.filler:hover .greyout {
+      opacity: 0; }
+  .card .greyout {
+    width: calc(100vw / 1);
+    height: calc(100vw / 1);
+    background-color: black;
+    opacity: 0;
+    position: relative;
+    top: -38%;
+    z-index: 1;
+    transition: opacity 0.5s ease; }
+  .card .subcard {
+    position: relative;
+    top: calc(100vw / 1);
+    width: calc(100vw / 1);
+    background-color: white;
+    transition: all 0.5s ease;
+    z-index: 2; }
+    .card .subcard h1 {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 7vw;
+      text-align: center;
+      padding: 5.5%;
+      color: #333333; }
+    .card .subcard h2 {
+      font-size: 3.5vw;
+      text-align: center;
+      padding: 3%;
+      background-color: #333333;
+      color: white;
+      padding-bottom: 10%; }
 
-/* flip the pane when hovered */
-.card.hover .flipper,
-.card:hover .flipper {
-  transform: rotateY(180deg); }
+@media only screen and (min-width: 600px) {
+  nav {
+    position: sticky;
+    top: 0px; }
+  .card {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3); }
+    .card.filler:hover .subcard {
+      top: calc(100vw / 3); }
+    .card .greyout {
+      width: calc(100vw / 3);
+      height: calc(100vw / 3); }
+    .card .subcard {
+      top: calc(100vw / 3);
+      width: calc(100vw / 3);
+      transition: all 0.5s ease; }
+      .card .subcard h1 {
+        font-size: 2.5vw;
+        padding: 5%; }
+      .card .subcard h2 {
+        font-size: 1.2vw;
+        padding: 3.5% 2% 10%; } }
 
-.back,
-.card,
-.front {
-  width: calc(100vw / 5);
-  height: calc(100vw / 5); }
+@media only screen and (min-width: 1100px) {
+  .card {
+    width: calc(100vw / 5);
+    height: calc(100vw / 5); }
+    .card.filler:hover .subcard {
+      top: calc(100vw / 5); }
+    .card .greyout {
+      width: calc(100vw / 5);
+      height: calc(100vw / 5); }
+    .card .subcard {
+      top: calc(100vw / 5);
+      width: calc(100vw / 5);
+      transition: all 0.5s ease; }
+      .card .subcard h1 {
+        font-size: 2vw;
+        padding: 4%; }
+      .card .subcard h2 {
+        font-size: 0.9vw;
+        padding: 2% 2% 10%; } }
 
-/* flip speed goes here */
-.flipper {
-  transition: 1.3s;
-  transform-style: preserve-3d;
-  position: relative; }
-
-/* hide back of pane during swap */
-.back,
-.front {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg); }
-
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg); }
+@media only screen and (min-width: 1500px) {
+  .card {
+    width: calc(100vw / 7);
+    height: calc(100vw / 7); }
+    .card.filler:hover .subcard {
+      top: calc(100vw / 7); }
+    .card .greyout {
+      width: calc(100vw / 7);
+      height: calc(100vw / 7); }
+    .card .subcard {
+      top: calc(100vw / 7);
+      width: calc(100vw / 7);
+      transition: all 0.5s ease; }
+      .card .subcard h1 {
+        font-size: 1.4vw;
+        padding: 4%; }
+      .card .subcard h2 {
+        font-size: 0.6vw;
+        padding: 2% 2% 10%; } }
