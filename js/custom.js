@@ -429,7 +429,7 @@ function setFillers(template) {
     main.appendChild(filler)
   }
 }
-setFillers(createCardTemplate())
+// setFillers(createCardTemplate())
 
 
 function setNavText() {
@@ -446,6 +446,6 @@ window.addEventListener("resize", () => {
   if (currentWindowWidth !== windowWidth()) {
     currentWindowWidth = windowWidth()
     setNavText()
-    setFillers(createCardTemplate())
+    // setFillers(createCardTemplate())
   }
 })
